@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="DevRecruit recruiter coding test management">
+
+    <title>Coding Tests | DevRecruit</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="coding-tests.css">
+
+</head>
+
+<body>
+
+<div class="coding-tests-page">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="coding-tests-sidebar"
+           id="codingTestsSidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../dashboard/index.html">
+
+                <span class="brand-icon">
+                    🚀
+                </span>
+
+                <span>
+                    DevRecruit
+                </span>
+
+            </a>
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                type="button"
+                aria-label="Close navigation">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                HR
+            </div>
+
+            <div class="profile-info">
+
+                <strong>
+                    Recruiter
+                </strong>
+
+                <span>
+                    Talent Acquisition
+                </span>
+
+            </div>
+
+            <span class="online-dot"></span>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    OVERVIEW
+                </span>
+
+                <a href="../dashboard/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+                <a href="../analytics/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        Analytics
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    TALENT MANAGEMENT
+                </span>
+
+                <a href="../candidates/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <span>
+                        Candidates
+                    </span>
+
+                    <b>
+                        248
+                    </b>
+
+                </a>
+
+                <a href="../ai-ranking/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        AI Candidate Ranking
+                    </span>
+
+                    <em>
+                        AI
+                    </em>
+
+                </a>
+
+                <a href="../shortlisted/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>
+                        Shortlisted
+                    </span>
+
+                    <b>
+                        18
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    RECRUITMENT
+                </span>
+
+                <a href="../jobs/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <span>
+                        Job Postings
+                    </span>
+
+                    <b>
+                        12
+                    </b>
+
+                </a>
+
+                <a href="../pipeline/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-filter"></i>
+
+                    <span>
+                        Hiring Pipeline
+                    </span>
+
+                </a>
+
+                <a href="../interviews/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <span>
+                        Interviews
+                    </span>
+
+                    <b>
+                        5
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    EVALUATION
+                </span>
+
+                <a href="../assessments/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <span>
+                        Assessments
+                    </span>
+
+                    <b>
+                        7
+                    </b>
+
+                </a>
+
+                <a href="index.html"
+                   class="nav-item active">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        Coding Tests
+                    </span>
+
+                </a>
+
+                <a href="../credentials/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <span>
+                        Credential Verification
+                    </span>
+
+                    <b class="alert-count">
+                        3
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    COMMUNICATION
+                </span>
+
+                <a href="../messages/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <b>
+                        4
+                    </b>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR FOOTER -->
+
+        <div class="sidebar-footer">
+
+            <a href="../notifications/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span>
+                    Notifications
+                </span>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+            <a href="../settings/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+            <button
+                class="logout-button"
+                id="logoutButton"
+                type="button">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Sign Out
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay">
+    </div>
+
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <main class="coding-tests-main">
+
+
+        <!-- HEADER -->
+
+        <header class="coding-tests-header">
+
+            <div class="header-left">
+
+                <button
+                    class="mobile-menu"
+                    id="mobileMenuButton"
+                    type="button"
+                    aria-label="Open navigation">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+                <div>
+
+                    <span class="page-label">
+                        EVALUATION
+                    </span>
+
+                    <h1>
+                        Coding Tests
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="header-button"
+                    id="refreshCodingTests"
+                    type="button"
+                    title="Refresh">
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                </button>
+
+                <a href="../notifications/index.html"
+                   class="header-button notification-button"
+                   aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span>
+                        7
+                    </span>
+
+                </a>
+
+
+                <a href="../settings/index.html"
+                   class="header-profile">
+
+                    <div class="header-avatar">
+                        HR
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Recruiter
+                        </strong>
+
+                        <small>
+                            Talent Acquisition
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             CONTENT
+        =================================================== -->
+
+        <div class="coding-tests-content">
+
+
+            <!-- INTRO -->
+
+            <section class="page-intro">
+
+                <div>
+
+                    <span>
+                        DEVELOPER EVALUATION
+                    </span>
+
+                    <h2>
+                        Coding Tests
+                    </h2>
+
+                    <p>
+                        Create, manage and evaluate coding challenges
+                        for technical candidates.
+                    </p>
+
+                </div>
+
+
+                <div class="intro-actions">
+
+                    <button
+                        class="secondary-action"
+                        id="codingTemplatesButton"
+                        type="button">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                        Templates
+
+                    </button>
+
+
+                    <button
+                        class="primary-action"
+                        id="createCodingTestButton"
+                        type="button">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Create Coding Test
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 STATS
+            =================================================== -->
+
+            <section class="coding-test-stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            TOTAL CODING TESTS
+                        </span>
+
+                        <strong>
+                            18
+                        </strong>
+
+                        <small>
+                            6 currently active
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+
+                        <i class="fa-solid fa-users"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            CANDIDATES ATTEMPTED
+                        </span>
+
+                        <strong>
+                            143
+                        </strong>
+
+                        <small>
+                            Across all tests
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            AVERAGE SCORE
+                        </span>
+
+                        <strong>
+                            76%
+                        </strong>
+
+                        <small class="positive">
+                            +5.2% this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            PASS RATE
+                        </span>
+
+                        <strong>
+                            68%
+                        </strong>
+
+                        <small>
+                            97 candidates passed
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 INSIGHTS
+            =================================================== -->
+
+            <section class="coding-insights">
+
+
+                <div class="insight-card">
+
+                    <div class="insight-header">
+
+                        <div class="insight-icon blue">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <span>
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+                    <strong>
+                        6
+                    </strong>
+
+                    <p>
+                        Coding tests accepting submissions
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <div class="insight-header">
+
+                        <div class="insight-icon purple">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+
+                        <span>
+                            DIFFICULTY
+                        </span>
+
+                    </div>
+
+                    <strong>
+                        Medium
+                    </strong>
+
+                    <p>
+                        Most commonly used difficulty level
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <div class="insight-header">
+
+                        <div class="insight-icon green">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+
+                        <span>
+                            TOP SCORE
+                        </span>
+
+                    </div>
+
+                    <strong>
+                        98%
+                    </strong>
+
+                    <p>
+                        Highest coding score this month
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <div class="insight-header">
+
+                        <div class="insight-icon orange">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                        <span>
+                            AVG. TIME
+                        </span>
+
+                    </div>
+
+                    <strong>
+                        52m
+                    </strong>
+
+                    <p>
+                        Average test completion time
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 TOOLBAR
+            =================================================== -->
+
+            <section class="coding-toolbar">
+
+
+                <div class="coding-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="codingTestSearch"
+                        placeholder="Search coding test, role or skill..."
+                        autocomplete="off">
+
+                </div>
+
+
+                <div class="toolbar-select">
+
+                    <label for="codingStatusFilter">
+                        STATUS
+                    </label>
+
+                    <select id="codingStatusFilter">
+
+                        <option value="all">
+                            All Status
+                        </option>
+
+                        <option value="active">
+                            Active
+                        </option>
+
+                        <option value="draft">
+                            Draft
+                        </option>
+
+                        <option value="closed">
+                            Closed
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="toolbar-select">
+
+                    <label for="difficultyFilter">
+                        LEVEL
+                    </label>
+
+                    <select id="difficultyFilter">
+
+                        <option value="all">
+                            All Levels
+                        </option>
+
+                        <option value="easy">
+                            Easy
+                        </option>
+
+                        <option value="medium">
+                            Medium
+                        </option>
+
+                        <option value="hard">
+                            Hard
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="toolbar-button"
+                    id="clearCodingFilters"
+                    type="button">
+
+                    <i class="fa-solid fa-filter-circle-xmark"></i>
+
+                    Clear
+
+                </button>
+
+
+                <button
+                    class="toolbar-button icon-only"
+                    id="refreshCodingList"
+                    type="button"
+                    title="Refresh">
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                </button>
+
+            </section>
+
+
+            <!-- ==================================================
+                 CODING TEST TABLE
+            =================================================== -->
+
+            <section class="coding-table-section">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span>
+                            CODING TEST LIBRARY
+                        </span>
+
+                        <h3>
+                            All Coding Tests
+                        </h3>
+
+                    </div>
+
+
+                    <div class="table-actions">
+
+                        <button
+                            class="table-action active"
+                            data-view="all"
+                            type="button">
+
+                            All
+
+                        </button>
+
+                        <button
+                            class="table-action"
+                            data-view="active"
+                            type="button">
+
+                            Active
+
+                        </button>
+
+                        <button
+                            class="table-action"
+                            data-view="draft"
+                            type="button">
+
+                            Drafts
+
+                        </button>
+
+                        <button
+                            class="table-action"
+                            data-view="closed"
+                            type="button">
+
+                            Closed
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    CODING TEST
+                                </th>
+
+                                <th>
+                                    DIFFICULTY
+                                </th>
+
+                                <th>
+                                    QUESTIONS
+                                </th>
+
+                                <th>
+                                    LANGUAGE
+                                </th>
+
+                                <th>
+                                    CANDIDATES
+                                </th>
+
+                                <th>
+                                    AVG. SCORE
+                                </th>
+
+                                <th>
+                                    STATUS
+                                </th>
+
+                                <th>
+                                    ACTION
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="codingTestTableBody">
+
+
+                            <!-- TEST 1 -->
+
+                            <tr
+                                data-name="JavaScript Algorithm Challenge"
+                                data-role="Frontend Developer"
+                                data-skill="JavaScript Algorithms Arrays"
+                                data-status="active"
+                                data-difficulty="medium">
+
+                                <td>
+
+                                    <div class="coding-name">
+
+                                        <div class="coding-icon blue">
+
+                                            <i class="fa-brands fa-js"></i>
+
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                JavaScript Algorithm Challenge
+                                            </strong>
+
+                                            <span>
+                                                Frontend Developer
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="difficulty medium">
+                                        Medium
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    3
+                                </td>
+
+
+                                <td>
+
+                                    <span class="language-tag">
+                                        JavaScript
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    42
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="score-high">
+                                        81%
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="coding-status active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="coding-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- TEST 2 -->
+
+                            <tr
+                                data-name="Python Data Structures Challenge"
+                                data-role="Python Developer"
+                                data-skill="Python Data Structures"
+                                data-status="active"
+                                data-difficulty="hard">
+
+                                <td>
+
+                                    <div class="coding-name">
+
+                                        <div class="coding-icon purple">
+
+                                            <i class="fa-brands fa-python"></i>
+
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Python Data Structures Challenge
+                                            </strong>
+
+                                            <span>
+                                                Python Developer
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="difficulty hard">
+                                        Hard
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    4
+                                </td>
+
+
+                                <td>
+
+                                    <span class="language-tag">
+                                        Python
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    31
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="score-medium">
+                                        72%
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="coding-status active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="coding-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- TEST 3 -->
+
+                            <tr
+                                data-name="Java Spring Backend Challenge"
+                                data-role="Backend Engineer"
+                                data-skill="Java Spring SQL"
+                                data-status="active"
+                                data-difficulty="hard">
+
+                                <td>
+
+                                    <div class="coding-name">
+
+                                        <div class="coding-icon orange">
+
+                                            <i class="fa-brands fa-java"></i>
+
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Java Spring Backend Challenge
+                                            </strong>
+
+                                            <span>
+                                                Backend Engineer
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="difficulty hard">
+                                        Hard
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    3
+                                </td>
+
+
+                                <td>
+
+                                    <span class="language-tag">
+                                        Java
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    27
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="score-medium">
+                                        69%
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="coding-status active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="coding-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- TEST 4 -->
+
+                            <tr
+                                data-name="SQL Query Optimization Test"
+                                data-role="Database Engineer"
+                                data-skill="SQL Database Optimization"
+                                data-status="draft"
+                                data-difficulty="medium">
+
+                                <td>
+
+                                    <div class="coding-name">
+
+                                        <div class="coding-icon green">
+
+                                            <i class="fa-solid fa-database"></i>
+
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                SQL Query Optimization Test
+                                            </strong>
+
+                                            <span>
+                                                Database Engineer
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="difficulty medium">
+                                        Medium
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    5
+                                </td>
+
+
+                                <td>
+
+                                    <span class="language-tag">
+                                        SQL
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    0
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="score-none">
+                                        —
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="coding-status draft">
+                                        Draft
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="coding-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- TEST 5 -->
+
+                            <tr
+                                data-name="React Component Challenge"
+                                data-role="Frontend Developer"
+                                data-skill="React JavaScript Components"
+                                data-status="closed"
+                                data-difficulty="medium">
+
+                                <td>
+
+                                    <div class="coding-name">
+
+                                        <div class="coding-icon cyan">
+
+                                            <i class="fa-brands fa-react"></i>
+
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                React Component Challenge
+                                            </strong>
+
+                                            <span>
+                                                Frontend Developer
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="difficulty medium">
+                                        Medium
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    3
+                                </td>
+
+
+                                <td>
+
+                                    <span class="language-tag">
+                                        JavaScript
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    24
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="score-high">
+                                        84%
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="coding-status closed">
+                                        Closed
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="coding-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- TEST 6 -->
+
+                            <tr
+                                data-name="C++ Competitive Programming Test"
+                                data-role="Software Engineer"
+                                data-skill="C++ Algorithms Problem Solving"
+                                data-status="active"
+                                data-difficulty="hard">
+
+                                <td>
+
+                                    <div class="coding-name">
+
+                                        <div class="coding-icon dark">
+
+                                            <i class="fa-solid fa-code"></i>
+
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                C++ Competitive Programming Test
+                                            </strong>
+
+                                            <span>
+                                                Software Engineer
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="difficulty hard">
+                                        Hard
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    4
+                                </td>
+
+
+                                <td>
+
+                                    <span class="language-tag">
+                                        C++
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    19
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="score-medium">
+                                        66%
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="coding-status active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="coding-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- TABLE FOOTER -->
+
+                <div class="table-footer">
+
+                    <span>
+                        Showing 6 of 18 coding tests
+                    </span>
+
+
+                    <div class="pagination">
+
+                        <button
+                            class="pagination-button"
+                            type="button">
+
+                            <i class="fa-solid fa-chevron-left"></i>
+
+                        </button>
+
+                        <button
+                            class="pagination-number active"
+                            type="button">
+
+                            1
+
+                        </button>
+
+                        <button
+                            class="pagination-number"
+                            type="button">
+
+                            2
+
+                        </button>
+
+                        <button
+                            class="pagination-number"
+                            type="button">
+
+                            3
+
+                        </button>
+
+                        <button
+                            class="pagination-button"
+                            type="button">
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- ==================================================
+     CODING TEST DETAILS MODAL
+================================================== -->
+
+<div class="coding-modal"
+     id="codingModal">
+
+    <div class="modal-backdrop"
+         id="modalBackdrop">
+    </div>
+
+
+    <div class="modal-content">
+
+
+        <button
+            class="modal-close"
+            id="modalClose"
+            type="button"
+            aria-label="Close">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="modal-heading">
+
+            <div class="modal-icon"
+                 id="modalCodingIcon">
+
+                <i class="fa-solid fa-code"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    CODING TEST DETAILS
+                </span>
+
+                <h3 id="modalCodingName">
+                    JavaScript Algorithm Challenge
+                </h3>
+
+                <p id="modalCodingRole">
+                    Frontend Developer
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="modal-stats">
+
+            <div class="modal-stat">
+
+                <span>
+                    QUESTIONS
+                </span>
+
+                <strong id="modalQuestions">
+                    3
+                </strong>
+
+            </div>
+
+
+            <div class="modal-stat">
+
+                <span>
+                    CANDIDATES
+                </span>
+
+                <strong id="modalCandidates">
+                    42
+                </strong>
+
+            </div>
+
+
+            <div class="modal-stat">
+
+                <span>
+                    AVG. SCORE
+                </span>
+
+                <strong id="modalScore">
+                    81%
+                </strong>
+
+            </div>
+
+
+            <div class="modal-stat">
+
+                <span>
+                    PASS RATE
+                </span>
+
+                <strong id="modalPassRate">
+                    74%
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="modal-info-grid">
+
+
+            <div class="detail-item">
+
+                <span>
+                    DIFFICULTY
+                </span>
+
+                <strong id="modalDifficulty">
+                    Medium
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    LANGUAGE
+                </span>
+
+                <strong id="modalLanguage">
+                    JavaScript
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    DURATION
+                </span>
+
+                <strong>
+                    90 minutes
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    STATUS
+                </span>
+
+                <strong id="modalStatus">
+                    Active
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="skills-section">
+
+            <span>
+                SKILLS EVALUATED
+            </span>
+
+            <div class="skill-tags"
+                 id="modalSkills">
+
+                <span>
+                    JavaScript
+                </span>
+
+                <span>
+                    Algorithms
+                </span>
+
+                <span>
+                    Arrays
+                </span>
+
+                <span>
+                    Problem Solving
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="test-progress-box">
+
+            <div class="progress-heading">
+
+                <div>
+
+                    <span>
+                        CANDIDATE PERFORMANCE
+                    </span>
+
+                    <strong>
+                        74%
+                    </strong>
+
+                </div>
+
+                <small>
+                    31 / 42 passed
+                </small>
+
+            </div>
+
+
+            <div class="large-progress">
+
+                <span
+                    id="modalProgress"
+                    style="width: 74%;">
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="modal-actions">
+
+            <button
+                class="modal-secondary"
+                id="duplicateCodingButton"
+                type="button">
+
+                <i class="fa-solid fa-copy"></i>
+
+                Duplicate
+
+            </button>
+
+
+            <button
+                class="modal-secondary"
+                id="editCodingButton"
+                type="button">
+
+                <i class="fa-solid fa-pen"></i>
+
+                Edit
+
+            </button>
+
+
+            <button
+                class="modal-primary"
+                id="viewSubmissionsButton"
+                type="button">
+
+                <i class="fa-solid fa-users"></i>
+
+                View Submissions
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     CREATE CODING TEST MODAL
+================================================== -->
+
+<div class="create-modal"
+     id="createCodingModal">
+
+    <div class="modal-backdrop"
+         id="createBackdrop">
+    </div>
+
+
+    <div class="modal-content create-content">
+
+
+        <button
+            class="modal-close"
+            id="createClose"
+            type="button"
+            aria-label="Close">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="modal-heading">
+
+            <div class="modal-icon create-icon">
+
+                <i class="fa-solid fa-terminal"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    CODING TEST BUILDER
+                </span>
+
+                <h3>
+                    Create Coding Test
+                </h3>
+
+                <p>
+                    Build a technical coding challenge for candidates.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form id="createCodingTestForm">
+
+
+            <div class="form-group">
+
+                <label for="codingTestName">
+                    Test Name
+                </label>
+
+                <input
+                    type="text"
+                    id="codingTestName"
+                    placeholder="e.g. Senior Backend Coding Challenge"
+                    required>
+
+            </div>
+
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="codingTestRole">
+                        Target Role
+                    </label>
+
+                    <input
+                        type="text"
+                        id="codingTestRole"
+                        placeholder="e.g. Backend Engineer"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="codingDifficulty">
+                        Difficulty
+                    </label>
+
+                    <select
+                        id="codingDifficulty"
+                        required>
+
+                        <option value="easy">
+                            Easy
+                        </option>
+
+                        <option value="medium"
+                                selected>
+
+                            Medium
+
+                        </option>
+
+                        <option value="hard">
+                            Hard
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="codingLanguage">
+                        Primary Language
+                    </label>
+
+                    <select
+                        id="codingLanguage"
+                        required>
+
+                        <option value="javascript">
+                            JavaScript
+                        </option>
+
+                        <option value="python">
+                            Python
+                        </option>
+
+                        <option value="java">
+                            Java
+                        </option>
+
+                        <option value="cpp">
+                            C++
+                        </option>
+
+                        <option value="csharp">
+                            C#
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="codingQuestionCount">
+                        Number of Problems
+                    </label>
+
+                    <input
+                        type="number"
+                        id="codingQuestionCount"
+                        min="1"
+                        max="20"
+                        value="3"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="codingDuration">
+                        Duration
+                    </label>
+
+                    <select
+                        id="codingDuration">
+
+                        <option value="45">
+                            45 minutes
+                        </option>
+
+                        <option value="60">
+                            60 minutes
+                        </option>
+
+                        <option value="90"
+                                selected>
+
+                            90 minutes
+
+                        </option>
+
+                        <option value="120">
+                            120 minutes
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="codingPassingScore">
+                        Passing Score
+                    </label>
+
+                    <div class="score-input">
+
+                        <input
+                            type="number"
+                            id="codingPassingScore"
+                            min="1"
+                            max="100"
+                            value="70"
+                            required>
+
+                        <span>
+                            %
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="codingSkills">
+                    Skills Evaluated
+                </label>
+
+                <input
+                    type="text"
+                    id="codingSkills"
+                    placeholder="Algorithms, Data Structures, Problem Solving">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="codingDescription">
+                    Description
+                </label>
+
+                <textarea
+                    id="codingDescription"
+                    rows="3"
+                    placeholder="Describe the coding challenge and evaluation criteria..."></textarea>
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <button
+                    type="button"
+                    class="modal-secondary"
+                    id="createCancel">
+
+                    Cancel
+
+                </button>
+
+
+                <button
+                    type="submit"
+                    class="modal-primary">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Create Coding Test
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     TOAST
+================================================== -->
+
+<div class="coding-toast"
+     id="codingToast">
+
+    <div class="toast-icon">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+    </div>
+
+
+    <div class="toast-content">
+
+        <strong id="toastTitle">
+            Success
+        </strong>
+
+        <span id="toastMessage">
+            Action completed successfully.
+        </span>
+
+    </div>
+
+
+    <button
+        id="toastClose"
+        type="button"
+        aria-label="Close notification">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+</div>
+
+
+<script src="coding-tests.js"></script>
+
+</body>
+
+</html>

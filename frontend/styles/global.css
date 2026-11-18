@@ -1,0 +1,74 @@
+/* ==========================================
+   DEVELOPER RECRUITMENT PLATFORM
+   Global Styles
+========================================== */
+
+/* Core */
+@import url("variables.css");
+@import url("colors.css");
+@import url("typography.css");
+@import url("animations.css");
+@import url("utilities.css");
+@import url("responsive.css");
+
+/* Themes */
+@import url("dark-theme.css");
+@import url("light-theme.css");
+@import url("bootstrap-custom.css");
+
+/* Components */
+@import url("components/buttons.css");
+@import url("components/cards.css");
+@import url("components/loaders.css");
+@import url("components/alerts.css");
+@import url("components/notifications.css");
+@import url("components/modals.css");
+@import url("components/inputs.css");
+@import url("components/forms.css");
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button,
+input,
+select,
+textarea{
+    font-family:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+}
+
+.section{
+    padding:80px 0;
+}

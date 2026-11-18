@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Applications | DevRecruit AI
+    </title>
+
+    <link rel="stylesheet"
+          href="../../../../styles/global.css">
+
+    <link rel="stylesheet"
+          href="applications.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+<div class="candidate-portal">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="candidate-sidebar"
+           id="candidateSidebar">
+
+
+        <div class="sidebar-brand">
+
+            <a href="../dashboard/index.html">
+
+                <span class="brand-icon">
+                    🚀
+                </span>
+
+                <span class="brand-text">
+                    DevRecruit
+                </span>
+
+            </a>
+
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                aria-label="Close sidebar"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                HV
+            </div>
+
+            <div class="profile-details">
+
+                <strong>
+                    Candidate
+                </strong>
+
+                <span>
+                    Developer
+                </span>
+
+            </div>
+
+            <span class="online-indicator"></span>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-navigation">
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    MAIN
+                </span>
+
+
+                <a href="../dashboard/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-grid-2"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a href="../profile/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <span>
+                        My Profile
+                    </span>
+
+                </a>
+
+
+                <a href="../resume/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    <span>
+                        Resume & Portfolio
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    AI INTELLIGENCE
+                </span>
+
+
+                <a href="../skills/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        AI Skill Profile
+                    </span>
+
+                    <span class="nav-badge">
+                        AI
+                    </span>
+
+                </a>
+
+
+                <a href="../skill-graph/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-diagram-project"></i>
+
+                    <span>
+                        Skill Graph
+                    </span>
+
+                </a>
+
+
+                <a href="../hiring-score/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        AI Hiring Score
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    RECRUITMENT
+                </span>
+
+
+                <a href="../jobs/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <span>
+                        Jobs
+                    </span>
+
+                </a>
+
+
+                <a href="../applications/index.html"
+                   class="nav-item active">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <span>
+                        Applications
+                    </span>
+
+                    <span class="nav-count">
+                        3
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    ASSESSMENT
+                </span>
+
+
+                <a href="../assessments/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <span>
+                        Assessments
+                    </span>
+
+                </a>
+
+
+                <a href="../coding-practice/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        Coding Practice
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    LEARNING
+                </span>
+
+
+                <a href="../learning/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <span>
+                        Learning
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    VERIFICATION
+                </span>
+
+
+                <a href="../credentials/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <span>
+                        Credentials
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+
+            <a href="../notifications/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span>
+                    Notifications
+                </span>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+
+            <a href="../settings/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <button
+                class="logout-button"
+                id="logoutButton"
+            >
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Sign Out
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay">
+    </div>
+
+
+    <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
+
+    <main class="candidate-main">
+
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+
+            <div class="header-left">
+
+                <button
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div>
+
+                    <span class="page-label">
+                        RECRUITMENT
+                    </span>
+
+                    <h1>
+                        My Applications
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <a
+                    href="../notifications/index.html"
+                    class="header-action"
+                >
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="../profile/index.html"
+                    class="header-user"
+                >
+
+                    <div class="header-avatar">
+                        HV
+                    </div>
+
+                    <div class="header-user-info">
+
+                        <strong>
+                            Candidate
+                        </strong>
+
+                        <span>
+                            Developer
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             CONTENT
+        =================================================== -->
+
+        <div class="applications-content">
+
+
+            <!-- INTRO -->
+
+            <section class="applications-intro">
+
+                <div>
+
+                    <span class="intro-label">
+                        APPLICATION TRACKER
+                    </span>
+
+                    <h2>
+                        Track your recruitment journey
+                    </h2>
+
+                    <p>
+                        Keep every application, interview,
+                        assessment and recruiter update in one
+                        organized workspace.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="../jobs/index.html"
+                    class="find-jobs-button"
+                >
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    Find More Jobs
+
+                </a>
+
+            </section>
+
+
+            <!-- ==================================================
+                 STATS
+            =================================================== -->
+
+            <section class="application-stats">
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            TOTAL APPLICATIONS
+                        </span>
+
+                        <strong>
+                            12
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <i class="fa-solid fa-hourglass-half"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            IN REVIEW
+                        </span>
+
+                        <strong>
+                            5
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon purple">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            INTERVIEWS
+                        </span>
+
+                        <strong>
+                            3
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            OFFERS
+                        </span>
+
+                        <strong>
+                            1
+                        </strong>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- ==================================================
+                 APPLICATION PIPELINE
+            =================================================== -->
+
+            <section class="pipeline-card">
+
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span>
+                            RECRUITMENT PIPELINE
+                        </span>
+
+                        <h3>
+                            Application Progress
+                        </h3>
+
+                    </div>
+
+                    <span class="pipeline-live">
+
+                        <span></span>
+
+                        Live tracking
+
+                    </span>
+
+                </div>
+
+
+                <div class="pipeline">
+
+
+                    <div class="pipeline-step completed">
+
+                        <div class="pipeline-node">
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </div>
+
+                        <strong>
+                            Applied
+                        </strong>
+
+                        <span>
+                            12
+                        </span>
+
+                    </div>
+
+
+                    <div class="pipeline-line completed"></div>
+
+
+                    <div class="pipeline-step completed">
+
+                        <div class="pipeline-node">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </div>
+
+                        <strong>
+                            Reviewed
+                        </strong>
+
+                        <span>
+                            8
+                        </span>
+
+                    </div>
+
+
+                    <div class="pipeline-line completed"></div>
+
+
+                    <div class="pipeline-step active">
+
+                        <div class="pipeline-node">
+
+                            <i class="fa-solid fa-comments"></i>
+
+                        </div>
+
+                        <strong>
+                            Interview
+                        </strong>
+
+                        <span>
+                            3
+                        </span>
+
+                    </div>
+
+
+                    <div class="pipeline-line"></div>
+
+
+                    <div class="pipeline-step">
+
+                        <div class="pipeline-node">
+
+                            <i class="fa-solid fa-trophy"></i>
+
+                        </div>
+
+                        <strong>
+                            Offer
+                        </strong>
+
+                        <span>
+                            1
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 FILTERS
+            =================================================== -->
+
+            <section class="applications-toolbar">
+
+
+                <div class="application-filters">
+
+                    <button
+                        class="application-filter active"
+                        data-status="all"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="application-filter"
+                        data-status="review"
+                    >
+                        In Review
+                    </button>
+
+                    <button
+                        class="application-filter"
+                        data-status="interview"
+                    >
+                        Interview
+                    </button>
+
+                    <button
+                        class="application-filter"
+                        data-status="offer"
+                    >
+                        Offer
+                    </button>
+
+                    <button
+                        class="application-filter"
+                        data-status="rejected"
+                    >
+                        Closed
+                    </button>
+
+                </div>
+
+
+                <div class="application-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="applicationSearch"
+                        placeholder="Search applications..."
+                    >
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 APPLICATION LIST
+            =================================================== -->
+
+            <section class="application-list-card">
+
+
+                <div class="application-list-header">
+
+                    <div>
+
+                        <span>
+                            YOUR APPLICATIONS
+                        </span>
+
+                        <h3>
+                            Recent applications
+                        </h3>
+
+                    </div>
+
+                    <span id="applicationCount">
+                        6 applications
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="application-list"
+                    id="applicationList"
+                >
+
+
+                    <!-- APPLICATION 1 -->
+
+                    <article
+                        class="application-item"
+                        data-status="interview"
+                        data-title="Machine Learning Engineer"
+                        data-company="Nova Intelligence"
+                    >
+
+                        <div class="company-logo purple">
+                            ML
+                        </div>
+
+
+                        <div class="application-main">
+
+                            <div class="application-title">
+
+                                <span>
+                                    Nova Intelligence
+                                </span>
+
+                                <h4>
+                                    Machine Learning Engineer
+                                </h4>
+
+                            </div>
+
+
+                            <div class="application-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Remote
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                    Applied Aug 10
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    96% AI Match
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="application-status interview">
+
+                            <span class="status-dot"></span>
+
+                            Interview
+
+                        </div>
+
+
+                        <button
+                            class="application-action"
+                            data-application="Machine Learning Engineer"
+                        >
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+                    </article>
+
+
+                    <!-- APPLICATION 2 -->
+
+                    <article
+                        class="application-item"
+                        data-status="review"
+                        data-title="Python Backend Developer"
+                        data-company="TechCore Systems"
+                    >
+
+                        <div class="company-logo blue">
+                            TC
+                        </div>
+
+
+                        <div class="application-main">
+
+                            <div class="application-title">
+
+                                <span>
+                                    TechCore Systems
+                                </span>
+
+                                <h4>
+                                    Python Backend Developer
+                                </h4>
+
+                            </div>
+
+
+                            <div class="application-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Bengaluru
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                    Applied Aug 9
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    94% AI Match
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="application-status review">
+
+                            <span class="status-dot"></span>
+
+                            In Review
+
+                        </div>
+
+
+                        <button
+                            class="application-action"
+                            data-application="Python Backend Developer"
+                        >
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+                    </article>
+
+
+                    <!-- APPLICATION 3 -->
+
+                    <article
+                        class="application-item"
+                        data-status="offer"
+                        data-title="Data Engineer"
+                        data-company="DataSphere"
+                    >
+
+                        <div class="company-logo cyan">
+                            DS
+                        </div>
+
+
+                        <div class="application-main">
+
+                            <div class="application-title">
+
+                                <span>
+                                    DataSphere
+                                </span>
+
+                                <h4>
+                                    Data Engineer
+                                </h4>
+
+                            </div>
+
+
+                            <div class="application-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Remote
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                    Applied Aug 7
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    89% AI Match
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="application-status offer">
+
+                            <span class="status-dot"></span>
+
+                            Offer
+
+                        </div>
+
+
+                        <button
+                            class="application-action"
+                            data-application="Data Engineer"
+                        >
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+                    </article>
+
+
+                    <!-- APPLICATION 4 -->
+
+                    <article
+                        class="application-item"
+                        data-status="interview"
+                        data-title="AI Engineer"
+                        data-company="NeuralWorks"
+                    >
+
+                        <div class="company-logo green">
+                            AI
+                        </div>
+
+
+                        <div class="application-main">
+
+                            <div class="application-title">
+
+                                <span>
+                                    NeuralWorks
+                                </span>
+
+                                <h4>
+                                    AI Engineer
+                                </h4>
+
+                            </div>
+
+
+                            <div class="application-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Hyderabad
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                    Applied Aug 5
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    87% AI Match
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="application-status interview">
+
+                            <span class="status-dot"></span>
+
+                            Interview
+
+                        </div>
+
+
+                        <button
+                            class="application-action"
+                            data-application="AI Engineer"
+                        >
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+                    </article>
+
+
+                    <!-- APPLICATION 5 -->
+
+                    <article
+                        class="application-item"
+                        data-status="review"
+                        data-title="Backend Engineer"
+                        data-company="CloudX Labs"
+                    >
+
+                        <div class="company-logo orange">
+                            CX
+                        </div>
+
+
+                        <div class="application-main">
+
+                            <div class="application-title">
+
+                                <span>
+                                    CloudX Labs
+                                </span>
+
+                                <h4>
+                                    Backend Engineer
+                                </h4>
+
+                            </div>
+
+
+                            <div class="application-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Bengaluru
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                    Applied Aug 3
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    84% AI Match
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="application-status review">
+
+                            <span class="status-dot"></span>
+
+                            In Review
+
+                        </div>
+
+
+                        <button
+                            class="application-action"
+                            data-application="Backend Engineer"
+                        >
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+                    </article>
+
+
+                    <!-- APPLICATION 6 -->
+
+                    <article
+                        class="application-item"
+                        data-status="rejected"
+                        data-title="AI Developer Intern"
+                        data-company="QuantumLogic"
+                    >
+
+                        <div class="company-logo rose">
+                            QL
+                        </div>
+
+
+                        <div class="application-main">
+
+                            <div class="application-title">
+
+                                <span>
+                                    QuantumLogic
+                                </span>
+
+                                <h4>
+                                    AI Developer Intern
+                                </h4>
+
+                            </div>
+
+
+                            <div class="application-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Pune
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                    Applied Jul 28
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    82% AI Match
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="application-status rejected">
+
+                            <span class="status-dot"></span>
+
+                            Closed
+
+                        </div>
+
+
+                        <button
+                            class="application-action"
+                            data-application="AI Developer Intern"
+                        >
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- EMPTY STATE -->
+
+                <div
+                    class="applications-empty"
+                    id="applicationsEmpty"
+                >
+
+                    <div class="empty-icon">
+
+                        <i class="fa-solid fa-folder-open"></i>
+
+                    </div>
+
+                    <h3>
+                        No applications found
+                    </h3>
+
+                    <p>
+                        Try another filter or search term.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 NEXT ACTION
+            =================================================== -->
+
+            <section class="application-next-action">
+
+                <div class="next-action-icon">
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        AI RECOMMENDATION
+                    </span>
+
+                    <h3>
+                        You have 5 applications currently in progress.
+                    </h3>
+
+                    <p>
+                        Keep your profile and assessment results
+                        updated to improve recruiter visibility.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="../hiring-score/index.html"
+                    class="next-action-button"
+                >
+
+                    View Hiring Score
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="applications.js"></script>
+
+</body>
+
+</html>

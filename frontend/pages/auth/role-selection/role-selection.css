@@ -1,0 +1,865 @@
+/* =======================================================
+   DEVRECRUIT AI
+   ROLE SELECTION PAGE
+======================================================= */
+
+
+/* =======================================================
+   RESET
+======================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:#0F172A;
+
+    background:#F8FAFC;
+
+    overflow-x:hidden;
+
+}
+
+
+/* =======================================================
+   MAIN PAGE
+======================================================= */
+
+.role-page{
+
+    min-height:100vh;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:70px 30px;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #EEF5FF 0%,
+            #F8FAFC 48%,
+            #F3EEFF 100%
+        );
+
+}
+
+
+/* =======================================================
+   BACKGROUND BLOBS
+======================================================= */
+
+.role-background{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+.role-blob{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    opacity:.35;
+
+    animation:roleFloat 12s ease-in-out infinite;
+
+}
+
+.role-blob-one{
+
+    width:380px;
+
+    height:380px;
+
+    background:#2563EB;
+
+    top:-140px;
+
+    left:-120px;
+
+}
+
+.role-blob-two{
+
+    width:360px;
+
+    height:360px;
+
+    background:#7C3AED;
+
+    right:-100px;
+
+    top:80px;
+
+    animation-delay:2s;
+
+}
+
+.role-blob-three{
+
+    width:300px;
+
+    height:300px;
+
+    background:#06B6D4;
+
+    bottom:-130px;
+
+    left:42%;
+
+    animation-delay:4s;
+
+}
+
+@keyframes roleFloat{
+
+    50%{
+
+        transform:
+            translateY(-30px)
+            scale(1.08);
+
+    }
+
+}
+
+
+/* =======================================================
+   MAIN CONTAINER
+======================================================= */
+
+.role-container{
+
+    width:100%;
+
+    max-width:1250px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* =======================================================
+   BRAND
+======================================================= */
+
+.role-brand{
+
+    width:max-content;
+
+    margin:0 auto 45px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#172033;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    font-weight:800;
+
+}
+
+.brand-icon{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563EB,
+            #7C3AED
+        );
+
+    box-shadow:
+        0 10px 25px rgba(37,99,235,.20);
+
+}
+
+
+/* =======================================================
+   HEADING
+======================================================= */
+
+.role-heading{
+
+    text-align:center;
+
+    margin-bottom:55px;
+
+}
+
+.role-badge{
+
+    display:inline-block;
+
+    padding:9px 18px;
+
+    margin-bottom:18px;
+
+    border-radius:30px;
+
+    background:rgba(37,99,235,.09);
+
+    color:#2563EB;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.role-heading h1{
+
+    font-size:48px;
+
+    line-height:1.15;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+    letter-spacing:-1px;
+
+}
+
+.role-heading p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#64748B;
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+
+/* =======================================================
+   ROLE GRID
+======================================================= */
+
+.role-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+
+/* =======================================================
+   ROLE CARD
+======================================================= */
+
+.role-card{
+
+    position:relative;
+
+    padding:38px 32px 32px;
+
+    background:
+        rgba(255,255,255,.82);
+
+    border:1px solid
+        rgba(255,255,255,.8);
+
+    border-radius:28px;
+
+    box-shadow:
+        0 25px 60px rgba(15,23,42,.08);
+
+    backdrop-filter:blur(18px);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+}
+
+.role-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 30px 70px rgba(15,23,42,.14);
+
+}
+
+.candidate-card:hover{
+
+    border-color:#93C5FD;
+
+}
+
+.recruiter-card:hover{
+
+    border-color:#C4B5FD;
+
+}
+
+.admin-card:hover{
+
+    border-color:#67E8F9;
+
+}
+
+
+/* =======================================================
+   ROLE ICON
+======================================================= */
+
+.role-card-icon{
+
+    width:65px;
+
+    height:65px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:24px;
+
+    border-radius:19px;
+
+    color:white;
+
+    font-size:25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563EB,
+            #4F46E5
+        );
+
+    box-shadow:
+        0 12px 25px rgba(37,99,235,.20);
+
+}
+
+.recruiter-card .role-card-icon{
+
+    background:
+        linear-gradient(
+            135deg,
+            #7C3AED,
+            #9333EA
+        );
+
+    box-shadow:
+        0 12px 25px rgba(124,58,237,.20);
+
+}
+
+.admin-card .role-card-icon{
+
+    background:
+        linear-gradient(
+            135deg,
+            #0891B2,
+            #2563EB
+        );
+
+    box-shadow:
+        0 12px 25px rgba(8,145,178,.20);
+
+}
+
+
+/* =======================================================
+   ROLE LABEL
+======================================================= */
+
+.role-label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#64748B;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:1.2px;
+
+}
+
+
+/* =======================================================
+   ROLE TITLE
+======================================================= */
+
+.role-card h2{
+
+    margin-bottom:14px;
+
+    font-size:30px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+}
+
+.role-card p{
+
+    min-height:105px;
+
+    margin-bottom:25px;
+
+    color:#64748B;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+/* =======================================================
+   FEATURES
+======================================================= */
+
+.role-card ul{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:13px;
+
+    margin-bottom:30px;
+
+}
+
+.role-card li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#334155;
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+.role-card li i{
+
+    color:#2563EB;
+
+    font-size:12px;
+
+}
+
+.recruiter-card li i{
+
+    color:#7C3AED;
+
+}
+
+.admin-card li i{
+
+    color:#0891B2;
+
+}
+
+
+/* =======================================================
+   ROLE BUTTON
+======================================================= */
+
+.role-button{
+
+    width:100%;
+
+    min-height:54px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    border:none;
+
+    border-radius:15px;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563EB,
+            #4F46E5
+        );
+
+    box-shadow:
+        0 12px 25px rgba(37,99,235,.18);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+.role-button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 16px 30px rgba(37,99,235,.25);
+
+}
+
+.role-button i{
+
+    transition:transform .25s ease;
+
+}
+
+.role-button:hover i{
+
+    transform:translateX(5px);
+
+}
+
+.recruiter-button{
+
+    background:
+        linear-gradient(
+            135deg,
+            #7C3AED,
+            #9333EA
+        );
+
+    box-shadow:
+        0 12px 25px rgba(124,58,237,.18);
+
+}
+
+.admin-button{
+
+    background:
+        linear-gradient(
+            135deg,
+            #0891B2,
+            #2563EB
+        );
+
+    box-shadow:
+        0 12px 25px rgba(8,145,178,.18);
+
+}
+
+
+/* =======================================================
+   BACK TO HOME
+======================================================= */
+
+.role-back{
+
+    text-align:center;
+
+    margin-top:38px;
+
+}
+
+.role-back a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    color:#64748B;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    transition:.25s ease;
+
+}
+
+.role-back a:hover{
+
+    color:#2563EB;
+
+}
+
+.role-back a i{
+
+    transition:transform .25s ease;
+
+}
+
+.role-back a:hover i{
+
+    transform:translateX(-4px);
+
+}
+
+
+/* =======================================================
+   SECURITY NOTE
+======================================================= */
+
+.security-note{
+
+    width:max-content;
+
+    max-width:100%;
+
+    margin:25px auto 0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:9px;
+
+    color:#94A3B8;
+
+    font-size:12px;
+
+}
+
+.security-note i{
+
+    color:#10B981;
+
+}
+
+
+/* =======================================================
+   RESPONSIVE — TABLET
+======================================================= */
+
+@media(max-width:1050px){
+
+    .role-grid{
+
+        grid-template-columns:1fr 1fr;
+
+        max-width:800px;
+
+        margin:auto;
+
+    }
+
+    .admin-card{
+
+        grid-column:1 / -1;
+
+        max-width:385px;
+
+        width:100%;
+
+        justify-self:center;
+
+    }
+
+}
+
+
+/* =======================================================
+   RESPONSIVE — MOBILE
+======================================================= */
+
+@media(max-width:700px){
+
+    .role-page{
+
+        padding:
+            45px
+            18px;
+
+        align-items:flex-start;
+
+    }
+
+    .role-container{
+
+        padding-top:10px;
+
+    }
+
+    .role-brand{
+
+        margin-bottom:40px;
+
+        font-size:19px;
+
+    }
+
+    .brand-icon{
+
+        width:38px;
+
+        height:38px;
+
+    }
+
+    .role-heading{
+
+        margin-bottom:38px;
+
+    }
+
+    .role-heading h1{
+
+        font-size:36px;
+
+    }
+
+    .role-heading p{
+
+        font-size:14px;
+
+    }
+
+    .role-grid{
+
+        grid-template-columns:1fr;
+
+        max-width:500px;
+
+    }
+
+    .admin-card{
+
+        grid-column:auto;
+
+        max-width:none;
+
+    }
+
+    .role-card{
+
+        padding:30px 25px;
+
+    }
+
+    .role-card p{
+
+        min-height:auto;
+
+    }
+
+    .security-note{
+
+        text-align:center;
+
+        line-height:1.6;
+
+    }
+
+}
+
+
+/* =======================================================
+   SMALL MOBILE
+======================================================= */
+
+@media(max-width:420px){
+
+    .role-heading h1{
+
+        font-size:31px;
+
+    }
+
+    .role-card h2{
+
+        font-size:26px;
+
+    }
+
+    .role-card{
+
+        border-radius:22px;
+
+    }
+
+}

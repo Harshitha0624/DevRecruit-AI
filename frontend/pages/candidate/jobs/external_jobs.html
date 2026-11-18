@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>External Jobs | DevRecruit AI</title>
+
+    <link rel="stylesheet" href="./jobs.css">
+    <style>
+    body {
+        outline: 4px solid red !important;
+    }
+</style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <main class="candidate-main" style="width:100%; margin-left:0;">
+
+        <header class="dashboard-header">
+            <div class="header-left">
+                <div>
+                    <span class="page-label">DEVRECRUIT AI / CAREER DISCOVERY</span>
+                    <h1>External Opportunities</h1>
+                </div>
+            </div>
+
+            <a href="index.html" class="side-card-link"
+               style="margin:0; padding:12px 16px; border:1px solid #E8ECF3; border-radius:10px;">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Internal Jobs
+            </a>
+        </header>
+
+        <div class="jobs-content">
+
+            <section class="jobs-hero">
+
+                <div class="jobs-hero-content">
+
+                    <span class="hero-label">
+                        <i class="fa-solid fa-globe"></i>
+                        GLOBAL CAREER OPPORTUNITIES
+                    </span>
+
+                    <h2>
+                        Explore <span>External Jobs</span>
+                    </h2>
+
+                    <p>
+                        Discover opportunities from external company career
+                        portals. Search for roles, explore companies and
+                        apply directly through their official job listings.
+                    </p>
+
+                    <div class="job-search">
+
+                        <div class="search-field">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input
+                                id="externalSearch"
+                                type="search"
+                                placeholder="Search job title or company">
+                        </div>
+
+                        <div class="location-field">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input
+                                id="externalLocation"
+                                type="search"
+                                placeholder="Filter by location">
+                        </div>
+
+                        <button class="search-button" id="externalSearchButton">
+                            <i class="fa-solid fa-search"></i>
+                            Search Jobs
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="hero-ai-card">
+                    <div class="ai-card-icon">
+                        <i class="fa-solid fa-earth-asia"></i>
+                    </div>
+                    <span>CAREER EXPLORER</span>
+                    <strong><i class="fa-solid fa-globe"></i></strong>
+                    <p>Explore opportunities beyond the DevRecruit platform.</p>
+                </div>
+
+            </section>
+
+            <section class="external-jobs-section">
+
+                <div class="jobs-list-header">
+                    <div>
+                        <span>DISCOVER OPPORTUNITIES</span>
+                        <h3>External Job Listings</h3>
+                    </div>
+
+                    <span class="job-count">
+                        Live listings from external sources
+                    </span>
+                </div>
+
+                <div id="externalJobList" class="external-job-list">
+                    <div class="external-message">
+                        <i class="fa-solid fa-spinner fa-spin"></i>
+                        <p>Loading external opportunities...</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <script src="external_jobs.js"></script>
+
+    <script>
+        document.getElementById("externalSearchButton")
+            ?.addEventListener("click", () => {
+                if (typeof loadExternalJobs === "function") {
+                    loadExternalJobs();
+                }
+            });
+    </script>
+
+</body>
+</html>

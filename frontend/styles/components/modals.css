@@ -1,0 +1,33 @@
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.6);
+
+    z-index:999;
+
+}
+
+.modal-content{
+
+    width:600px;
+
+    max-width:95%;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    animation:fadeUp .4s ease;
+
+}

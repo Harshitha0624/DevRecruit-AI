@@ -1,0 +1,2313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="DevRecruit recruiter assessment management">
+
+    <title>Assessments | DevRecruit</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="assessments.css">
+
+</head>
+
+
+<body>
+
+<div class="assessments-page">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="assessments-sidebar"
+           id="assessmentsSidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../dashboard/index.html">
+
+                <span class="brand-icon">
+                    🚀
+                </span>
+
+                <span>
+                    DevRecruit
+                </span>
+
+            </a>
+
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                type="button"
+                aria-label="Close navigation">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                HR
+            </div>
+
+            <div class="profile-info">
+
+                <strong>
+                    Recruiter
+                </strong>
+
+                <span>
+                    Talent Acquisition
+                </span>
+
+            </div>
+
+            <span class="online-dot"></span>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <!-- OVERVIEW -->
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    OVERVIEW
+                </span>
+
+
+                <a href="../dashboard/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a href="../analytics/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        Analytics
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- TALENT -->
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    TALENT MANAGEMENT
+                </span>
+
+
+                <a href="../candidates/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <span>
+                        Candidates
+                    </span>
+
+                    <b>
+                        248
+                    </b>
+
+                </a>
+
+
+                <a href="../ai-ranking/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        AI Candidate Ranking
+                    </span>
+
+                    <em>
+                        AI
+                    </em>
+
+                </a>
+
+
+                <a href="../shortlisted/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>
+                        Shortlisted
+                    </span>
+
+                    <b>
+                        18
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <!-- RECRUITMENT -->
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    RECRUITMENT
+                </span>
+
+
+                <a href="../jobs/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <span>
+                        Job Postings
+                    </span>
+
+                    <b>
+                        12
+                    </b>
+
+                </a>
+
+
+                <a href="../pipeline/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-filter"></i>
+
+                    <span>
+                        Hiring Pipeline
+                    </span>
+
+                </a>
+
+
+                <a href="../interviews/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <span>
+                        Interviews
+                    </span>
+
+                    <b>
+                        5
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <!-- EVALUATION -->
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    EVALUATION
+                </span>
+
+
+                <a href="index.html"
+                   class="nav-item active">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <span>
+                        Assessments
+                    </span>
+
+                    <b>
+                        7
+                    </b>
+
+                </a>
+
+
+                <a href="../coding-tests/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        Coding Tests
+                    </span>
+
+                </a>
+
+
+                <a href="../credentials/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <span>
+                        Credential Verification
+                    </span>
+
+                    <b class="alert-count">
+                        3
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    COMMUNICATION
+                </span>
+
+
+                <a href="../messages/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <b>
+                        4
+                    </b>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- FOOTER -->
+
+        <div class="sidebar-footer">
+
+
+            <a href="../notifications/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span>
+                    Notifications
+                </span>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+
+            <a href="../settings/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <button
+                class="logout-button"
+                id="logoutButton"
+                type="button">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Sign Out
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay">
+    </div>
+
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <main class="assessments-main">
+
+
+        <!-- HEADER -->
+
+        <header class="assessments-header">
+
+
+            <div class="header-left">
+
+                <button
+                    class="mobile-menu"
+                    id="mobileMenuButton"
+                    type="button"
+                    aria-label="Open navigation">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div>
+
+                    <span class="page-label">
+                        EVALUATION
+                    </span>
+
+                    <h1>
+                        Assessments
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+
+                <button
+                    class="header-button"
+                    id="refreshAssessments"
+                    type="button"
+                    title="Refresh assessments">
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                </button>
+
+
+                <a href="../notifications/index.html"
+                   class="header-button notification-button"
+                   aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span>
+                        7
+                    </span>
+
+                </a>
+
+
+                <a href="../settings/index.html"
+                   class="header-profile">
+
+                    <div class="header-avatar">
+                        HR
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Recruiter
+                        </strong>
+
+                        <small>
+                            Talent Acquisition
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             CONTENT
+        =================================================== -->
+
+        <div class="assessments-content">
+
+
+            <!-- PAGE INTRO -->
+
+            <section class="page-intro">
+
+
+                <div>
+
+                    <span>
+                        CANDIDATE EVALUATION
+                    </span>
+
+                    <h2>
+                        Assessments
+                    </h2>
+
+                    <p>
+                        Create, manage and evaluate candidate
+                        assessments throughout your recruitment process.
+                    </p>
+
+                </div>
+
+
+                <div class="intro-actions">
+
+
+                    <button
+                        class="secondary-action"
+                        id="assessmentTemplatesButton"
+                        type="button">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                        Templates
+
+                    </button>
+
+
+                    <button
+                        class="primary-action"
+                        id="createAssessmentButton"
+                        type="button">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Create Assessment
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 STATS
+            =================================================== -->
+
+            <section class="assessment-stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <i class="fa-solid fa-clipboard-list"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            TOTAL ASSESSMENTS
+                        </span>
+
+                        <strong>
+                            24
+                        </strong>
+
+                        <small>
+                            7 currently active
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+
+                        <i class="fa-solid fa-users"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            CANDIDATES ASSESSED
+                        </span>
+
+                        <strong>
+                            186
+                        </strong>
+
+                        <small>
+                            Across all assessments
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <i class="fa-solid fa-chart-simple"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            AVERAGE SCORE
+                        </span>
+
+                        <strong>
+                            78%
+                        </strong>
+
+                        <small class="positive">
+                            +4.8% this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            COMPLETION RATE
+                        </span>
+
+                        <strong>
+                            84%
+                        </strong>
+
+                        <small>
+                            156 completed
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 QUICK INSIGHTS
+            =================================================== -->
+
+            <section class="assessment-insights">
+
+
+                <div class="insight-card">
+
+                    <div class="insight-header">
+
+                        <div class="insight-icon blue">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <span>
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+                    <strong>
+                        7
+                    </strong>
+
+                    <p>
+                        Assessments currently accepting submissions
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <div class="insight-header">
+
+                        <div class="insight-icon purple">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <span>
+                            TECHNICAL
+                        </span>
+
+                    </div>
+
+                    <strong>
+                        12
+                    </strong>
+
+                    <p>
+                        Technical assessments available
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <div class="insight-header">
+
+                        <div class="insight-icon green">
+                            <i class="fa-solid fa-ranking-star"></i>
+                        </div>
+
+                        <span>
+                            TOP SCORE
+                        </span>
+
+                    </div>
+
+                    <strong>
+                        96%
+                    </strong>
+
+                    <p>
+                        Highest candidate score this month
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <div class="insight-header">
+
+                        <div class="insight-icon orange">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                        <span>
+                            AVG. TIME
+                        </span>
+
+                    </div>
+
+                    <strong>
+                        38m
+                    </strong>
+
+                    <p>
+                        Average assessment completion time
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 TOOLBAR
+            =================================================== -->
+
+            <section class="assessment-toolbar">
+
+
+                <div class="assessment-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="assessmentSearch"
+                        placeholder="Search assessment, role or skill..."
+                        autocomplete="off">
+
+                </div>
+
+
+                <div class="toolbar-select">
+
+                    <label for="assessmentStatusFilter">
+                        STATUS
+                    </label>
+
+                    <select id="assessmentStatusFilter">
+
+                        <option value="all">
+                            All Status
+                        </option>
+
+                        <option value="active">
+                            Active
+                        </option>
+
+                        <option value="draft">
+                            Draft
+                        </option>
+
+                        <option value="closed">
+                            Closed
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="toolbar-select">
+
+                    <label for="assessmentTypeFilter">
+                        TYPE
+                    </label>
+
+                    <select id="assessmentTypeFilter">
+
+                        <option value="all">
+                            All Types
+                        </option>
+
+                        <option value="technical">
+                            Technical
+                        </option>
+
+                        <option value="coding">
+                            Coding
+                        </option>
+
+                        <option value="mcq">
+                            MCQ
+                        </option>
+
+                        <option value="mixed">
+                            Mixed
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="toolbar-button"
+                    id="clearAssessmentFilters"
+                    type="button">
+
+                    <i class="fa-solid fa-filter-circle-xmark"></i>
+
+                    Clear
+
+                </button>
+
+
+                <button
+                    class="toolbar-button icon-only"
+                    id="refreshAssessmentList"
+                    type="button"
+                    title="Refresh">
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                </button>
+
+            </section>
+
+
+            <!-- ==================================================
+                 ASSESSMENT TABLE
+            =================================================== -->
+
+            <section class="assessment-table-section">
+
+
+                <div class="section-heading">
+
+
+                    <div>
+
+                        <span>
+                            ASSESSMENT LIBRARY
+                        </span>
+
+                        <h3>
+                            All Assessments
+                        </h3>
+
+                    </div>
+
+
+                    <div class="table-actions">
+
+
+                        <button
+                            class="table-action active"
+                            data-view="all"
+                            type="button">
+
+                            All
+
+                        </button>
+
+
+                        <button
+                            class="table-action"
+                            data-view="active"
+                            type="button">
+
+                            Active
+
+                        </button>
+
+
+                        <button
+                            class="table-action"
+                            data-view="draft"
+                            type="button">
+
+                            Drafts
+
+                        </button>
+
+
+                        <button
+                            class="table-action"
+                            data-view="closed"
+                            type="button">
+
+                            Closed
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    ASSESSMENT
+                                </th>
+
+                                <th>
+                                    TYPE
+                                </th>
+
+                                <th>
+                                    QUESTIONS
+                                </th>
+
+                                <th>
+                                    CANDIDATES
+                                </th>
+
+                                <th>
+                                    AVG. SCORE
+                                </th>
+
+                                <th>
+                                    COMPLETION
+                                </th>
+
+                                <th>
+                                    STATUS
+                                </th>
+
+                                <th>
+                                    ACTION
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="assessmentTableBody">
+
+
+                            <!-- ASSESSMENT 1 -->
+
+                            <tr
+                                data-name="Full Stack Developer Assessment"
+                                data-role="Full Stack Developer"
+                                data-skill="JavaScript React Node"
+                                data-status="active"
+                                data-type="technical">
+
+                                <td>
+
+                                    <div class="assessment-name">
+
+                                        <div class="assessment-icon blue">
+                                            <i class="fa-solid fa-code"></i>
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Full Stack Developer Assessment
+                                            </strong>
+
+                                            <span>
+                                                Full Stack Developer
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assessment-type technical">
+                                        Technical
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    40
+                                </td>
+
+
+                                <td>
+                                    48
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="score-high">
+                                        82%
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="completion-cell">
+
+                                        <div class="progress-bar">
+
+                                            <span
+                                                style="width: 88%;">
+                                            </span>
+
+                                        </div>
+
+                                        <small>
+                                            88%
+                                        </small>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assessment-status active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="assessment-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ASSESSMENT 2 -->
+
+                            <tr
+                                data-name="Python Data Science Challenge"
+                                data-role="Data Scientist"
+                                data-skill="Python Pandas Machine Learning"
+                                data-status="active"
+                                data-type="coding">
+
+                                <td>
+
+                                    <div class="assessment-name">
+
+                                        <div class="assessment-icon purple">
+                                            <i class="fa-brands fa-python"></i>
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Python Data Science Challenge
+                                            </strong>
+
+                                            <span>
+                                                Data Scientist
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assessment-type coding">
+                                        Coding
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    25
+                                </td>
+
+
+                                <td>
+                                    32
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="score-high">
+                                        79%
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="completion-cell">
+
+                                        <div class="progress-bar">
+
+                                            <span
+                                                style="width: 76%;">
+                                            </span>
+
+                                        </div>
+
+                                        <small>
+                                            76%
+                                        </small>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assessment-status active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="assessment-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ASSESSMENT 3 -->
+
+                            <tr
+                                data-name="Java Backend Engineering Test"
+                                data-role="Backend Engineer"
+                                data-skill="Java Spring Boot SQL"
+                                data-status="active"
+                                data-type="mixed">
+
+                                <td>
+
+                                    <div class="assessment-name">
+
+                                        <div class="assessment-icon orange">
+                                            <i class="fa-brands fa-java"></i>
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Java Backend Engineering Test
+                                            </strong>
+
+                                            <span>
+                                                Backend Engineer
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assessment-type mixed">
+                                        Mixed
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    35
+                                </td>
+
+
+                                <td>
+                                    27
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="score-medium">
+                                        74%
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="completion-cell">
+
+                                        <div class="progress-bar">
+
+                                            <span
+                                                style="width: 81%;">
+                                            </span>
+
+                                        </div>
+
+                                        <small>
+                                            81%
+                                        </small>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assessment-status active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="assessment-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ASSESSMENT 4 -->
+
+                            <tr
+                                data-name="SQL Fundamentals Quiz"
+                                data-role="Backend Engineer"
+                                data-skill="SQL Database"
+                                data-status="draft"
+                                data-type="mcq">
+
+                                <td>
+
+                                    <div class="assessment-name">
+
+                                        <div class="assessment-icon green">
+                                            <i class="fa-solid fa-database"></i>
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                SQL Fundamentals Quiz
+                                            </strong>
+
+                                            <span>
+                                                Backend Engineer
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assessment-type mcq">
+                                        MCQ
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    30
+                                </td>
+
+
+                                <td>
+                                    0
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="score-none">
+                                        —
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="completion-cell">
+
+                                        <div class="progress-bar empty">
+
+                                            <span
+                                                style="width: 0%;">
+                                            </span>
+
+                                        </div>
+
+                                        <small>
+                                            0%
+                                        </small>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assessment-status draft">
+                                        Draft
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="assessment-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ASSESSMENT 5 -->
+
+                            <tr
+                                data-name="AI Machine Learning Evaluation"
+                                data-role="AI / ML Engineer"
+                                data-skill="Python TensorFlow Machine Learning"
+                                data-status="closed"
+                                data-type="technical">
+
+                                <td>
+
+                                    <div class="assessment-name">
+
+                                        <div class="assessment-icon pink">
+                                            <i class="fa-solid fa-brain"></i>
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                AI Machine Learning Evaluation
+                                            </strong>
+
+                                            <span>
+                                                AI / ML Engineer
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assessment-type technical">
+                                        Technical
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    45
+                                </td>
+
+
+                                <td>
+                                    39
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="score-high">
+                                        86%
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="completion-cell">
+
+                                        <div class="progress-bar">
+
+                                            <span
+                                                style="width: 100%;">
+                                            </span>
+
+                                        </div>
+
+                                        <small>
+                                            100%
+                                        </small>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assessment-status closed">
+                                        Closed
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="assessment-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ASSESSMENT 6 -->
+
+                            <tr
+                                data-name="Frontend JavaScript Challenge"
+                                data-role="Frontend Developer"
+                                data-skill="HTML CSS JavaScript"
+                                data-status="active"
+                                data-type="coding">
+
+                                <td>
+
+                                    <div class="assessment-name">
+
+                                        <div class="assessment-icon blue">
+                                            <i class="fa-brands fa-js"></i>
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Frontend JavaScript Challenge
+                                            </strong>
+
+                                            <span>
+                                                Frontend Developer
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assessment-type coding">
+                                        Coding
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+                                    20
+                                </td>
+
+
+                                <td>
+                                    22
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="score-medium">
+                                        71%
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="completion-cell">
+
+                                        <div class="progress-bar">
+
+                                            <span
+                                                style="width: 72%;">
+                                            </span>
+
+                                        </div>
+
+                                        <small>
+                                            72%
+                                        </small>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assessment-status active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="assessment-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- TABLE FOOTER -->
+
+                <div class="table-footer">
+
+                    <span>
+                        Showing 6 of 24 assessments
+                    </span>
+
+
+                    <div class="pagination">
+
+                        <button
+                            class="pagination-button"
+                            type="button">
+
+                            <i class="fa-solid fa-chevron-left"></i>
+
+                        </button>
+
+                        <button
+                            class="pagination-number active"
+                            type="button">
+
+                            1
+
+                        </button>
+
+                        <button
+                            class="pagination-number"
+                            type="button">
+
+                            2
+
+                        </button>
+
+                        <button
+                            class="pagination-number"
+                            type="button">
+
+                            3
+
+                        </button>
+
+                        <button
+                            class="pagination-number"
+                            type="button">
+
+                            4
+
+                        </button>
+
+                        <button
+                            class="pagination-button"
+                            type="button">
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- ==================================================
+     ASSESSMENT DETAILS MODAL
+================================================== -->
+
+<div class="assessment-modal"
+     id="assessmentModal">
+
+    <div class="modal-backdrop"
+         id="modalBackdrop">
+    </div>
+
+
+    <div class="modal-content">
+
+
+        <button
+            class="modal-close"
+            id="modalClose"
+            type="button"
+            aria-label="Close">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="modal-heading">
+
+
+            <div class="modal-icon"
+                 id="modalAssessmentIcon">
+
+                <i class="fa-solid fa-code"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    ASSESSMENT DETAILS
+                </span>
+
+                <h3 id="modalAssessmentName">
+                    Full Stack Developer Assessment
+                </h3>
+
+                <p id="modalAssessmentRole">
+                    Full Stack Developer
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="modal-stats">
+
+
+            <div class="modal-stat">
+
+                <span>
+                    QUESTIONS
+                </span>
+
+                <strong id="modalQuestions">
+                    40
+                </strong>
+
+            </div>
+
+
+            <div class="modal-stat">
+
+                <span>
+                    CANDIDATES
+                </span>
+
+                <strong id="modalCandidates">
+                    48
+                </strong>
+
+            </div>
+
+
+            <div class="modal-stat">
+
+                <span>
+                    AVG. SCORE
+                </span>
+
+                <strong id="modalScore">
+                    82%
+                </strong>
+
+            </div>
+
+
+            <div class="modal-stat">
+
+                <span>
+                    COMPLETION
+                </span>
+
+                <strong id="modalCompletion">
+                    88%
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="modal-info-grid">
+
+
+            <div class="detail-item">
+
+                <span>
+                    ASSESSMENT TYPE
+                </span>
+
+                <strong id="modalType">
+                    Technical
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    STATUS
+                </span>
+
+                <strong id="modalStatus">
+                    Active
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    DURATION
+                </span>
+
+                <strong>
+                    60 minutes
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    PASSING SCORE
+                </span>
+
+                <strong>
+                    70%
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="skills-section">
+
+            <span>
+                SKILLS EVALUATED
+            </span>
+
+            <div id="modalSkills"
+                 class="skill-tags">
+
+                <span>
+                    JavaScript
+                </span>
+
+                <span>
+                    Node.js
+                </span>
+
+                <span>
+                    Databases
+                </span>
+
+                <span>
+                    APIs
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="assessment-progress-box">
+
+
+            <div class="progress-heading">
+
+                <div>
+
+                    <span>
+                        CANDIDATE COMPLETION
+                    </span>
+
+                    <strong>
+                        88%
+                    </strong>
+
+                </div>
+
+                <small>
+                    42 / 48 completed
+                </small>
+
+            </div>
+
+
+            <div class="large-progress">
+
+                <span
+                    id="modalProgress"
+                    style="width: 88%;">
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="modal-actions">
+
+
+            <button
+                class="modal-secondary"
+                id="duplicateAssessmentButton"
+                type="button">
+
+                <i class="fa-solid fa-copy"></i>
+
+                Duplicate
+
+            </button>
+
+
+            <button
+                class="modal-secondary"
+                id="editAssessmentButton"
+                type="button">
+
+                <i class="fa-solid fa-pen"></i>
+
+                Edit
+
+            </button>
+
+
+            <button
+                class="modal-primary"
+                id="viewSubmissionsButton"
+                type="button">
+
+                <i class="fa-solid fa-users"></i>
+
+                View Submissions
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     CREATE ASSESSMENT MODAL
+================================================== -->
+
+<div class="create-modal"
+     id="createModal">
+
+    <div class="modal-backdrop"
+         id="createBackdrop">
+    </div>
+
+
+    <div class="modal-content create-content">
+
+
+        <button
+            class="modal-close"
+            id="createClose"
+            type="button"
+            aria-label="Close">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="modal-heading">
+
+
+            <div class="modal-icon create-icon">
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    ASSESSMENT BUILDER
+                </span>
+
+                <h3>
+                    Create Assessment
+                </h3>
+
+                <p>
+                    Build a customized assessment for candidates.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form id="createAssessmentForm">
+
+
+            <div class="form-group">
+
+                <label for="assessmentName">
+                    Assessment Name
+                </label>
+
+                <input
+                    type="text"
+                    id="assessmentName"
+                    placeholder="e.g. Senior Java Developer Assessment"
+                    required>
+
+            </div>
+
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="assessmentRole">
+                        Target Role
+                    </label>
+
+                    <input
+                        type="text"
+                        id="assessmentRole"
+                        placeholder="e.g. Backend Engineer"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="assessmentType">
+                        Assessment Type
+                    </label>
+
+                    <select
+                        id="assessmentType"
+                        required>
+
+                        <option value="technical">
+                            Technical
+                        </option>
+
+                        <option value="coding">
+                            Coding
+                        </option>
+
+                        <option value="mcq">
+                            MCQ
+                        </option>
+
+                        <option value="mixed">
+                            Mixed
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="questionCount">
+                        Number of Questions
+                    </label>
+
+                    <input
+                        type="number"
+                        id="questionCount"
+                        min="1"
+                        max="200"
+                        value="30"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="assessmentDuration">
+                        Duration
+                    </label>
+
+                    <select
+                        id="assessmentDuration">
+
+                        <option value="30">
+                            30 minutes
+                        </option>
+
+                        <option value="45">
+                            45 minutes
+                        </option>
+
+                        <option value="60"
+                                selected>
+
+                            60 minutes
+
+                        </option>
+
+                        <option value="90">
+                            90 minutes
+                        </option>
+
+                        <option value="120">
+                            120 minutes
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="assessmentSkills">
+                    Skills to Evaluate
+                </label>
+
+                <input
+                    type="text"
+                    id="assessmentSkills"
+                    placeholder="JavaScript, Node.js, SQL, APIs">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="passingScore">
+                    Passing Score
+                </label>
+
+                <div class="score-input">
+
+                    <input
+                        type="number"
+                        id="passingScore"
+                        min="1"
+                        max="100"
+                        value="70"
+                        required>
+
+                    <span>
+                        %
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="assessmentDescription">
+                    Description
+                </label>
+
+                <textarea
+                    id="assessmentDescription"
+                    rows="3"
+                    placeholder="Describe what this assessment evaluates...">
+                </textarea>
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <button
+                    type="button"
+                    class="modal-secondary"
+                    id="createCancel">
+
+                    Cancel
+
+                </button>
+
+
+                <button
+                    type="submit"
+                    class="modal-primary">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Create Assessment
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     TOAST
+================================================== -->
+
+<div class="assessment-toast"
+     id="assessmentToast">
+
+
+    <div class="toast-icon">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+    </div>
+
+
+    <div class="toast-content">
+
+        <strong id="toastTitle">
+            Success
+        </strong>
+
+        <span id="toastMessage">
+            Action completed successfully.
+        </span>
+
+    </div>
+
+
+    <button
+        id="toastClose"
+        type="button"
+        aria-label="Close notification">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+</div>
+
+
+<script src="assessments.js"></script>
+
+</body>
+
+</html>

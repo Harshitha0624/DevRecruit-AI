@@ -1,0 +1,8 @@
+{
+  "contract": "RecruiterVerification",
+  "address": "0x6d925938Edb8A16B3035A4cF34FAA090f490202a",
+  "network": "Hardhat Local",
+  "rpc_url": "http://127.0.0.1:8545",
+  "deployer": "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199",
+  "deployed_at": "2026-09-28T10:08:33.564Z"
+}

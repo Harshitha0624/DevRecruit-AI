@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Candidate Login | DevRecruit AI
+    </title>
+
+    <!-- Global CSS -->
+
+    <link rel="stylesheet"
+          href="../../../../styles/global.css">
+
+    <!-- Candidate Login CSS -->
+
+    <link rel="stylesheet"
+          href="login.css">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    <!-- ==============================
+         CANDIDATE LOGIN PAGE
+    =============================== -->
+
+    <main class="candidate-login-page">
+
+        <!-- Background -->
+
+        <div class="login-background">
+
+            <div class="login-blob login-blob-one"></div>
+
+            <div class="login-blob login-blob-two"></div>
+
+            <div class="login-blob login-blob-three"></div>
+
+        </div>
+
+
+        <!-- Login Container -->
+
+        <div class="login-container">
+
+
+            <!-- Brand -->
+
+            <a href="../../../landing/index.html"
+               class="login-brand">
+
+                <span class="login-brand-icon">
+                    🚀
+                </span>
+
+                <span>
+                    DevRecruit AI
+                </span>
+
+            </a>
+
+
+            <!-- Login Card -->
+
+            <div class="login-card">
+
+
+                <!-- Header -->
+
+                <div class="login-header">
+
+                    <div class="login-icon">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+                    <span class="login-role">
+                        CANDIDATE PORTAL
+                    </span>
+
+                    <h1>
+                        Welcome Back
+                    </h1>
+
+                    <p>
+                        Sign in to continue your developer journey.
+                    </p>
+
+                </div>
+
+
+                <!-- Form -->
+
+                <form id="candidateLoginForm"
+                      class="login-form">
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="candidateEmail">
+
+                            Email Address
+
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="candidateEmail"
+                                name="email"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <div class="password-label">
+
+                            <label for="candidatePassword">
+
+                                Password
+
+                            </label>
+
+                            <a href="#"
+                               id="forgotPassword">
+
+                                Forgot Password?
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="candidatePassword"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="passwordToggle"
+                                aria-label="Show password">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Remember Me -->
+
+                    <div class="login-options">
+
+                        <label class="remember-me">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+                            <span>
+                                Remember me
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Login Button -->
+
+                    <button
+                        type="submit"
+                        class="login-button">
+
+                        <span>
+                            Sign In
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <!-- Demo Message -->
+
+                    <p
+                        id="loginMessage"
+                        class="login-message">
+                    </p>
+
+                </form>
+
+
+                <!-- Register -->
+
+                <div class="register-link">
+
+                    <span>
+                        Don't have an account?
+                    </span>
+
+                    <a href="../register/index.html">
+
+                        Create Candidate Account
+
+                    </a>
+
+                </div>
+
+
+                <!-- Other Roles -->
+
+                <div class="other-role">
+
+                    <span>
+                        Not a candidate?
+                    </span>
+
+                    <a href="../../../../auth/role-selection/index.html">
+
+                        Choose another role
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Security -->
+
+            <div class="login-security">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                Secure candidate authentication
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

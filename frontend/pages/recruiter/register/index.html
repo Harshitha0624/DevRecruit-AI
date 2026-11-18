@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Recruiter Registration | DevRecruit AI
+    </title>
+
+    <!-- Global CSS -->
+
+    <link rel="stylesheet"
+          href="../../../../styles/global.css">
+
+    <!-- Recruiter Register CSS -->
+
+    <link rel="stylesheet"
+          href="register.css">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    <!-- =================================================
+         RECRUITER REGISTRATION PAGE
+    ================================================== -->
+
+    <main class="recruiter-register-page">
+
+
+        <!-- Background -->
+
+        <div class="register-background">
+
+            <div class="register-blob register-blob-one"></div>
+
+            <div class="register-blob register-blob-two"></div>
+
+            <div class="register-blob register-blob-three"></div>
+
+        </div>
+
+
+        <!-- Main Container -->
+
+        <div class="register-container">
+
+
+            <!-- Brand -->
+
+            <a href="../../../landing/index.html"
+               class="register-brand">
+
+                <span class="register-brand-icon">
+                    🚀
+                </span>
+
+                <span>
+                    DevRecruit AI
+                </span>
+
+            </a>
+
+
+            <!-- Register Card -->
+
+            <div class="register-card">
+
+
+                <!-- Header -->
+
+                <div class="register-header">
+
+                    <div class="register-icon">
+
+                        <i class="fa-solid fa-building"></i>
+
+                    </div>
+
+                    <span class="register-role">
+                        RECRUITER PORTAL
+                    </span>
+
+                    <h1>
+                        Create Recruiter Account
+                    </h1>
+
+                    <p>
+                        Build your hiring workspace and discover
+                        exceptional developers.
+                    </p>
+
+                </div>
+
+
+                <!-- Registration Form -->
+
+                <form
+                    id="recruiterRegisterForm"
+                    class="register-form"
+                >
+
+
+                    <!-- =================================================
+                         RECRUITER INFORMATION
+                    ================================================== -->
+
+                    <div class="form-section-title">
+
+                        <i class="fa-solid fa-user-tie"></i>
+
+                        <span>
+                            Recruiter Information
+                        </span>
+
+                    </div>
+
+
+                    <!-- Name -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="firstName">
+                                First Name
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    name="firstName"
+                                    placeholder="First name"
+                                    autocomplete="given-name"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="lastName">
+                                Last Name
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    name="lastName"
+                                    placeholder="Last name"
+                                    autocomplete="family-name"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Work Email -->
+
+                    <div class="form-group">
+
+                        <label for="recruiterEmail">
+                            Work Email
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="recruiterEmail"
+                                name="email"
+                                placeholder="name@company.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Phone -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter phone number"
+                                autocomplete="tel"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         COMPANY INFORMATION
+                    ================================================== -->
+
+                    <div class="form-section-title company-section-title">
+
+                        <i class="fa-solid fa-building"></i>
+
+                        <span>
+                            Company Information
+                        </span>
+
+                    </div>
+
+
+                    <!-- Company Name -->
+
+                    <div class="form-group">
+
+                        <label for="companyName">
+                            Company Name
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-city"></i>
+
+                            <input
+                                type="text"
+                                id="companyName"
+                                name="companyName"
+                                placeholder="Enter company name"
+                                autocomplete="organization"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Company Size + Industry -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="companySize">
+                                Company Size
+                            </label>
+
+                            <div class="select-wrapper">
+
+                                <i class="fa-solid fa-users"></i>
+
+                                <select
+                                    id="companySize"
+                                    name="companySize"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select size
+                                    </option>
+
+                                    <option value="1-10">
+                                        1–10 employees
+                                    </option>
+
+                                    <option value="11-50">
+                                        11–50 employees
+                                    </option>
+
+                                    <option value="51-200">
+                                        51–200 employees
+                                    </option>
+
+                                    <option value="201-500">
+                                        201–500 employees
+                                    </option>
+
+                                    <option value="501-1000">
+                                        501–1000 employees
+                                    </option>
+
+                                    <option value="1000+">
+                                        1000+ employees
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="industry">
+                                Industry
+                            </label>
+
+                            <div class="select-wrapper">
+
+                                <i class="fa-solid fa-briefcase"></i>
+
+                                <select
+                                    id="industry"
+                                    name="industry"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select industry
+                                    </option>
+
+                                    <option value="technology">
+                                        Technology
+                                    </option>
+
+                                    <option value="finance">
+                                        Finance
+                                    </option>
+
+                                    <option value="healthcare">
+                                        Healthcare
+                                    </option>
+
+                                    <option value="ecommerce">
+                                        E-Commerce
+                                    </option>
+
+                                    <option value="education">
+                                        Education
+                                    </option>
+
+                                    <option value="consulting">
+                                        Consulting
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         ACCOUNT SECURITY
+                    ================================================== -->
+
+                    <div class="form-section-title security-section-title">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <span>
+                            Account Security
+                        </span>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="registerPassword">
+                                Password
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input
+                                    type="password"
+                                    id="registerPassword"
+                                    name="password"
+                                    placeholder="Create password"
+                                    autocomplete="new-password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    id="passwordToggle"
+                                    aria-label="Show password"
+                                >
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Confirm -->
+
+                        <div class="form-group">
+
+                            <label for="confirmPassword">
+                                Confirm Password
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    name="confirmPassword"
+                                    placeholder="Confirm password"
+                                    autocomplete="new-password"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Password Strength -->
+
+                    <div class="password-strength">
+
+                        <div class="strength-header">
+
+                            <span>
+                                Password Strength
+                            </span>
+
+                            <span
+                                id="strengthText"
+                                class="strength-text"
+                            >
+                                Not entered
+                            </span>
+
+                        </div>
+
+                        <div class="strength-bar">
+
+                            <span
+                                id="strengthProgress"
+                                class="strength-progress"
+                            ></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Terms -->
+
+                    <label class="terms-checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                        >
+
+                        <span>
+
+                            I agree to the
+                            <a href="#">
+                                Terms of Service
+                            </a>
+                            and
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+
+                        </span>
+
+                    </label>
+
+
+                    <!-- Submit -->
+
+                    <button
+                        type="submit"
+                        class="register-button"
+                    >
+
+                        <span>
+                            Create Recruiter Account
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <!-- Message -->
+
+                    <p
+                        id="registerMessage"
+                        class="register-message"
+                    ></p>
+
+                </form>
+
+
+                <!-- Login -->
+
+                <div class="login-link">
+
+                    <span>
+                        Already have a recruiter account?
+                    </span>
+
+                    <a href="../login/index.html">
+                        Sign In
+                    </a>
+
+                </div>
+
+
+                <!-- Other Roles -->
+
+                <div class="other-role">
+
+                    <span>
+                        Want another role?
+                    </span>
+
+                    <a href="../../auth/role-selection/index.html">
+                        Choose another role
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Security -->
+
+            <div class="register-security">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                Secure recruiter registration
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="register.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+{
+  "contract": "AccessControl",
+  "address": "0x446C29FBFEF829F81E236a2376191F648dbEF995",
+  "network": "Hardhat Local",
+  "rpc_url": "http://127.0.0.1:8545",
+  "deployer": "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199",
+  "deployed_at": "2026-09-28T12:40:34.978Z"
+}

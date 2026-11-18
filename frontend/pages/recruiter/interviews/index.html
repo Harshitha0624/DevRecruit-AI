@@ -1,0 +1,2315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="DevRecruit recruiter interview management">
+
+    <title>Interviews | DevRecruit</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="interviews.css">
+
+</head>
+
+
+<body>
+
+<div class="interviews-page">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="interviews-sidebar"
+           id="interviewsSidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../dashboard/index.html">
+
+                <span class="brand-icon">
+                    🚀
+                </span>
+
+                <span>
+                    DevRecruit
+                </span>
+
+            </a>
+
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                type="button"
+                aria-label="Close navigation">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                HR
+            </div>
+
+            <div class="profile-info">
+
+                <strong>
+                    Recruiter
+                </strong>
+
+                <span>
+                    Talent Acquisition
+                </span>
+
+            </div>
+
+            <span class="online-dot"></span>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <!-- OVERVIEW -->
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    OVERVIEW
+                </span>
+
+
+                <a href="../dashboard/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a href="../analytics/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        Analytics
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- TALENT -->
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    TALENT MANAGEMENT
+                </span>
+
+
+                <a href="../candidates/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <span>
+                        Candidates
+                    </span>
+
+                    <b>
+                        248
+                    </b>
+
+                </a>
+
+
+                <a href="../ai-ranking/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        AI Candidate Ranking
+                    </span>
+
+                    <em>
+                        AI
+                    </em>
+
+                </a>
+
+
+                <a href="../shortlisted/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>
+                        Shortlisted
+                    </span>
+
+                    <b>
+                        18
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <!-- RECRUITMENT -->
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    RECRUITMENT
+                </span>
+
+
+                <a href="../jobs/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <span>
+                        Job Postings
+                    </span>
+
+                    <b>
+                        12
+                    </b>
+
+                </a>
+
+
+                <a href="../pipeline/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-filter"></i>
+
+                    <span>
+                        Hiring Pipeline
+                    </span>
+
+                </a>
+
+
+                <a href="index.html"
+                   class="nav-item active">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <span>
+                        Interviews
+                    </span>
+
+                    <b>
+                        5
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <!-- EVALUATION -->
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    EVALUATION
+                </span>
+
+
+                <a href="../assessments/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <span>
+                        Assessments
+                    </span>
+
+                    <b>
+                        7
+                    </b>
+
+                </a>
+
+
+                <a href="../coding-tests/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        Coding Tests
+                    </span>
+
+                </a>
+
+
+                <a href="../credentials/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <span>
+                        Credential Verification
+                    </span>
+
+                    <b class="alert-count">
+                        3
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    COMMUNICATION
+                </span>
+
+
+                <a href="../messages/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <b>
+                        4
+                    </b>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- FOOTER -->
+
+        <div class="sidebar-footer">
+
+
+            <a href="../notifications/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span>
+                    Notifications
+                </span>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+
+            <a href="../settings/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <button
+                class="logout-button"
+                id="logoutButton"
+                type="button">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Sign Out
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay">
+    </div>
+
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <main class="interviews-main">
+
+
+        <!-- HEADER -->
+
+        <header class="interviews-header">
+
+
+            <div class="header-left">
+
+                <button
+                    class="mobile-menu"
+                    id="mobileMenuButton"
+                    type="button"
+                    aria-label="Open navigation">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div>
+
+                    <span class="page-label">
+                        RECRUITMENT
+                    </span>
+
+                    <h1>
+                        Interviews
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+
+                <button
+                    class="header-button"
+                    id="refreshInterviews"
+                    type="button"
+                    title="Refresh interviews">
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                </button>
+
+
+                <a href="../notifications/index.html"
+                   class="header-button notification-button"
+                   aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span>
+                        7
+                    </span>
+
+                </a>
+
+
+                <a href="../settings/index.html"
+                   class="header-profile">
+
+                    <div class="header-avatar">
+                        HR
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Recruiter
+                        </strong>
+
+                        <small>
+                            Talent Acquisition
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             CONTENT
+        =================================================== -->
+
+        <div class="interviews-content">
+
+
+            <!-- PAGE INTRO -->
+
+            <section class="page-intro">
+
+
+                <div>
+
+                    <span>
+                        INTERVIEW MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Interviews
+                    </h2>
+
+                    <p>
+                        Schedule, manage and track candidate
+                        interviews across your hiring pipeline.
+                    </p>
+
+                </div>
+
+
+                <div class="intro-actions">
+
+
+                    <button
+                        class="secondary-action"
+                        id="todayButton"
+                        type="button">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        Today
+
+                    </button>
+
+
+                    <button
+                        class="primary-action"
+                        id="scheduleInterviewButton"
+                        type="button">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Schedule Interview
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 STATS
+            =================================================== -->
+
+            <section class="interview-stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            UPCOMING
+                        </span>
+
+                        <strong>
+                            8
+                        </strong>
+
+                        <small>
+                            Next 7 days
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+
+                        <i class="fa-solid fa-video"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            TODAY
+                        </span>
+
+                        <strong>
+                            3
+                        </strong>
+
+                        <small>
+                            Interviews scheduled
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            COMPLETED
+                        </span>
+
+                        <strong>
+                            42
+                        </strong>
+
+                        <small class="positive">
+                            91% completion rate
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            AVG. DURATION
+                        </span>
+
+                        <strong>
+                            46m
+                        </strong>
+
+                        <small>
+                            Per interview
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 TOOLBAR
+            =================================================== -->
+
+            <section class="interview-toolbar">
+
+
+                <div class="interview-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="interviewSearch"
+                        placeholder="Search candidate, role or interviewer..."
+                        autocomplete="off">
+
+                </div>
+
+
+                <div class="toolbar-select">
+
+                    <label for="statusFilter">
+                        STATUS
+                    </label>
+
+                    <select id="statusFilter">
+
+                        <option value="all">
+                            All Status
+                        </option>
+
+                        <option value="scheduled">
+                            Scheduled
+                        </option>
+
+                        <option value="completed">
+                            Completed
+                        </option>
+
+                        <option value="pending">
+                            Pending
+                        </option>
+
+                        <option value="cancelled">
+                            Cancelled
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="toolbar-select">
+
+                    <label for="typeFilter">
+                        TYPE
+                    </label>
+
+                    <select id="typeFilter">
+
+                        <option value="all">
+                            All Types
+                        </option>
+
+                        <option value="technical">
+                            Technical
+                        </option>
+
+                        <option value="hr">
+                            HR
+                        </option>
+
+                        <option value="managerial">
+                            Managerial
+                        </option>
+
+                        <option value="final">
+                            Final Round
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="toolbar-button"
+                    id="clearInterviewFilters"
+                    type="button">
+
+                    <i class="fa-solid fa-filter-circle-xmark"></i>
+
+                    Clear
+
+                </button>
+
+
+                <button
+                    class="toolbar-button icon-only"
+                    id="refreshInterviewList"
+                    type="button"
+                    title="Refresh">
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                </button>
+
+            </section>
+
+
+            <!-- ==================================================
+                 MAIN GRID
+            =================================================== -->
+
+            <section class="interview-layout">
+
+
+                <!-- ==================================================
+                     CALENDAR
+                =================================================== -->
+
+                <div class="calendar-panel">
+
+
+                    <div class="calendar-header">
+
+                        <button
+                            class="calendar-nav"
+                            id="previousMonth"
+                            type="button">
+
+                            <i class="fa-solid fa-chevron-left"></i>
+
+                        </button>
+
+
+                        <div>
+
+                            <span>
+                                INTERVIEW CALENDAR
+                            </span>
+
+                            <h3 id="calendarMonth">
+                                August 2026
+                            </h3>
+
+                        </div>
+
+
+                        <button
+                            class="calendar-nav"
+                            id="nextMonth"
+                            type="button">
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="calendar-weekdays">
+
+                        <span>
+                            MON
+                        </span>
+
+                        <span>
+                            TUE
+                        </span>
+
+                        <span>
+                            WED
+                        </span>
+
+                        <span>
+                            THU
+                        </span>
+
+                        <span>
+                            FRI
+                        </span>
+
+                        <span>
+                            SAT
+                        </span>
+
+                        <span>
+                            SUN
+                        </span>
+
+                    </div>
+
+
+                    <div class="calendar-grid"
+                         id="calendarGrid">
+
+                        <!-- JS generates calendar -->
+
+                    </div>
+
+
+                    <div class="calendar-legend">
+
+                        <span>
+
+                            <i class="legend-dot blue"></i>
+
+                            Technical
+
+                        </span>
+
+
+                        <span>
+
+                            <i class="legend-dot purple"></i>
+
+                            HR
+
+                        </span>
+
+
+                        <span>
+
+                            <i class="legend-dot orange"></i>
+
+                            Managerial
+
+                        </span>
+
+
+                        <span>
+
+                            <i class="legend-dot green"></i>
+
+                            Final
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================================
+                     UPCOMING
+                =================================================== -->
+
+                <div class="upcoming-panel">
+
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <span>
+                                SCHEDULE
+                            </span>
+
+                            <h3>
+                                Upcoming Interviews
+                            </h3>
+
+                        </div>
+
+
+                        <button
+                            class="view-all-button"
+                            id="viewAllInterviews"
+                            type="button">
+
+                            View All
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="upcoming-list"
+                         id="upcomingList">
+
+
+                        <!-- INTERVIEW 1 -->
+
+                        <article
+                            class="upcoming-interview"
+                            data-name="Meera Joshi"
+                            data-role="Senior Full Stack Developer"
+                            data-interviewer="Rahul Sharma"
+                            data-status="scheduled"
+                            data-type="technical"
+                            data-date="2026-08-18">
+
+
+                            <div class="date-box">
+
+                                <span>
+                                    AUG
+                                </span>
+
+                                <strong>
+                                    18
+                                </strong>
+
+                                <small>
+                                    TUE
+                                </small>
+
+                            </div>
+
+
+                            <div class="interview-person">
+
+                                <div class="person-avatar avatar-orange">
+                                    MJ
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Meera Joshi
+                                    </strong>
+
+                                    <span>
+                                        Senior Full Stack Developer
+                                    </span>
+
+                                    <small>
+
+                                        <i class="fa-regular fa-clock"></i>
+
+                                        10:30 AM · 45 min
+
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="interview-type technical">
+                                Technical
+                            </div>
+
+
+                            <button
+                                class="interview-menu"
+                                type="button"
+                                aria-label="Interview options">
+
+                                <i class="fa-solid fa-ellipsis"></i>
+
+                            </button>
+
+                        </article>
+
+
+                        <!-- INTERVIEW 2 -->
+
+                        <article
+                            class="upcoming-interview"
+                            data-name="Karan Singh"
+                            data-role="AI / ML Engineer"
+                            data-interviewer="Priya Nair"
+                            data-status="scheduled"
+                            data-type="managerial"
+                            data-date="2026-08-18">
+
+
+                            <div class="date-box purple-date">
+
+                                <span>
+                                    AUG
+                                </span>
+
+                                <strong>
+                                    18
+                                </strong>
+
+                                <small>
+                                    TUE
+                                </small>
+
+                            </div>
+
+
+                            <div class="interview-person">
+
+                                <div class="person-avatar avatar-green">
+                                    KS
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Karan Singh
+                                    </strong>
+
+                                    <span>
+                                        AI / ML Engineer
+                                    </span>
+
+                                    <small>
+
+                                        <i class="fa-regular fa-clock"></i>
+
+                                        2:00 PM · 60 min
+
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="interview-type managerial">
+                                Managerial
+                            </div>
+
+
+                            <button
+                                class="interview-menu"
+                                type="button">
+
+                                <i class="fa-solid fa-ellipsis"></i>
+
+                            </button>
+
+                        </article>
+
+
+                        <!-- INTERVIEW 3 -->
+
+                        <article
+                            class="upcoming-interview"
+                            data-name="Alex Kumar"
+                            data-role="Senior Full Stack Developer"
+                            data-interviewer="Vikram Shah"
+                            data-status="pending"
+                            data-type="hr"
+                            data-date="2026-08-19">
+
+
+                            <div class="date-box">
+
+                                <span>
+                                    AUG
+                                </span>
+
+                                <strong>
+                                    19
+                                </strong>
+
+                                <small>
+                                    WED
+                                </small>
+
+                            </div>
+
+
+                            <div class="interview-person">
+
+                                <div class="person-avatar avatar-blue">
+                                    AK
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Alex Kumar
+                                    </strong>
+
+                                    <span>
+                                        Senior Full Stack Developer
+                                    </span>
+
+                                    <small>
+
+                                        <i class="fa-regular fa-clock"></i>
+
+                                        11:00 AM · 30 min
+
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="interview-type hr">
+                                HR
+                            </div>
+
+
+                            <button
+                                class="interview-menu"
+                                type="button">
+
+                                <i class="fa-solid fa-ellipsis"></i>
+
+                            </button>
+
+                        </article>
+
+
+                        <!-- INTERVIEW 4 -->
+
+                        <article
+                            class="upcoming-interview"
+                            data-name="Sarah Patel"
+                            data-role="Backend Engineer"
+                            data-interviewer="Arjun Rao"
+                            data-status="scheduled"
+                            data-type="technical"
+                            data-date="2026-08-20">
+
+
+                            <div class="date-box">
+
+                                <span>
+                                    AUG
+                                </span>
+
+                                <strong>
+                                    20
+                                </strong>
+
+                                <small>
+                                    THU
+                                </small>
+
+                            </div>
+
+
+                            <div class="interview-person">
+
+                                <div class="person-avatar avatar-purple">
+                                    SP
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Sarah Patel
+                                    </strong>
+
+                                    <span>
+                                        Backend Engineer
+                                    </span>
+
+                                    <small>
+
+                                        <i class="fa-regular fa-clock"></i>
+
+                                        3:30 PM · 45 min
+
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="interview-type technical">
+                                Technical
+                            </div>
+
+
+                            <button
+                                class="interview-menu"
+                                type="button">
+
+                                <i class="fa-solid fa-ellipsis"></i>
+
+                            </button>
+
+                        </article>
+
+
+                        <!-- INTERVIEW 5 -->
+
+                        <article
+                            class="upcoming-interview"
+                            data-name="Priya Menon"
+                            data-role="AI / ML Engineer"
+                            data-interviewer="Neha Kapoor"
+                            data-status="scheduled"
+                            data-type="final"
+                            data-date="2026-08-21">
+
+
+                            <div class="date-box green-date">
+
+                                <span>
+                                    AUG
+                                </span>
+
+                                <strong>
+                                    21
+                                </strong>
+
+                                <small>
+                                    FRI
+                                </small>
+
+                            </div>
+
+
+                            <div class="interview-person">
+
+                                <div class="person-avatar avatar-pink">
+                                    PM
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Priya Menon
+                                    </strong>
+
+                                    <span>
+                                        AI / ML Engineer
+                                    </span>
+
+                                    <small>
+
+                                        <i class="fa-regular fa-clock"></i>
+
+                                        4:00 PM · 60 min
+
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="interview-type final">
+                                Final Round
+                            </div>
+
+
+                            <button
+                                class="interview-menu"
+                                type="button">
+
+                                <i class="fa-solid fa-ellipsis"></i>
+
+                            </button>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 INTERVIEW TABLE
+            =================================================== -->
+
+            <section class="interview-table-section">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span>
+                            INTERVIEW ACTIVITY
+                        </span>
+
+                        <h3>
+                            All Interviews
+                        </h3>
+
+                    </div>
+
+
+                    <div class="table-actions">
+
+                        <button
+                            class="table-action active"
+                            data-view="all"
+                            type="button">
+
+                            All
+
+                        </button>
+
+
+                        <button
+                            class="table-action"
+                            data-view="today"
+                            type="button">
+
+                            Today
+
+                        </button>
+
+
+                        <button
+                            class="table-action"
+                            data-view="week"
+                            type="button">
+
+                            This Week
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    CANDIDATE
+                                </th>
+
+                                <th>
+                                    POSITION
+                                </th>
+
+                                <th>
+                                    INTERVIEWER
+                                </th>
+
+                                <th>
+                                    DATE & TIME
+                                </th>
+
+                                <th>
+                                    TYPE
+                                </th>
+
+                                <th>
+                                    STATUS
+                                </th>
+
+                                <th>
+                                    ACTION
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="interviewTableBody">
+
+
+                            <tr
+                                data-name="Meera Joshi"
+                                data-status="scheduled">
+
+                                <td>
+
+                                    <div class="table-person">
+
+                                        <div class="table-avatar avatar-orange">
+                                            MJ
+                                        </div>
+
+                                        <strong>
+                                            Meera Joshi
+                                        </strong>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Senior Full Stack Developer
+                                </td>
+
+
+                                <td>
+                                    Rahul Sharma
+                                </td>
+
+
+                                <td>
+                                    Aug 18 · 10:30 AM
+                                </td>
+
+
+                                <td>
+
+                                    <span class="table-type technical">
+                                        Technical
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status scheduled">
+                                        Scheduled
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="table-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr
+                                data-name="Karan Singh"
+                                data-status="scheduled">
+
+                                <td>
+
+                                    <div class="table-person">
+
+                                        <div class="table-avatar avatar-green">
+                                            KS
+                                        </div>
+
+                                        <strong>
+                                            Karan Singh
+                                        </strong>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    AI / ML Engineer
+                                </td>
+
+
+                                <td>
+                                    Priya Nair
+                                </td>
+
+
+                                <td>
+                                    Aug 18 · 2:00 PM
+                                </td>
+
+
+                                <td>
+
+                                    <span class="table-type managerial">
+                                        Managerial
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status scheduled">
+                                        Scheduled
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="table-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr
+                                data-name="Alex Kumar"
+                                data-status="pending">
+
+                                <td>
+
+                                    <div class="table-person">
+
+                                        <div class="table-avatar avatar-blue">
+                                            AK
+                                        </div>
+
+                                        <strong>
+                                            Alex Kumar
+                                        </strong>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Senior Full Stack Developer
+                                </td>
+
+
+                                <td>
+                                    Vikram Shah
+                                </td>
+
+
+                                <td>
+                                    Aug 19 · 11:00 AM
+                                </td>
+
+
+                                <td>
+
+                                    <span class="table-type hr">
+                                        HR
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="table-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr
+                                data-name="Sarah Patel"
+                                data-status="scheduled">
+
+                                <td>
+
+                                    <div class="table-person">
+
+                                        <div class="table-avatar avatar-purple">
+                                            SP
+                                        </div>
+
+                                        <strong>
+                                            Sarah Patel
+                                        </strong>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Backend Engineer
+                                </td>
+
+
+                                <td>
+                                    Arjun Rao
+                                </td>
+
+
+                                <td>
+                                    Aug 20 · 3:30 PM
+                                </td>
+
+
+                                <td>
+
+                                    <span class="table-type technical">
+                                        Technical
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status scheduled">
+                                        Scheduled
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="table-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr
+                                data-name="Priya Menon"
+                                data-status="scheduled">
+
+                                <td>
+
+                                    <div class="table-person">
+
+                                        <div class="table-avatar avatar-pink">
+                                            PM
+                                        </div>
+
+                                        <strong>
+                                            Priya Menon
+                                        </strong>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    AI / ML Engineer
+                                </td>
+
+
+                                <td>
+                                    Neha Kapoor
+                                </td>
+
+
+                                <td>
+                                    Aug 21 · 4:00 PM
+                                </td>
+
+
+                                <td>
+
+                                    <span class="table-type final">
+                                        Final Round
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status scheduled">
+                                        Scheduled
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="table-view"
+                                        type="button">
+
+                                        View
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- ==================================================
+     INTERVIEW DETAILS MODAL
+================================================== -->
+
+<div class="interview-modal"
+     id="interviewModal">
+
+    <div class="modal-backdrop"
+         id="modalBackdrop">
+    </div>
+
+
+    <div class="modal-content">
+
+
+        <button
+            class="modal-close"
+            id="modalClose"
+            type="button"
+            aria-label="Close">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="modal-heading">
+
+            <div class="modal-icon">
+
+                <i class="fa-solid fa-video"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    INTERVIEW DETAILS
+                </span>
+
+                <h3 id="modalCandidate">
+                    Meera Joshi
+                </h3>
+
+                <p id="modalPosition">
+                    Senior Full Stack Developer
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="modal-detail-grid">
+
+
+            <div class="detail-item">
+
+                <span>
+                    INTERVIEWER
+                </span>
+
+                <strong id="modalInterviewer">
+                    Rahul Sharma
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    INTERVIEW TYPE
+                </span>
+
+                <strong id="modalType">
+                    Technical
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    DATE
+                </span>
+
+                <strong id="modalDate">
+                    Aug 18, 2026
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    TIME
+                </span>
+
+                <strong id="modalTime">
+                    10:30 AM
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    DURATION
+                </span>
+
+                <strong>
+                    45 minutes
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>
+                    STATUS
+                </span>
+
+                <strong id="modalStatus">
+                    Scheduled
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="meeting-box">
+
+            <div>
+
+                <i class="fa-solid fa-link"></i>
+
+                <div>
+
+                    <strong>
+                        Interview Meeting
+                    </strong>
+
+                    <span>
+                        Video interview link is ready
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="joinMeetingButton"
+                type="button">
+
+                Join Meeting
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="modal-actions">
+
+            <button
+                class="modal-secondary"
+                id="cancelInterviewButton"
+                type="button">
+
+                Cancel Interview
+
+            </button>
+
+
+            <button
+                class="modal-primary"
+                id="editInterviewButton"
+                type="button">
+
+                <i class="fa-solid fa-pen"></i>
+
+                Edit Interview
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     SCHEDULE INTERVIEW MODAL
+================================================== -->
+
+<div class="schedule-modal"
+     id="scheduleModal">
+
+    <div class="modal-backdrop"
+         id="scheduleBackdrop">
+    </div>
+
+
+    <div class="modal-content schedule-content">
+
+
+        <button
+            class="modal-close"
+            id="scheduleClose"
+            type="button">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="modal-heading">
+
+            <div class="modal-icon schedule-icon">
+
+                <i class="fa-regular fa-calendar-plus"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    RECRUITMENT
+                </span>
+
+                <h3>
+                    Schedule Interview
+                </h3>
+
+                <p>
+                    Create a new candidate interview.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form id="scheduleForm">
+
+
+            <div class="form-group">
+
+                <label for="scheduleCandidate">
+                    Candidate
+                </label>
+
+                <select
+                    id="scheduleCandidate"
+                    required>
+
+                    <option value="">
+                        Select candidate
+                    </option>
+
+                    <option value="Meera Joshi">
+                        Meera Joshi
+                    </option>
+
+                    <option value="Karan Singh">
+                        Karan Singh
+                    </option>
+
+                    <option value="Alex Kumar">
+                        Alex Kumar
+                    </option>
+
+                    <option value="Sarah Patel">
+                        Sarah Patel
+                    </option>
+
+                    <option value="Priya Menon">
+                        Priya Menon
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="scheduleInterviewer">
+                    Interviewer
+                </label>
+
+                <select
+                    id="scheduleInterviewer"
+                    required>
+
+                    <option value="">
+                        Select interviewer
+                    </option>
+
+                    <option value="Rahul Sharma">
+                        Rahul Sharma
+                    </option>
+
+                    <option value="Priya Nair">
+                        Priya Nair
+                    </option>
+
+                    <option value="Vikram Shah">
+                        Vikram Shah
+                    </option>
+
+                    <option value="Neha Kapoor">
+                        Neha Kapoor
+                    </option>
+
+                    <option value="Arjun Rao">
+                        Arjun Rao
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="scheduleDate">
+                        Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="scheduleDate"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="scheduleTime">
+                        Time
+                    </label>
+
+                    <input
+                        type="time"
+                        id="scheduleTime"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="scheduleType">
+                        Interview Type
+                    </label>
+
+                    <select
+                        id="scheduleType"
+                        required>
+
+                        <option value="technical">
+                            Technical
+                        </option>
+
+                        <option value="hr">
+                            HR
+                        </option>
+
+                        <option value="managerial">
+                            Managerial
+                        </option>
+
+                        <option value="final">
+                            Final Round
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="scheduleDuration">
+                        Duration
+                    </label>
+
+                    <select
+                        id="scheduleDuration">
+
+                        <option value="30">
+                            30 minutes
+                        </option>
+
+                        <option value="45"
+                                selected>
+
+                            45 minutes
+
+                        </option>
+
+                        <option value="60">
+                            60 minutes
+                        </option>
+
+                        <option value="90">
+                            90 minutes
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="scheduleNotes">
+                    Notes
+                </label>
+
+                <textarea
+                    id="scheduleNotes"
+                    rows="3"
+                    placeholder="Add interview notes...">
+                </textarea>
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <button
+                    type="button"
+                    class="modal-secondary"
+                    id="scheduleCancel">
+
+                    Cancel
+
+                </button>
+
+
+                <button
+                    type="submit"
+                    class="modal-primary">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    Schedule Interview
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     TOAST
+================================================== -->
+
+<div class="interview-toast"
+     id="interviewToast">
+
+    <div class="toast-icon">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+    </div>
+
+
+    <div class="toast-content">
+
+        <strong id="toastTitle">
+            Success
+        </strong>
+
+        <span id="toastMessage">
+            Action completed successfully.
+        </span>
+
+    </div>
+
+
+    <button
+        id="toastClose"
+        type="button"
+        aria-label="Close notification">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+</div>
+
+
+<script src="interviews.js"></script>
+
+</body>
+
+</html>

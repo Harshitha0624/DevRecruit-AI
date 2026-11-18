@@ -1,0 +1,16 @@
+{
+  "name": "developer-recruitment-blockchain",
+  "version": "1.0.0",
+  "description": "Blockchain and IPFS layer for the AI Developer Recruitment Platform",
+  "type": "module",
+  "scripts": {
+    "compile": "hardhat compile"
+  },
+  "devDependencies": {
+    "hardhat": "^3.17.0",
+    "solc": "^0.8.20"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0"
+  }
+}

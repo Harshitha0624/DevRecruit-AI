@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        AI Hiring Score | DevRecruit AI
+    </title>
+
+    <link rel="stylesheet"
+          href="../../../../styles/global.css">
+
+    <link rel="stylesheet"
+          href="hiring-score.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+<div class="candidate-portal">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="candidate-sidebar"
+           id="candidateSidebar">
+
+
+        <div class="sidebar-brand">
+
+            <a href="../dashboard/index.html">
+
+                <span class="brand-icon">
+                    🚀
+                </span>
+
+                <span class="brand-text">
+                    DevRecruit
+                </span>
+
+            </a>
+
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                aria-label="Close sidebar"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                HV
+            </div>
+
+            <div class="profile-details">
+
+                <strong>
+                    Candidate
+                </strong>
+
+                <span>
+                    Developer
+                </span>
+
+            </div>
+
+            <span class="online-indicator"></span>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-navigation">
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    MAIN
+                </span>
+
+
+                <a href="../dashboard/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-grid-2"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a href="../profile/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <span>
+                        My Profile
+                    </span>
+
+                </a>
+
+
+                <a href="../resume/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    <span>
+                        Resume & Portfolio
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    AI INTELLIGENCE
+                </span>
+
+
+                <a href="../skills/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        AI Skill Profile
+                    </span>
+
+                    <span class="nav-badge">
+                        AI
+                    </span>
+
+                </a>
+
+
+                <a href="../skill-graph/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-diagram-project"></i>
+
+                    <span>
+                        Skill Graph
+                    </span>
+
+                </a>
+
+
+                <a href="../hiring-score/index.html"
+                   class="nav-item active">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        AI Hiring Score
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    RECRUITMENT
+                </span>
+
+
+                <a href="../jobs/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <span>
+                        Jobs
+                    </span>
+
+                </a>
+
+
+                <a href="../applications/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <span>
+                        Applications
+                    </span>
+
+                    <span class="nav-count">
+                        3
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    ASSESSMENT
+                </span>
+
+
+                <a href="../assessments/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <span>
+                        Assessments
+                    </span>
+
+                </a>
+
+
+                <a href="../coding-practice/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        Coding Practice
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    LEARNING
+                </span>
+
+
+                <a href="../learning/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <span>
+                        Learning
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    VERIFICATION
+                </span>
+
+
+                <a href="../credentials/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <span>
+                        Credentials
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+
+            <a href="../notifications/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span>
+                    Notifications
+                </span>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+
+            <a href="../settings/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <button
+                class="logout-button"
+                id="logoutButton"
+            >
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Sign Out
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- OVERLAY -->
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay">
+    </div>
+
+
+    <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
+
+    <main class="candidate-main">
+
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+
+            <div class="header-left">
+
+
+                <button
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div>
+
+                    <span class="page-label">
+                        AI INTELLIGENCE
+                    </span>
+
+                    <h1>
+                        AI Hiring Score
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+
+                <a
+                    href="../notifications/index.html"
+                    class="header-action"
+                >
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="../profile/index.html"
+                    class="header-user"
+                >
+
+                    <div class="header-avatar">
+                        HV
+                    </div>
+
+
+                    <div class="header-user-info">
+
+                        <strong>
+                            Candidate
+                        </strong>
+
+                        <span>
+                            Developer
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             PAGE
+        =================================================== -->
+
+        <div class="hiring-score-content">
+
+
+            <!-- INTRO -->
+
+            <section class="score-intro">
+
+                <div>
+
+                    <span class="intro-label">
+                        INTELLIGENT CANDIDATE ANALYSIS
+                    </span>
+
+                    <h2>
+                        Your AI Hiring Readiness
+                    </h2>
+
+                    <p>
+                        DevRecruit AI evaluates your skills,
+                        assessments, projects, credentials and
+                        profile signals to estimate your current
+                        readiness for relevant opportunities.
+                    </p>
+
+                </div>
+
+
+                <div class="score-status">
+
+                    <span class="status-dot"></span>
+
+                    <span>
+                        AI analysis updated recently
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 SCORE OVERVIEW
+            =================================================== -->
+
+            <section class="score-overview">
+
+
+                <!-- MAIN SCORE -->
+
+                <article class="main-score-card">
+
+
+                    <div class="score-card-top">
+
+                        <div>
+
+                            <span>
+                                OVERALL AI HIRING SCORE
+                            </span>
+
+                            <h3>
+                                Candidate Readiness
+                            </h3>
+
+                        </div>
+
+
+                        <div class="score-confidence">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                            <span>
+                                91% confidence
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="main-score-body">
+
+
+                        <div class="score-circle">
+
+                            <div class="score-circle-inner">
+
+                                <strong>
+                                    91
+                                </strong>
+
+                                <span>
+                                    / 100
+                                </span>
+
+                                <small>
+                                    Excellent
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="score-summary">
+
+                            <div class="score-summary-badge">
+
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                                +7.2 points
+
+                            </div>
+
+
+                            <h3>
+                                Strong hiring potential
+                            </h3>
+
+
+                            <p>
+                                Your current combination of technical
+                                skills, verified evidence and assessment
+                                performance indicates a strong match for
+                                several software engineering roles.
+                            </p>
+
+
+                            <div class="score-summary-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-clock"></i>
+                                    Updated today
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-database"></i>
+                                    8 signals analyzed
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RANK -->
+
+                <article class="ranking-card">
+
+                    <div class="ranking-icon">
+
+                        <i class="fa-solid fa-ranking-star"></i>
+
+                    </div>
+
+
+                    <span class="ranking-label">
+                        CANDIDATE POSITION
+                    </span>
+
+
+                    <strong class="ranking-number">
+                        Top 12%
+                    </strong>
+
+
+                    <p>
+                        Compared with candidates applying
+                        for similar technical roles.
+                    </p>
+
+
+                    <div class="ranking-progress">
+
+                        <span style="width:88%"></span>
+
+                    </div>
+
+
+                    <div class="ranking-footer">
+
+                        <span>
+                            Your position
+                        </span>
+
+                        <strong>
+                            88th percentile
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MATCH -->
+
+                <article class="match-card">
+
+                    <div class="match-icon">
+
+                        <i class="fa-solid fa-bullseye"></i>
+
+                    </div>
+
+
+                    <span class="match-label">
+                        ROLE MATCH POTENTIAL
+                    </span>
+
+
+                    <strong>
+                        86%
+                    </strong>
+
+
+                    <p>
+                        Average compatibility across
+                        recommended job roles.
+                    </p>
+
+
+                    <div class="match-roles">
+
+                        <span>
+                            ML Engineer
+                        </span>
+
+                        <span>
+                            Python Developer
+                        </span>
+
+                        <span>
+                            Data Engineer
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- ==================================================
+                 SCORE FACTORS
+            =================================================== -->
+
+            <section class="factor-card">
+
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span>
+                            AI SCORE EXPLANATION
+                        </span>
+
+                        <h3>
+                            What Drives Your Hiring Score?
+                        </h3>
+
+                    </div>
+
+
+                    <span class="explanation-badge">
+
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        AI Generated
+
+                    </span>
+
+                </div>
+
+
+                <div class="factor-grid">
+
+
+                    <!-- TECHNICAL -->
+
+                    <article class="factor-item">
+
+
+                        <div class="factor-top">
+
+                            <div class="factor-icon blue">
+
+                                <i class="fa-solid fa-code"></i>
+
+                            </div>
+
+
+                            <div class="factor-title">
+
+                                <strong>
+                                    Technical Skills
+                                </strong>
+
+                                <span>
+                                    92 / 100
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="factor-progress">
+
+                            <span style="width:92%"></span>
+
+                        </div>
+
+
+                        <p>
+                            Strong programming, database and
+                            machine learning capabilities.
+                        </p>
+
+                    </article>
+
+
+                    <!-- ASSESSMENTS -->
+
+                    <article class="factor-item">
+
+
+                        <div class="factor-top">
+
+                            <div class="factor-icon purple">
+
+                                <i class="fa-solid fa-clipboard-check"></i>
+
+                            </div>
+
+
+                            <div class="factor-title">
+
+                                <strong>
+                                    Assessments
+                                </strong>
+
+                                <span>
+                                    89 / 100
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="factor-progress">
+
+                            <span style="width:89%"></span>
+
+                        </div>
+
+
+                        <p>
+                            Consistent performance across
+                            technical assessments.
+                        </p>
+
+                    </article>
+
+
+                    <!-- PROJECTS -->
+
+                    <article class="factor-item">
+
+
+                        <div class="factor-top">
+
+                            <div class="factor-icon green">
+
+                                <i class="fa-solid fa-folder-open"></i>
+
+                            </div>
+
+
+                            <div class="factor-title">
+
+                                <strong>
+                                    Project Evidence
+                                </strong>
+
+                                <span>
+                                    86 / 100
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="factor-progress">
+
+                            <span style="width:86%"></span>
+
+                        </div>
+
+
+                        <p>
+                            Projects demonstrate practical
+                            application of your technical skills.
+                        </p>
+
+                    </article>
+
+
+                    <!-- CREDENTIALS -->
+
+                    <article class="factor-item">
+
+
+                        <div class="factor-top">
+
+                            <div class="factor-icon cyan">
+
+                                <i class="fa-solid fa-certificate"></i>
+
+                            </div>
+
+
+                            <div class="factor-title">
+
+                                <strong>
+                                    Verified Credentials
+                                </strong>
+
+                                <span>
+                                    84 / 100
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="factor-progress">
+
+                            <span style="width:84%"></span>
+
+                        </div>
+
+
+                        <p>
+                            Verified credentials increase
+                            trust in your candidate profile.
+                        </p>
+
+                    </article>
+
+
+                    <!-- PROFILE -->
+
+                    <article class="factor-item">
+
+
+                        <div class="factor-top">
+
+                            <div class="factor-icon orange">
+
+                                <i class="fa-solid fa-user-check"></i>
+
+                            </div>
+
+
+                            <div class="factor-title">
+
+                                <strong>
+                                    Profile Quality
+                                </strong>
+
+                                <span>
+                                    81 / 100
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="factor-progress">
+
+                            <span style="width:81%"></span>
+
+                        </div>
+
+
+                        <p>
+                            Resume completeness, portfolio
+                            quality and professional profile.
+                        </p>
+
+                    </article>
+
+
+                    <!-- COMMUNICATION -->
+
+                    <article class="factor-item">
+
+
+                        <div class="factor-top">
+
+                            <div class="factor-icon rose">
+
+                                <i class="fa-solid fa-comments"></i>
+
+                            </div>
+
+
+                            <div class="factor-title">
+
+                                <strong>
+                                    Communication
+                                </strong>
+
+                                <span>
+                                    78 / 100
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="factor-progress">
+
+                            <span style="width:78%"></span>
+
+                        </div>
+
+
+                        <p>
+                            Communication indicators from
+                            assessments and profile activity.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 ROLE MATCHING
+            =================================================== -->
+
+            <section class="role-match-card">
+
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span>
+                            AI ROLE MATCHING
+                        </span>
+
+                        <h3>
+                            Roles You Are Most Ready For
+                        </h3>
+
+                    </div>
+
+
+                    <a
+                        href="../jobs/index.html"
+                        class="view-jobs-button"
+                    >
+
+                        Explore Jobs
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <div class="role-grid">
+
+
+                    <article class="role-item">
+
+
+                        <div class="role-icon purple">
+
+                            <i class="fa-solid fa-brain"></i>
+
+                        </div>
+
+
+                        <div class="role-info">
+
+                            <strong>
+                                Machine Learning Engineer
+                            </strong>
+
+                            <span>
+                                Strong technical compatibility
+                            </span>
+
+
+                            <div class="role-progress">
+
+                                <span style="width:96%"></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="role-score">
+
+                            <strong>
+                                96%
+                            </strong>
+
+                            <span>
+                                Match
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="role-item">
+
+
+                        <div class="role-icon blue">
+
+                            <i class="fa-brands fa-python"></i>
+
+                        </div>
+
+
+                        <div class="role-info">
+
+                            <strong>
+                                Python Developer
+                            </strong>
+
+                            <span>
+                                Excellent programming alignment
+                            </span>
+
+
+                            <div class="role-progress">
+
+                                <span style="width:94%"></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="role-score">
+
+                            <strong>
+                                94%
+                            </strong>
+
+                            <span>
+                                Match
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="role-item">
+
+
+                        <div class="role-icon cyan">
+
+                            <i class="fa-solid fa-database"></i>
+
+                        </div>
+
+
+                        <div class="role-info">
+
+                            <strong>
+                                Data Engineer
+                            </strong>
+
+                            <span>
+                                Strong data skill alignment
+                            </span>
+
+
+                            <div class="role-progress">
+
+                                <span style="width:89%"></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="role-score">
+
+                            <strong>
+                                89%
+                            </strong>
+
+                            <span>
+                                Match
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="role-item">
+
+
+                        <div class="role-icon green">
+
+                            <i class="fa-solid fa-server"></i>
+
+                        </div>
+
+
+                        <div class="role-info">
+
+                            <strong>
+                                Backend Developer
+                            </strong>
+
+                            <span>
+                                Good backend compatibility
+                            </span>
+
+
+                            <div class="role-progress">
+
+                                <span style="width:84%"></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="role-score">
+
+                            <strong>
+                                84%
+                            </strong>
+
+                            <span>
+                                Match
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 IMPROVEMENT PLAN
+            =================================================== -->
+
+            <section class="improvement-card">
+
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span>
+                            AI IMPROVEMENT PLAN
+                        </span>
+
+                        <h3>
+                            Increase Your Hiring Score
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="improvement-grid">
+
+
+                    <article class="improvement-item">
+
+                        <div class="improvement-number">
+                            01
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Strengthen Cloud Skills
+                            </strong>
+
+                            <p>
+                                Complete an AWS architecture
+                                assessment and build a deployment
+                                project.
+                            </p>
+
+                        </div>
+
+                        <span class="potential">
+                            +4 pts
+                        </span>
+
+                    </article>
+
+
+                    <article class="improvement-item">
+
+                        <div class="improvement-number">
+                            02
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Complete NLP Assessment
+                            </strong>
+
+                            <p>
+                                Demonstrate your NLP capability
+                                through an advanced assessment.
+                            </p>
+
+                        </div>
+
+                        <span class="potential">
+                            +3 pts
+                        </span>
+
+                    </article>
+
+
+                    <article class="improvement-item">
+
+                        <div class="improvement-number">
+                            03
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Add Production Project
+                            </strong>
+
+                            <p>
+                                Add a production-scale project
+                                with deployment evidence.
+                            </p>
+
+                        </div>
+
+                        <span class="potential">
+                            +5 pts
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="hiring-score.js"></script>
+
+</body>
+
+</html>

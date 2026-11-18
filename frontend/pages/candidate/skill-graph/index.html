@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Skill Graph | DevRecruit AI
+    </title>
+
+    <link rel="stylesheet"
+          href="../../../../styles/global.css">
+
+    <link rel="stylesheet"
+          href="skill-graph.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+<div class="candidate-portal">
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="candidate-sidebar"
+           id="candidateSidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../dashboard/index.html">
+
+                <span class="brand-icon">
+                    🚀
+                </span>
+
+                <span class="brand-text">
+                    DevRecruit
+                </span>
+
+            </a>
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                aria-label="Close sidebar"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                HV
+            </div>
+
+            <div class="profile-details">
+
+                <strong>
+                    Candidate
+                </strong>
+
+                <span>
+                    Developer
+                </span>
+
+            </div>
+
+            <span class="online-indicator"></span>
+
+        </div>
+
+
+        <nav class="sidebar-navigation">
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    MAIN
+                </span>
+
+                <a href="../dashboard/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-grid-2"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+                <a href="../profile/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <span>
+                        My Profile
+                    </span>
+
+                </a>
+
+                <a href="../resume/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    <span>
+                        Resume & Portfolio
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    AI INTELLIGENCE
+                </span>
+
+                <a href="../skills/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        AI Skill Profile
+                    </span>
+
+                    <span class="nav-badge">
+                        AI
+                    </span>
+
+                </a>
+
+                <a href="../skill-graph/index.html"
+                   class="nav-item active">
+
+                    <i class="fa-solid fa-diagram-project"></i>
+
+                    <span>
+                        Skill Graph
+                    </span>
+
+                </a>
+
+                <a href="../hiring-score/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        AI Hiring Score
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    RECRUITMENT
+                </span>
+
+                <a href="../jobs/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <span>
+                        Jobs
+                    </span>
+
+                </a>
+
+                <a href="../applications/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <span>
+                        Applications
+                    </span>
+
+                    <span class="nav-count">
+                        3
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    ASSESSMENT
+                </span>
+
+                <a href="../assessments/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <span>
+                        Assessments
+                    </span>
+
+                </a>
+
+                <a href="../coding-practice/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        Coding Practice
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    LEARNING
+                </span>
+
+                <a href="../learning/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <span>
+                        Learning
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    VERIFICATION
+                </span>
+
+                <a href="../credentials/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <span>
+                        Credentials
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="../notifications/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span>
+                    Notifications
+                </span>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+            <a href="../settings/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+            <button
+                class="logout-button"
+                id="logoutButton"
+            >
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Sign Out
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay">
+    </div>
+
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <main class="candidate-main">
+
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <button
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+                <div>
+
+                    <span class="page-label">
+                        AI INTELLIGENCE
+                    </span>
+
+                    <h1>
+                        Personalized Skill Graph
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <a
+                    href="../notifications/index.html"
+                    class="header-action"
+                >
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="../profile/index.html"
+                    class="header-user"
+                >
+
+                    <div class="header-avatar">
+                        HV
+                    </div>
+
+                    <div class="header-user-info">
+
+                        <strong>
+                            Candidate
+                        </strong>
+
+                        <span>
+                            Developer
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             CONTENT
+        =================================================== -->
+
+        <div class="skill-graph-content">
+
+
+            <!-- INTRO -->
+
+            <section class="graph-intro">
+
+                <div>
+
+                    <span class="intro-label">
+                        PERSONALIZED KNOWLEDGE MAP
+                    </span>
+
+                    <h2>
+                        Understand How Your Skills Connect
+                    </h2>
+
+                    <p>
+                        Your skill graph maps relationships between
+                        technologies, competencies, assessments,
+                        projects and career paths.
+                    </p>
+
+                </div>
+
+
+                <div class="graph-actions">
+
+                    <button
+                        class="graph-action"
+                        id="resetGraphButton"
+                    >
+
+                        <i class="fa-solid fa-arrows-rotate"></i>
+
+                        Reset View
+
+                    </button>
+
+                    <button
+                        class="graph-action primary"
+                        id="expandGraphButton"
+                    >
+
+                        <i class="fa-solid fa-expand"></i>
+
+                        Expand Graph
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 GRAPH AREA
+            =================================================== -->
+
+            <section class="graph-card">
+
+                <div class="graph-header">
+
+                    <div>
+
+                        <span>
+                            LIVE SKILL RELATIONSHIP MAP
+                        </span>
+
+                        <h3>
+                            Candidate Knowledge Graph
+                        </h3>
+
+                    </div>
+
+
+                    <div class="graph-legend">
+
+                        <span>
+                            <i class="legend-dot core"></i>
+                            Core
+                        </span>
+
+                        <span>
+                            <i class="legend-dot strong"></i>
+                            Strong
+                        </span>
+
+                        <span>
+                            <i class="legend-dot developing"></i>
+                            Developing
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="graph-canvas"
+                    id="skillGraphCanvas"
+                >
+
+                    <!-- CONNECTIONS -->
+
+                    <svg
+                        class="graph-connections"
+                        id="graphConnections"
+                    >
+
+                        <line
+                            id="linePythonML"
+                        />
+
+                        <line
+                            id="linePythonData"
+                        />
+
+                        <line
+                            id="lineMLNLP"
+                        />
+
+                        <line
+                            id="lineMLDL"
+                        />
+
+                        <line
+                            id="lineDataSQL"
+                        />
+
+                        <line
+                            id="lineSQLPostgres"
+                        />
+
+                        <line
+                            id="lineMLCloud"
+                        />
+
+                        <line
+                            id="lineCloudDocker"
+                        />
+
+                    </svg>
+
+
+                    <!-- CORE -->
+
+                    <button
+                        class="skill-node core-node"
+                        data-skill="Python"
+                        style="left:50%;top:48%;"
+                    >
+
+                        <span class="node-icon">
+                            <i class="fa-brands fa-python"></i>
+                        </span>
+
+                        <strong>
+                            Python
+                        </strong>
+
+                        <small>
+                            94%
+                        </small>
+
+                    </button>
+
+
+                    <!-- MACHINE LEARNING -->
+
+                    <button
+                        class="skill-node strong-node"
+                        data-skill="Machine Learning"
+                        style="left:29%;top:25%;"
+                    >
+
+                        <span class="node-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </span>
+
+                        <strong>
+                            Machine Learning
+                        </strong>
+
+                        <small>
+                            88%
+                        </small>
+
+                    </button>
+
+
+                    <!-- DATA SCIENCE -->
+
+                    <button
+                        class="skill-node strong-node"
+                        data-skill="Data Science"
+                        style="left:73%;top:25%;"
+                    >
+
+                        <span class="node-icon">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </span>
+
+                        <strong>
+                            Data Science
+                        </strong>
+
+                        <small>
+                            84%
+                        </small>
+
+                    </button>
+
+
+                    <!-- NLP -->
+
+                    <button
+                        class="skill-node developing-node"
+                        data-skill="NLP"
+                        style="left:16%;top:48%;"
+                    >
+
+                        <span class="node-icon">
+                            <i class="fa-solid fa-language"></i>
+                        </span>
+
+                        <strong>
+                            NLP
+                        </strong>
+
+                        <small>
+                            76%
+                        </small>
+
+                    </button>
+
+
+                    <!-- DEEP LEARNING -->
+
+                    <button
+                        class="skill-node strong-node"
+                        data-skill="Deep Learning"
+                        style="left:37%;top:72%;"
+                    >
+
+                        <span class="node-icon">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </span>
+
+                        <strong>
+                            Deep Learning
+                        </strong>
+
+                        <small>
+                            82%
+                        </small>
+
+                    </button>
+
+
+                    <!-- SQL -->
+
+                    <button
+                        class="skill-node strong-node"
+                        data-skill="SQL"
+                        style="left:79%;top:51%;"
+                    >
+
+                        <span class="node-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </span>
+
+                        <strong>
+                            SQL
+                        </strong>
+
+                        <small>
+                            91%
+                        </small>
+
+                    </button>
+
+
+                    <!-- POSTGRESQL -->
+
+                    <button
+                        class="skill-node developing-node"
+                        data-skill="PostgreSQL"
+                        style="left:88%;top:72%;"
+                    >
+
+                        <span class="node-icon">
+                            <i class="fa-solid fa-server"></i>
+                        </span>
+
+                        <strong>
+                            PostgreSQL
+                        </strong>
+
+                        <small>
+                            82%
+                        </small>
+
+                    </button>
+
+
+                    <!-- CLOUD -->
+
+                    <button
+                        class="skill-node developing-node"
+                        data-skill="Cloud"
+                        style="left:62%;top:75%;"
+                    >
+
+                        <span class="node-icon">
+                            <i class="fa-solid fa-cloud"></i>
+                        </span>
+
+                        <strong>
+                            Cloud
+                        </strong>
+
+                        <small>
+                            76%
+                        </small>
+
+                    </button>
+
+
+                    <!-- DOCKER -->
+
+                    <button
+                        class="skill-node developing-node"
+                        data-skill="Docker"
+                        style="left:73%;top:90%;"
+                    >
+
+                        <span class="node-icon">
+                            <i class="fa-brands fa-docker"></i>
+                        </span>
+
+                        <strong>
+                            Docker
+                        </strong>
+
+                        <small>
+                            72%
+                        </small>
+
+                    </button>
+
+
+                    <!-- CENTER LABEL -->
+
+                    <div class="graph-center-label">
+
+                        <span>
+                            AI
+                        </span>
+
+                        <strong>
+                            Skill Intelligence
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GRAPH FOOTER -->
+
+                <div class="graph-footer">
+
+                    <div class="graph-stat">
+
+                        <strong>
+                            24
+                        </strong>
+
+                        <span>
+                            Skills mapped
+                        </span>
+
+                    </div>
+
+                    <div class="graph-stat">
+
+                        <strong>
+                            31
+                        </strong>
+
+                        <span>
+                            Skill relationships
+                        </span>
+
+                    </div>
+
+                    <div class="graph-stat">
+
+                        <strong>
+                            89%
+                        </strong>
+
+                        <span>
+                            Graph confidence
+                        </span>
+
+                    </div>
+
+                    <div class="graph-stat">
+
+                        <strong>
+                            6
+                        </strong>
+
+                        <span>
+                            Career paths identified
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 SELECTED SKILL
+            =================================================== -->
+
+            <section
+                class="selected-skill-card"
+                id="selectedSkillCard"
+            >
+
+                <div class="selected-skill-placeholder">
+
+                    <div class="selected-icon">
+                        <i class="fa-solid fa-hand-pointer"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Select a skill node
+                        </strong>
+
+                        <span>
+                            Click any skill in the graph to
+                            view its relationships and AI insights.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 AI RECOMMENDATIONS
+            =================================================== -->
+
+            <section class="recommendation-card">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span>
+                            AI CAREER RECOMMENDATIONS
+                        </span>
+
+                        <h3>
+                            What Your Skill Graph Suggests
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="recommendation-grid">
+
+
+                    <article class="recommendation-item">
+
+                        <div class="recommendation-icon purple">
+
+                            <i class="fa-solid fa-arrow-up"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Strengthen NLP
+                            </strong>
+
+                            <p>
+                                Improving NLP could unlock
+                                AI Engineer and NLP Engineer
+                                career paths.
+                            </p>
+
+                        </div>
+
+                        <span class="recommendation-match">
+                            +14%
+                        </span>
+
+                    </article>
+
+
+                    <article class="recommendation-item">
+
+                        <div class="recommendation-icon blue">
+
+                            <i class="fa-solid fa-cloud"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Develop Cloud Skills
+                            </strong>
+
+                            <p>
+                                AWS and cloud architecture are
+                                the largest gaps in your current
+                                technical profile.
+                            </p>
+
+                        </div>
+
+                        <span class="recommendation-match">
+                            +18%
+                        </span>
+
+                    </article>
+
+
+                    <article class="recommendation-item">
+
+                        <div class="recommendation-icon green">
+
+                            <i class="fa-solid fa-route"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Recommended Path
+                            </strong>
+
+                            <p>
+                                Your strongest combination points
+                                toward Machine Learning Engineering.
+                            </p>
+
+                        </div>
+
+                        <span class="recommendation-match">
+                            96%
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="skill-graph.js"></script>
+
+</body>
+
+</html>

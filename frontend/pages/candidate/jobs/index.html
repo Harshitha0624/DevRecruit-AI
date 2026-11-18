@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Jobs | DevRecruit AI
+    </title>
+
+    <link rel="stylesheet"
+          href="../../../../styles/global.css">
+
+    <link rel="stylesheet"
+          href="jobs.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+<div class="candidate-portal">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="candidate-sidebar"
+           id="candidateSidebar">
+
+
+        <div class="sidebar-brand">
+
+            <a href="../dashboard/index.html">
+
+                <span class="brand-icon">
+                    🚀
+                </span>
+
+                <span class="brand-text">
+                    DevRecruit
+                </span>
+
+            </a>
+
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                aria-label="Close sidebar"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                HV
+            </div>
+
+            <div class="profile-details">
+
+                <strong>
+                    Candidate
+                </strong>
+
+                <span>
+                    Developer
+                </span>
+
+            </div>
+
+            <span class="online-indicator"></span>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-navigation">
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    MAIN
+                </span>
+
+
+                <a href="../dashboard/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-grid-2"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a href="../profile/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <span>
+                        My Profile
+                    </span>
+
+                </a>
+
+
+                <a href="../resume/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    <span>
+                        Resume & Portfolio
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    AI INTELLIGENCE
+                </span>
+
+
+                <a href="../skills/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        AI Skill Profile
+                    </span>
+
+                    <span class="nav-badge">
+                        AI
+                    </span>
+
+                </a>
+
+
+                <a href="../skill-graph/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-diagram-project"></i>
+
+                    <span>
+                        Skill Graph
+                    </span>
+
+                </a>
+
+
+                <a href="../hiring-score/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        AI Hiring Score
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    RECRUITMENT
+                </span>
+
+
+                <a href="../jobs/index.html"
+                   class="nav-item active">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <span>
+                        Jobs
+                    </span>
+
+                </a>
+                <a href="../jobs/external_jobs.html"
+   class="nav-item">
+
+    <i class="fa-solid fa-globe"></i>
+
+    <span>
+        External Jobs
+    </span>
+
+</a>
+
+
+                <a href="../applications/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <span>
+                        Applications
+                    </span>
+
+                    <span class="nav-count">
+                        3
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    ASSESSMENT
+                </span>
+
+
+                <a href="../assessments/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <span>
+                        Assessments
+                    </span>
+
+                </a>
+
+
+                <a href="../coding-practice/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        Coding Practice
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    LEARNING
+                </span>
+
+
+                <a href="../learning/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <span>
+                        Learning
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    VERIFICATION
+                </span>
+
+
+                <a href="../credentials/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <span>
+                        Credentials
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+
+            <a href="../notifications/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span>
+                    Notifications
+                </span>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+
+            <a href="../settings/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <button
+                class="logout-button"
+                id="logoutButton"
+            >
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Sign Out
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay">
+    </div>
+
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <main class="candidate-main">
+
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+
+            <div class="header-left">
+
+                <button
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div>
+
+                    <span class="page-label">
+                        RECRUITMENT
+                    </span>
+
+                    <h1>
+                        Discover Opportunities
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <a
+                    href="../notifications/index.html"
+                    class="header-action"
+                >
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="../profile/index.html"
+                    class="header-user"
+                >
+
+                    <div class="header-avatar">
+                        HV
+                    </div>
+
+                    <div class="header-user-info">
+
+                        <strong>
+                            Candidate
+                        </strong>
+
+                        <span>
+                            Developer
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             JOB CONTENT
+        =================================================== -->
+
+        <div class="jobs-content">
+
+
+            <!-- HERO -->
+
+            <section class="jobs-hero">
+
+                <div class="jobs-hero-content">
+
+                    <span class="hero-label">
+                        AI-POWERED JOB DISCOVERY
+                    </span>
+
+                    <h2>
+                        Find roles that match
+                        <span>your potential.</span>
+                    </h2>
+
+                    <p>
+                        DevRecruit AI analyzes your skills,
+                        experience and hiring score to surface
+                        opportunities where you have the strongest
+                        chance of success.
+                    </p>
+
+
+                    <div class="job-search">
+
+                        <div class="search-field">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <input
+                                type="text"
+                                id="jobSearchInput"
+                                placeholder="Search jobs, skills or companies..."
+                                autocomplete="off"
+                            >
+
+                        </div>
+
+
+                        <div class="location-field">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <input
+                                type="text"
+                                id="locationInput"
+                                placeholder="Location"
+                                autocomplete="off"
+                            >
+
+                        </div>
+
+
+                        <button
+                            class="search-button"
+                            id="searchButton"
+                        >
+
+                            Search Jobs
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-ai-card">
+
+                    <div class="ai-card-icon">
+
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                    </div>
+
+                    <span>
+                        YOUR AI MATCH
+                    </span>
+
+                    <strong>
+                        86%
+                    </strong>
+
+                    <p>
+                        Average compatibility
+                        with recommended roles.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 FILTER BAR
+            =================================================== -->
+
+            <section class="job-filter-bar">
+
+
+                <div class="filter-left">
+
+                    <button
+                        class="filter-button active"
+                        data-filter="all"
+                    >
+                        All Jobs
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-filter="remote"
+                    >
+                        Remote
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-filter="hybrid"
+                    >
+                        Hybrid
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-filter="onsite"
+                    >
+                        On-site
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-filter="internship"
+                    >
+                        Internship
+                    </button>
+
+                </div>
+
+
+                <div class="sort-control">
+
+                    <label for="sortJobs">
+                        Sort:
+                    </label>
+
+                    <select id="sortJobs">
+
+                        <option value="match">
+                            Best Match
+                        </option>
+
+                        <option value="recent">
+                            Most Recent
+                        </option>
+
+                        <option value="salary">
+                            Highest Salary
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 MAIN JOB AREA
+            =================================================== -->
+
+            <section class="jobs-layout">
+
+
+                <!-- JOB LIST -->
+
+                <div class="jobs-list-area">
+
+
+                    <div class="jobs-list-header">
+
+                        <div>
+
+                            <span>
+                                AI RECOMMENDED
+                            </span>
+
+                            <h3 id="jobResultTitle">
+                                Jobs matched to your profile
+                            </h3>
+
+                        </div>
+
+                        <span
+                            class="job-count"
+                            id="jobCount"
+                        >
+                            6 opportunities
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="job-list"
+                        id="jobList"
+                    >
+
+
+                        <!-- JOB 1 -->
+
+                        <article
+                            class="job-card"
+                            data-type="remote"
+                            data-title="Machine Learning Engineer"
+                            data-skills="python machine learning tensorflow"
+                            data-location="remote"
+                            data-salary="120000"
+                            data-match="96"
+                        >
+
+                            <div class="company-logo purple">
+                                ML
+                            </div>
+
+
+                            <div class="job-main">
+
+                                <div class="job-title-row">
+
+                                    <div>
+
+                                        <span class="job-company">
+                                            Nova Intelligence
+                                        </span>
+
+                                        <h4>
+                                            Machine Learning Engineer
+                                        </h4>
+
+                                    </div>
+
+                                    <span class="match-badge">
+                                        96% Match
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-meta">
+
+                                    <span>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Remote
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        Full-time
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i>
+                                        2 days ago
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-tags">
+
+                                    <span>
+                                        Python
+                                    </span>
+
+                                    <span>
+                                        Machine Learning
+                                    </span>
+
+                                    <span>
+                                        TensorFlow
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-bottom">
+
+                                    <strong>
+                                        ₹12–18 LPA
+                                    </strong>
+
+                                    <span>
+                                        Experience: 1–3 years
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                class="save-job"
+                                aria-label="Save job"
+                            >
+
+                                <i class="fa-regular fa-bookmark"></i>
+
+                            </button>
+
+                        </article>
+
+
+                        <!-- JOB 2 -->
+
+                        <article
+                            class="job-card"
+                            data-type="hybrid"
+                            data-title="Python Backend Developer"
+                            data-skills="python flask django sql"
+                            data-location="bengaluru"
+                            data-salary="110000"
+                            data-match="94"
+                        >
+
+                            <div class="company-logo blue">
+                                TC
+                            </div>
+
+
+                            <div class="job-main">
+
+                                <div class="job-title-row">
+
+                                    <div>
+
+                                        <span class="job-company">
+                                            TechCore Systems
+                                        </span>
+
+                                        <h4>
+                                            Python Backend Developer
+                                        </h4>
+
+                                    </div>
+
+                                    <span class="match-badge">
+                                        94% Match
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-meta">
+
+                                    <span>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Bengaluru
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-building"></i>
+                                        Hybrid
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i>
+                                        1 day ago
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-tags">
+
+                                    <span>
+                                        Python
+                                    </span>
+
+                                    <span>
+                                        Flask
+                                    </span>
+
+                                    <span>
+                                        SQL
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-bottom">
+
+                                    <strong>
+                                        ₹10–16 LPA
+                                    </strong>
+
+                                    <span>
+                                        Experience: 0–2 years
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                class="save-job"
+                                aria-label="Save job"
+                            >
+
+                                <i class="fa-regular fa-bookmark"></i>
+
+                            </button>
+
+                        </article>
+
+
+                        <!-- JOB 3 -->
+
+                        <article
+                            class="job-card"
+                            data-type="remote"
+                            data-title="Data Engineer"
+                            data-skills="python sql postgresql data engineering"
+                            data-location="remote"
+                            data-salary="115000"
+                            data-match="89"
+                        >
+
+                            <div class="company-logo cyan">
+                                DS
+                            </div>
+
+
+                            <div class="job-main">
+
+                                <div class="job-title-row">
+
+                                    <div>
+
+                                        <span class="job-company">
+                                            DataSphere
+                                        </span>
+
+                                        <h4>
+                                            Data Engineer
+                                        </h4>
+
+                                    </div>
+
+                                    <span class="match-badge">
+                                        89% Match
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-meta">
+
+                                    <span>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Remote
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        Full-time
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i>
+                                        3 days ago
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-tags">
+
+                                    <span>
+                                        Python
+                                    </span>
+
+                                    <span>
+                                        SQL
+                                    </span>
+
+                                    <span>
+                                        PostgreSQL
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-bottom">
+
+                                    <strong>
+                                        ₹11–17 LPA
+                                    </strong>
+
+                                    <span>
+                                        Experience: 1–3 years
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                class="save-job"
+                                aria-label="Save job"
+                            >
+
+                                <i class="fa-regular fa-bookmark"></i>
+
+                            </button>
+
+                        </article>
+
+
+                        <!-- JOB 4 -->
+
+                        <article
+                            class="job-card"
+                            data-type="onsite"
+                            data-title="AI Engineer"
+                            data-skills="python artificial intelligence nlp deep learning"
+                            data-location="hyderabad"
+                            data-salary="130000"
+                            data-match="87"
+                        >
+
+                            <div class="company-logo green">
+                                AI
+                            </div>
+
+
+                            <div class="job-main">
+
+                                <div class="job-title-row">
+
+                                    <div>
+
+                                        <span class="job-company">
+                                            NeuralWorks
+                                        </span>
+
+                                        <h4>
+                                            AI Engineer
+                                        </h4>
+
+                                    </div>
+
+                                    <span class="match-badge">
+                                        87% Match
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-meta">
+
+                                    <span>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Hyderabad
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-building"></i>
+                                        On-site
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i>
+                                        4 days ago
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-tags">
+
+                                    <span>
+                                        Python
+                                    </span>
+
+                                    <span>
+                                        NLP
+                                    </span>
+
+                                    <span>
+                                        Deep Learning
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-bottom">
+
+                                    <strong>
+                                        ₹13–20 LPA
+                                    </strong>
+
+                                    <span>
+                                        Experience: 1–4 years
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                class="save-job"
+                                aria-label="Save job"
+                            >
+
+                                <i class="fa-regular fa-bookmark"></i>
+
+                            </button>
+
+                        </article>
+
+
+                        <!-- JOB 5 -->
+
+                        <article
+                            class="job-card"
+                            data-type="hybrid"
+                            data-title="Backend Engineer"
+                            data-skills="python api docker postgresql"
+                            data-location="bengaluru"
+                            data-salary="105000"
+                            data-match="84"
+                        >
+
+                            <div class="company-logo orange">
+                                CX
+                            </div>
+
+
+                            <div class="job-main">
+
+                                <div class="job-title-row">
+
+                                    <div>
+
+                                        <span class="job-company">
+                                            CloudX Labs
+                                        </span>
+
+                                        <h4>
+                                            Backend Engineer
+                                        </h4>
+
+                                    </div>
+
+                                    <span class="match-badge">
+                                        84% Match
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-meta">
+
+                                    <span>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Bengaluru
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-building"></i>
+                                        Hybrid
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i>
+                                        5 days ago
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-tags">
+
+                                    <span>
+                                        Python
+                                    </span>
+
+                                    <span>
+                                        Docker
+                                    </span>
+
+                                    <span>
+                                        PostgreSQL
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-bottom">
+
+                                    <strong>
+                                        ₹9–15 LPA
+                                    </strong>
+
+                                    <span>
+                                        Experience: 0–3 years
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                class="save-job"
+                                aria-label="Save job"
+                            >
+
+                                <i class="fa-regular fa-bookmark"></i>
+
+                            </button>
+
+                        </article>
+
+
+                        <!-- JOB 6 -->
+
+                        <article
+                            class="job-card"
+                            data-type="internship"
+                            data-title="AI Developer Intern"
+                            data-skills="python machine learning ai"
+                            data-location="pune"
+                            data-salary="35000"
+                            data-match="82"
+                        >
+
+                            <div class="company-logo rose">
+                                QL
+                            </div>
+
+
+                            <div class="job-main">
+
+                                <div class="job-title-row">
+
+                                    <div>
+
+                                        <span class="job-company">
+                                            QuantumLogic
+                                        </span>
+
+                                        <h4>
+                                            AI Developer Intern
+                                        </h4>
+
+                                    </div>
+
+                                    <span class="match-badge">
+                                        82% Match
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-meta">
+
+                                    <span>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Pune
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                        Internship
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i>
+                                        1 week ago
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-tags">
+
+                                    <span>
+                                        Python
+                                    </span>
+
+                                    <span>
+                                        AI
+                                    </span>
+
+                                    <span>
+                                        Machine Learning
+                                    </span>
+
+                                </div>
+
+
+                                <div class="job-bottom">
+
+                                    <strong>
+                                        ₹25–35K / month
+                                    </strong>
+
+                                    <span>
+                                        Experience: Student
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                class="save-job"
+                                aria-label="Save job"
+                            >
+
+                                <i class="fa-regular fa-bookmark"></i>
+
+                            </button>
+
+                        </article>
+
+
+                    </div>
+
+
+                    <!-- NO RESULTS -->
+
+                    <div
+                        class="no-results"
+                        id="noResults"
+                    >
+
+                        <div class="no-results-icon">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </div>
+
+                        <h3>
+                            No matching jobs
+                        </h3>
+
+                        <p>
+                            Try changing your search or filters.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================================
+                     RIGHT SIDEBAR
+                =================================================== -->
+
+                <aside class="jobs-side-panel">
+
+
+                    <!-- AI INSIGHT -->
+
+                    <div class="ai-insight-card">
+
+                        <div class="side-card-heading">
+
+                            <div class="side-icon purple">
+
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    AI INSIGHT
+                                </span>
+
+                                <strong>
+                                    Your job strategy
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Your strongest matches are currently
+                            concentrated around Python, Machine
+                            Learning and Data Engineering roles.
+                        </p>
+
+
+                        <a
+                            href="../hiring-score/index.html"
+                            class="side-card-link"
+                        >
+
+                            Improve your match score
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- SAVED JOBS -->
+
+                    <div class="side-panel-card">
+
+                        <div class="side-card-title">
+
+                            <strong>
+                                Saved Jobs
+                            </strong>
+
+                            <span id="savedCount">
+                                0
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            class="saved-preview"
+                            id="savedPreview"
+                        >
+
+                            <i class="fa-regular fa-bookmark"></i>
+
+                            <span>
+                                Save jobs to see them here.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- QUICK FILTERS -->
+
+                    <div class="side-panel-card">
+
+                        <div class="side-card-title">
+
+                            <strong>
+                                Quick Filters
+                            </strong>
+
+                        </div>
+
+
+                        <div class="quick-filters">
+
+                            <button data-quick-filter="remote">
+                                Remote Jobs
+                            </button>
+
+                            <button data-quick-filter="internship">
+                                Internships
+                            </button>
+
+                            <button data-quick-filter="hybrid">
+                                Hybrid Roles
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </aside>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="jobs.js"></script>
+
+</body>
+
+</html>

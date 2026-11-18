@@ -1,0 +1,206 @@
+/* ===========================================
+   Enterprise Navbar
+=========================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(18px);
+
+    transition:.4s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.navbar-container{
+
+    height:85px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.logo-box{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:15px;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #7C3AED
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.logo-text h2{
+
+    font-size:20px;
+
+}
+
+.logo-text span{
+
+    font-size:12px;
+
+    color:#64748B;
+
+}
+
+/* Menu */
+
+.nav-menu{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.nav-menu a{
+
+    font-weight:600;
+
+    color:#334155;
+
+    transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+    color:#2563EB;
+
+}
+
+/* Right */
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.theme-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:#EEF2FF;
+
+    font-size:18px;
+
+}
+
+/* Hamburger */
+
+.hamburger{
+
+    display:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .nav-menu{
+
+        display:none;
+
+    }
+
+    .nav-right{
+
+        display:none;
+
+    }
+
+    .hamburger{
+
+        display:block;
+
+    }
+
+}
+/* ==========================================================
+ACTIVE LINK
+========================================================== */
+
+.nav-links a.active{
+
+    color:#2563EB;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+DARK MODE BUTTON
+========================================================== */
+
+.theme-btn.active{
+
+    background:#2563EB;
+
+    color:white;
+
+}

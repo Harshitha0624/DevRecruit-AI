@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="DevRecruit recruiter notification center">
+
+    <title>Notifications | DevRecruit</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="notifications.css">
+
+</head>
+
+<body>
+
+<div class="notifications-page">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="notifications-sidebar"
+           id="notificationsSidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../dashboard/index.html">
+
+                <span class="brand-icon">
+                    🚀
+                </span>
+
+                <span>
+                    DevRecruit
+                </span>
+
+            </a>
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                type="button"
+                aria-label="Close navigation">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                HR
+            </div>
+
+            <div class="profile-info">
+
+                <strong>
+                    Recruiter
+                </strong>
+
+                <span>
+                    Talent Acquisition
+                </span>
+
+            </div>
+
+            <span class="online-dot"></span>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    OVERVIEW
+                </span>
+
+                <a href="../dashboard/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+                <a href="../analytics/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        Analytics
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    TALENT MANAGEMENT
+                </span>
+
+                <a href="../candidates/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <span>
+                        Candidates
+                    </span>
+
+                    <b>
+                        248
+                    </b>
+
+                </a>
+
+                <a href="../ai-ranking/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        AI Candidate Ranking
+                    </span>
+
+                    <em>
+                        AI
+                    </em>
+
+                </a>
+
+                <a href="../shortlisted/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>
+                        Shortlisted
+                    </span>
+
+                    <b>
+                        18
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    RECRUITMENT
+                </span>
+
+                <a href="../jobs/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <span>
+                        Job Postings
+                    </span>
+
+                    <b>
+                        12
+                    </b>
+
+                </a>
+
+                <a href="../pipeline/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-filter"></i>
+
+                    <span>
+                        Hiring Pipeline
+                    </span>
+
+                </a>
+
+                <a href="../interviews/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <span>
+                        Interviews
+                    </span>
+
+                    <b>
+                        5
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    EVALUATION
+                </span>
+
+                <a href="../assessments/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <span>
+                        Assessments
+                    </span>
+
+                    <b>
+                        7
+                    </b>
+
+                </a>
+
+                <a href="../coding-tests/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        Coding Tests
+                    </span>
+
+                </a>
+
+                <a href="../credentials/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <span>
+                        Credential Verification
+                    </span>
+
+                    <b class="alert-count">
+                        3
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    COMMUNICATION
+                </span>
+
+                <a href="../messages/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <b>
+                        4
+                    </b>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR FOOTER -->
+
+        <div class="sidebar-footer">
+
+            <a href="index.html"
+               class="nav-item active">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span>
+                    Notifications
+                </span>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+            <a href="../settings/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+            <button
+                class="logout-button"
+                id="logoutButton"
+                type="button">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Sign Out
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay">
+    </div>
+
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <main class="notifications-main">
+
+
+        <!-- HEADER -->
+
+        <header class="notifications-header">
+
+            <div class="header-left">
+
+                <button
+                    class="mobile-menu"
+                    id="mobileMenuButton"
+                    type="button"
+                    aria-label="Open navigation">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+                <div>
+
+                    <span class="page-label">
+                        RECRUITER CENTER
+                    </span>
+
+                    <h1>
+                        Notifications
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="header-button"
+                    id="refreshNotifications"
+                    type="button"
+                    title="Refresh">
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                </button>
+
+
+                <a href="../messages/index.html"
+                   class="header-button"
+                   title="Messages">
+
+                    <i class="fa-regular fa-comment-dots"></i>
+
+                </a>
+
+
+                <a href="index.html"
+                   class="header-button notification-button"
+                   aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span id="headerNotificationCount">
+                        7
+                    </span>
+
+                </a>
+
+
+                <a href="../settings/index.html"
+                   class="header-profile">
+
+                    <div class="header-avatar">
+                        HR
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Recruiter
+                        </strong>
+
+                        <small>
+                            Talent Acquisition
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             CONTENT
+        =================================================== -->
+
+        <div class="notifications-content">
+
+
+            <!-- INTRO -->
+
+            <section class="page-intro">
+
+                <div>
+
+                    <span>
+                        ACTIVITY CENTER
+                    </span>
+
+                    <h2>
+                        Stay Updated
+                    </h2>
+
+                    <p>
+                        Track candidate activity, interview updates,
+                        assessments, credentials and important
+                        recruitment events.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="primary-action"
+                    id="markAllReadButton"
+                    type="button">
+
+                    <i class="fa-solid fa-check-double"></i>
+
+                    Mark All as Read
+
+                </button>
+
+            </section>
+
+
+            <!-- ==================================================
+                 SUMMARY
+            =================================================== -->
+
+            <section class="notification-summary">
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon blue">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            TOTAL
+                        </span>
+
+                        <strong id="totalCount">
+                            12
+                        </strong>
+
+                        <small>
+                            Recent notifications
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon red">
+
+                        <i class="fa-solid fa-circle-exclamation"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            UNREAD
+                        </span>
+
+                        <strong id="unreadCount">
+                            7
+                        </strong>
+
+                        <small>
+                            Need your attention
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon green">
+
+                        <i class="fa-solid fa-calendar-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            TODAY
+                        </span>
+
+                        <strong>
+                            5
+                        </strong>
+
+                        <small>
+                            New activities
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon purple">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            AI ALERTS
+                        </span>
+
+                        <strong>
+                            3
+                        </strong>
+
+                        <small>
+                            Intelligent updates
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 TOOLBAR
+            =================================================== -->
+
+            <section class="notification-toolbar">
+
+
+                <div class="notification-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="notificationSearch"
+                        placeholder="Search notifications..."
+                        autocomplete="off">
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="notificationType">
+                        TYPE
+                    </label>
+
+                    <select id="notificationType">
+
+                        <option value="all">
+                            All Notifications
+                        </option>
+
+                        <option value="candidate">
+                            Candidates
+                        </option>
+
+                        <option value="interview">
+                            Interviews
+                        </option>
+
+                        <option value="assessment">
+                            Assessments
+                        </option>
+
+                        <option value="credential">
+                            Credentials
+                        </option>
+
+                        <option value="ai">
+                            AI Updates
+                        </option>
+
+                        <option value="message">
+                            Messages
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="notificationStatus">
+                        STATUS
+                    </label>
+
+                    <select id="notificationStatus">
+
+                        <option value="all">
+                            All
+                        </option>
+
+                        <option value="unread">
+                            Unread
+                        </option>
+
+                        <option value="read">
+                            Read
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="clear-filter-button"
+                    id="clearNotificationFilters"
+                    type="button">
+
+                    <i class="fa-solid fa-filter-circle-xmark"></i>
+
+                    Clear
+
+                </button>
+
+            </section>
+
+
+            <!-- ==================================================
+                 NOTIFICATION AREA
+            =================================================== -->
+
+            <section class="notifications-card">
+
+
+                <div class="notifications-card-header">
+
+                    <div>
+
+                        <span>
+                            ACTIVITY FEED
+                        </span>
+
+                        <h3>
+                            Recent Notifications
+                        </h3>
+
+                    </div>
+
+
+                    <div class="notification-tabs">
+
+                        <button
+                            class="notification-tab active"
+                            data-filter="all"
+                            type="button">
+
+                            All
+
+                        </button>
+
+                        <button
+                            class="notification-tab"
+                            data-filter="unread"
+                            type="button">
+
+                            Unread
+
+                            <b>
+                                7
+                            </b>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NOTIFICATION LIST -->
+
+                <div class="notification-list"
+                     id="notificationList">
+
+
+                    <!-- 1 -->
+
+                    <article
+                        class="notification-item unread"
+                        data-type="candidate"
+                        data-status="unread"
+                        data-search="Priya Nair applied Cloud Engineer candidate application">
+
+                        <div class="notification-icon blue">
+
+                            <i class="fa-solid fa-user-plus"></i>
+
+                        </div>
+
+
+                        <div class="notification-content">
+
+                            <div class="notification-top">
+
+                                <strong>
+                                    New candidate application
+                                </strong>
+
+                                <time>
+                                    12 min ago
+                                </time>
+
+                            </div>
+
+                            <p>
+                                <b>Priya Nair</b> has applied for
+                                the <b>Cloud Engineer</b> position.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    Cloud Engineer
+                                </span>
+
+                                <span>
+                                    Candidate
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="mark-read-button"
+                                title="Mark as read"
+                                type="button">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </button>
+
+                            <button
+                                class="delete-notification"
+                                title="Delete"
+                                type="button">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 2 -->
+
+                    <article
+                        class="notification-item unread"
+                        data-type="assessment"
+                        data-status="unread"
+                        data-search="Aarav Sharma completed technical assessment">
+
+                        <div class="notification-icon green">
+
+                            <i class="fa-solid fa-clipboard-check"></i>
+
+                        </div>
+
+
+                        <div class="notification-content">
+
+                            <div class="notification-top">
+
+                                <strong>
+                                    Assessment completed
+                                </strong>
+
+                                <time>
+                                    28 min ago
+                                </time>
+
+                            </div>
+
+                            <p>
+                                <b>Aarav Sharma</b> completed the
+                                Backend Engineering Assessment with a
+                                score of <b>92/100</b>.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                    Score: 92%
+                                </span>
+
+                                <span>
+                                    Assessment
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="mark-read-button"
+                                title="Mark as read"
+                                type="button">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </button>
+
+                            <button
+                                class="delete-notification"
+                                title="Delete"
+                                type="button">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 3 -->
+
+                    <article
+                        class="notification-item unread"
+                        data-type="interview"
+                        data-status="unread"
+                        data-search="Interview tomorrow Sneha Reddy frontend developer">
+
+                        <div class="notification-icon orange">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                        </div>
+
+
+                        <div class="notification-content">
+
+                            <div class="notification-top">
+
+                                <strong>
+                                    Interview reminder
+                                </strong>
+
+                                <time>
+                                    1 hr ago
+                                </time>
+
+                            </div>
+
+                            <p>
+                                Technical interview with
+                                <b>Sneha Reddy</b> is scheduled for
+                                <b>tomorrow at 11:00 AM</b>.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    Tomorrow · 11:00 AM
+                                </span>
+
+                                <span>
+                                    Interview
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="mark-read-button"
+                                title="Mark as read"
+                                type="button">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </button>
+
+                            <button
+                                class="delete-notification"
+                                title="Delete"
+                                type="button">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 4 -->
+
+                    <article
+                        class="notification-item unread"
+                        data-type="credential"
+                        data-status="unread"
+                        data-search="Credential verification Rohan Kumar blockchain">
+
+                        <div class="notification-icon purple">
+
+                            <i class="fa-solid fa-certificate"></i>
+
+                        </div>
+
+
+                        <div class="notification-content">
+
+                            <div class="notification-top">
+
+                                <strong>
+                                    Credential requires review
+                                </strong>
+
+                                <time>
+                                    2 hrs ago
+                                </time>
+
+                            </div>
+
+                            <p>
+                                A credential submitted by
+                                <b>Rohan Kumar</b> requires manual
+                                verification.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-link"></i>
+                                    Blockchain verification
+                                </span>
+
+                                <span>
+                                    Credential
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="mark-read-button"
+                                title="Mark as read"
+                                type="button">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </button>
+
+                            <button
+                                class="delete-notification"
+                                title="Delete"
+                                type="button">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 5 -->
+
+                    <article
+                        class="notification-item unread"
+                        data-type="ai"
+                        data-status="unread"
+                        data-search="AI ranking Priya Nair candidate match score">
+
+                        <div class="notification-icon ai">
+
+                            <i class="fa-solid fa-brain"></i>
+
+                        </div>
+
+
+                        <div class="notification-content">
+
+                            <div class="notification-top">
+
+                                <strong>
+                                    AI ranking updated
+                                </strong>
+
+                                <time>
+                                    3 hrs ago
+                                </time>
+
+                            </div>
+
+                            <p>
+                                <b>Priya Nair</b> moved to
+                                <b>#1</b> in the Cloud Engineer
+                                candidate ranking with a <b>94%</b>
+                                skill match.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                    Rank improved
+                                </span>
+
+                                <span>
+                                    AI Update
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="mark-read-button"
+                                title="Mark as read"
+                                type="button">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </button>
+
+                            <button
+                                class="delete-notification"
+                                title="Delete"
+                                type="button">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 6 -->
+
+                    <article
+                        class="notification-item unread"
+                        data-type="message"
+                        data-status="unread"
+                        data-search="Message Vikram Singh interview details">
+
+                        <div class="notification-icon cyan">
+
+                            <i class="fa-solid fa-comment-dots"></i>
+
+                        </div>
+
+
+                        <div class="notification-content">
+
+                            <div class="notification-top">
+
+                                <strong>
+                                    New candidate message
+                                </strong>
+
+                                <time>
+                                    4 hrs ago
+                                </time>
+
+                            </div>
+
+                            <p>
+                                <b>Vikram Singh</b> sent you a new
+                                message asking about interview details.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-envelope"></i>
+                                    New message
+                                </span>
+
+                                <span>
+                                    Communication
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="mark-read-button"
+                                title="Mark as read"
+                                type="button">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </button>
+
+                            <button
+                                class="delete-notification"
+                                title="Delete"
+                                type="button">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 7 -->
+
+                    <article
+                        class="notification-item unread"
+                        data-type="candidate"
+                        data-status="unread"
+                        data-search="Ananya Mehta shortlisted candidate">
+
+                        <div class="notification-icon pink">
+
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+
+                        <div class="notification-content">
+
+                            <div class="notification-top">
+
+                                <strong>
+                                    Candidate shortlisted
+                                </strong>
+
+                                <time>
+                                    5 hrs ago
+                                </time>
+
+                            </div>
+
+                            <p>
+                                <b>Ananya Mehta</b> has been added to
+                                the shortlist for the Full Stack
+                                Developer position.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    Shortlisted
+                                </span>
+
+                                <span>
+                                    Candidate
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="mark-read-button"
+                                title="Mark as read"
+                                type="button">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </button>
+
+                            <button
+                                class="delete-notification"
+                                title="Delete"
+                                type="button">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 8 READ -->
+
+                    <article
+                        class="notification-item"
+                        data-type="interview"
+                        data-status="read"
+                        data-search="Interview completed Priya Nair">
+
+                        <div class="notification-icon green">
+
+                            <i class="fa-solid fa-user-check"></i>
+
+                        </div>
+
+
+                        <div class="notification-content">
+
+                            <div class="notification-top">
+
+                                <strong>
+                                    Interview completed
+                                </strong>
+
+                                <time>
+                                    Yesterday
+                                </time>
+
+                            </div>
+
+                            <p>
+                                Interview with <b>Priya Nair</b>
+                                has been completed successfully.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
+                                    Completed
+                                </span>
+
+                                <span>
+                                    Interview
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="mark-read-button"
+                                title="Mark as unread"
+                                type="button">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </button>
+
+                            <button
+                                class="delete-notification"
+                                title="Delete"
+                                type="button">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 9 READ -->
+
+                    <article
+                        class="notification-item"
+                        data-type="ai"
+                        data-status="read"
+                        data-search="AI skill analysis updated Backend Developer">
+
+                        <div class="notification-icon ai">
+
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        </div>
+
+
+                        <div class="notification-content">
+
+                            <div class="notification-top">
+
+                                <strong>
+                                    AI skill analysis completed
+                                </strong>
+
+                                <time>
+                                    Yesterday
+                                </time>
+
+                            </div>
+
+                            <p>
+                                AI analysis for the Backend Developer
+                                role has been refreshed with new
+                                candidate skill data.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-brain"></i>
+                                    AI Engine
+                                </span>
+
+                                <span>
+                                    AI Update
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="mark-read-button"
+                                title="Mark as unread"
+                                type="button">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </button>
+
+                            <button
+                                class="delete-notification"
+                                title="Delete"
+                                type="button">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 10 READ -->
+
+                    <article
+                        class="notification-item"
+                        data-type="credential"
+                        data-status="read"
+                        data-search="Credential verified Aarav Sharma blockchain">
+
+                        <div class="notification-icon blue">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                        </div>
+
+
+                        <div class="notification-content">
+
+                            <div class="notification-top">
+
+                                <strong>
+                                    Credential verified
+                                </strong>
+
+                                <time>
+                                    2 days ago
+                                </time>
+
+                            </div>
+
+                            <p>
+                                The blockchain credential submitted by
+                                <b>Aarav Sharma</b> has been successfully
+                                verified.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-link"></i>
+                                    Verified on blockchain
+                                </span>
+
+                                <span>
+                                    Credential
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="mark-read-button"
+                                title="Mark as unread"
+                                type="button">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </button>
+
+                            <button
+                                class="delete-notification"
+                                title="Delete"
+                                type="button">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 11 READ -->
+
+                    <article
+                        class="notification-item"
+                        data-type="assessment"
+                        data-status="read"
+                        data-search="Assessment submitted Rohan Kumar">
+
+                        <div class="notification-icon orange">
+
+                            <i class="fa-solid fa-file-circle-check"></i>
+
+                        </div>
+
+
+                        <div class="notification-content">
+
+                            <div class="notification-top">
+
+                                <strong>
+                                    Assessment submitted
+                                </strong>
+
+                                <time>
+                                    2 days ago
+                                </time>
+
+                            </div>
+
+                            <p>
+                                <b>Rohan Kumar</b> submitted the
+                                Senior Software Engineer assessment.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-file"></i>
+                                    Submission received
+                                </span>
+
+                                <span>
+                                    Assessment
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="mark-read-button"
+                                title="Mark as unread"
+                                type="button">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </button>
+
+                            <button
+                                class="delete-notification"
+                                title="Delete"
+                                type="button">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 12 READ -->
+
+                    <article
+                        class="notification-item"
+                        data-type="candidate"
+                        data-status="read"
+                        data-search="New candidate profile updated Vikram Singh">
+
+                        <div class="notification-icon cyan">
+
+                            <i class="fa-solid fa-user-pen"></i>
+
+                        </div>
+
+
+                        <div class="notification-content">
+
+                            <div class="notification-top">
+
+                                <strong>
+                                    Candidate profile updated
+                                </strong>
+
+                                <time>
+                                    3 days ago
+                                </time>
+
+                            </div>
+
+                            <p>
+                                <b>Vikram Singh</b> updated his skills,
+                                experience and professional profile.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-user"></i>
+                                    Profile updated
+                                </span>
+
+                                <span>
+                                    Candidate
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="mark-read-button"
+                                title="Mark as unread"
+                                type="button">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </button>
+
+                            <button
+                                class="delete-notification"
+                                title="Delete"
+                                type="button">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- EMPTY STATE -->
+
+                <div class="empty-state"
+                     id="emptyNotificationState">
+
+                    <div class="empty-icon">
+
+                        <i class="fa-regular fa-bell-slash"></i>
+
+                    </div>
+
+                    <h3>
+                        No notifications found
+                    </h3>
+
+                    <p>
+                        Try changing your search or filters.
+                    </p>
+
+                </div>
+
+
+                <!-- FOOTER -->
+
+                <div class="notifications-footer">
+
+                    <span id="notificationResultCount">
+                        Showing 12 notifications
+                    </span>
+
+                    <div class="pagination">
+
+                        <button
+                            type="button"
+                            disabled>
+
+                            <i class="fa-solid fa-chevron-left"></i>
+
+                        </button>
+
+                        <button
+                            class="active"
+                            type="button">
+
+                            1
+
+                        </button>
+
+                        <button type="button">
+                            2
+                        </button>
+
+                        <button type="button">
+                            3
+                        </button>
+
+                        <button type="button">
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- ==================================================
+     TOAST
+================================================== -->
+
+<div class="notifications-toast"
+     id="notificationsToast">
+
+    <div class="toast-icon">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+    </div>
+
+    <div class="toast-content">
+
+        <strong id="toastTitle">
+            Success
+        </strong>
+
+        <span id="toastMessage">
+            Action completed successfully.
+        </span>
+
+    </div>
+
+    <button
+        id="toastClose"
+        type="button"
+        aria-label="Close notification">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+</div>
+
+
+<script src="notifications.js"></script>
+
+</body>
+
+</html>

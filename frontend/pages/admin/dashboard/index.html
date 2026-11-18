@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | DevRecruit AI</title>
+
+  <link rel="stylesheet" href="../../../../styles/global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <style>
+    :root {
+      --navy:#101a35;
+      --blue:#4263eb;
+      --muted:#8490a8;
+      --line:#e8ecf4;
+    }
+
+    * {
+      box-sizing:border-box;
+    }
+
+    body {
+      margin:0;
+      font-family:Poppins,sans-serif;
+      background:#f5f7fc;
+      color:#192440;
+    }
+
+    .layout {
+      display:flex;
+      min-height:100vh;
+    }
+
+    aside {
+      width:250px;
+      background:var(--navy);
+      color:#fff;
+      padding:26px 16px;
+      flex-shrink:0;
+    }
+
+    .brand {
+      font-size:20px;
+      font-weight:800;
+      padding:0 12px 30px;
+    }
+
+    .brand i {
+      color:#8095ff;
+      margin-right:8px;
+    }
+
+    .nav-label {
+      color:#8492b8;
+      font-size:11px;
+      letter-spacing:1.5px;
+      padding:12px;
+    }
+
+    .nav {
+      display:flex;
+      align-items:center;
+      gap:13px;
+      width:100%;
+      border:0;
+      border-radius:9px;
+      padding:13px 12px;
+      margin:3px 0;
+      color:#c4cce0;
+      background:transparent;
+      text-align:left;
+      font:500 13px Poppins;
+      cursor:pointer;
+    }
+
+    .nav i {
+      width:18px;
+    }
+
+    .nav.active,
+    .nav:hover {
+      background:#29385e;
+      color:#fff;
+    }
+
+    .sidebar-bottom {
+      margin-top:40px;
+      border-top:1px solid #34405c;
+      padding-top:18px;
+    }
+
+    main {
+      flex:1;
+      min-width:0;
+      padding:28px 32px;
+    }
+
+    .topbar {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+      margin-bottom:28px;
+    }
+
+    h1 {
+      font-size:25px;
+      margin:0;
+    }
+
+    .subtitle {
+      color:var(--muted);
+      font-size:13px;
+      margin-top:5px;
+    }
+
+    .admin-chip {
+      display:flex;
+      align-items:center;
+      gap:10px;
+      background:white;
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:10px 14px;
+      font-size:12px;
+    }
+
+    .avatar {
+      background:#e6ebff;
+      color:#3454d1;
+      border-radius:50%;
+      padding:10px;
+    }
+
+    .notice {
+      display:none;
+      padding:12px 16px;
+      background:#fff4e5;
+      border:1px solid #ffd69b;
+      border-radius:10px;
+      margin-bottom:20px;
+      color:#80510b;
+      font-size:13px;
+    }
+
+    .stats {
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:17px;
+      margin-bottom:25px;
+    }
+
+    .card {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:15px;
+      padding:20px;
+      box-shadow:0 4px 18px #25345c05;
+    }
+
+    .stat-top {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    .stat-icon {
+      width:39px;
+      height:39px;
+      display:grid;
+      place-items:center;
+      background:#edf1ff;
+      color:var(--blue);
+      border-radius:11px;
+      font-size:16px;
+    }
+
+    .stat-value {
+      font-size:29px;
+      font-weight:700;
+      margin-top:13px;
+    }
+
+    .stat-note {
+      color:var(--muted);
+      font-size:11px;
+      margin-top:4px;
+    }
+
+    .content-grid {
+      display:grid;
+      grid-template-columns:1.5fr 1fr;
+      gap:20px;
+    }
+
+    .section-head {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:18px;
+    }
+
+    h2 {
+      font-size:16px;
+      margin:0;
+    }
+
+    .tag {
+      font-size:11px;
+      color:#4263eb;
+      background:#eef1ff;
+      padding:6px 9px;
+      border-radius:7px;
+    }
+
+    .quick-grid {
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+    }
+
+    .quick {
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:16px;
+      text-align:left;
+      background:white;
+      cursor:pointer;
+      font:inherit;
+      color:inherit;
+    }
+
+    .quick:hover {
+      border-color:#9baaff;
+      background:#fafbff;
+    }
+
+    .quick i {
+      color:var(--blue);
+      font-size:18px;
+      margin-bottom:12px;
+    }
+
+    .quick strong {
+      display:block;
+      font-size:12px;
+    }
+
+    .quick span {
+      display:block;
+      color:var(--muted);
+      font-size:11px;
+      margin-top:4px;
+    }
+
+    .status-row {
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:13px 0;
+      border-bottom:1px solid #f0f2f7;
+      font-size:12px;
+    }
+
+    .status-row:last-child {
+      border-bottom:0;
+    }
+
+    .dot {
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:#18a875;
+    }
+
+    .status-row small {
+      color:var(--muted);
+      margin-left:auto;
+    }
+
+    .panel {
+      display:none;
+      margin-top:20px;
+    }
+
+    .panel.visible {
+      display:block;
+    }
+
+    .panel p {
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .data-table {
+      width:100%;
+      border-collapse:collapse;
+      font-size:12px;
+    }
+
+    .data-table th,
+    .data-table td {
+      text-align:left;
+      padding:13px 10px;
+      border-bottom:1px solid var(--line);
+    }
+
+    .data-table th {
+      color:var(--muted);
+      font-weight:500;
+    }
+
+    .btn {
+      background:var(--blue);
+      color:white;
+      border:0;
+      border-radius:8px;
+      padding:9px 13px;
+      cursor:pointer;
+      font:500 12px Poppins;
+    }
+
+    .btn.secondary {
+      background:#eef1ff;
+      color:#3454d1;
+    }
+
+    .error {
+      color:#b42318 !important;
+    }
+
+    @media(max-width:1050px) {
+      .stats {
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+
+      .content-grid {
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media(max-width:650px) {
+      .layout {
+        display:block;
+      }
+
+      aside {
+        width:100%;
+        padding:16px;
+      }
+
+      .brand {
+        padding-bottom:12px;
+      }
+
+      .nav-label,
+      .sidebar-bottom {
+        display:none;
+      }
+
+      aside nav {
+        display:flex;
+        overflow-x:auto;
+      }
+
+      .nav {
+        min-width:max-content;
+        width:auto;
+      }
+
+      main {
+        padding:20px 14px;
+      }
+
+      .topbar {
+        align-items:flex-start;
+      }
+
+      h1 {
+        font-size:21px;
+      }
+
+      .admin-chip {
+        font-size:10px;
+      }
+
+      .stats {
+        gap:10px;
+      }
+
+      .card {
+        padding:14px;
+      }
+
+      .stat-value {
+        font-size:24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="layout">
+
+  <aside>
+    <div class="brand">
+      <i class="fa-solid fa-cubes"></i>DevRecruit AI
+    </div>
+
+    <div class="nav-label">ADMINISTRATION</div>
+
+    <nav>
+      <button class="nav active" data-panel="overview">
+        <i class="fa-solid fa-chart-pie"></i> Overview
+      </button>
+
+      <button class="nav" data-panel="users">
+        <i class="fa-solid fa-users"></i> Users
+      </button>
+
+      <button class="nav" data-panel="organizations">
+        <i class="fa-solid fa-building"></i> Organizations
+      </button>
+
+      <button class="nav" data-panel="jobs">
+        <i class="fa-solid fa-briefcase"></i> Jobs & Applications
+      </button>
+
+      <button class="nav" data-panel="resources">
+        <i class="fa-solid fa-book-open"></i> Learning Resources
+      </button>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <button class="nav" id="logoutButton">
+        <i class="fa-solid fa-right-from-bracket"></i> Sign Out
+      </button>
+    </div>
+  </aside>
+
+  <main>
+
+    <header class="topbar">
+      <div>
+        <h1 id="pageTitle">Admin Overview</h1>
+        <div class="subtitle">
+          Monitor and manage the DevRecruit AI platform.
+        </div>
+      </div>
+
+      <div class="admin-chip">
+        <span class="avatar">
+          <i class="fa-solid fa-user-shield"></i>
+        </span>
+
+        <span>
+          <strong id="adminName">Administrator</strong><br>
+          <span style="color:#8490a8">Platform Admin</span>
+        </span>
+      </div>
+    </header>
+
+    <div class="notice" id="notice"></div>
+
+    <section id="overview">
+
+      <div class="stats">
+
+        <div class="card">
+          <div class="stat-top">
+            Total Users
+            <span class="stat-icon">
+              <i class="fa-solid fa-users"></i>
+            </span>
+          </div>
+          <div class="stat-value" id="usersCount">—</div>
+          <div class="stat-note">Registered platform users</div>
+        </div>
+
+        <div class="card">
+          <div class="stat-top">
+            Organizations
+            <span class="stat-icon">
+              <i class="fa-solid fa-building"></i>
+            </span>
+          </div>
+          <div class="stat-value" id="orgCount">—</div>
+          <div class="stat-note">Registered organizations</div>
+        </div>
+
+        <div class="card">
+          <div class="stat-top">
+            Job Listings
+            <span class="stat-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </span>
+          </div>
+          <div class="stat-value" id="jobsCount">—</div>
+          <div class="stat-note">Platform job listings</div>
+        </div>
+
+        <div class="card">
+          <div class="stat-top">
+            Applications
+            <span class="stat-icon">
+              <i class="fa-solid fa-file-lines"></i>
+            </span>
+          </div>
+          <div class="stat-value" id="appsCount">—</div>
+          <div class="stat-note">Candidate applications</div>
+        </div>
+
+      </div>
+
+      <div class="content-grid">
+
+        <div class="card">
+          <div class="section-head">
+            <h2>Platform Management</h2>
+            <span class="tag">Quick Access</span>
+          </div>
+
+          <div class="quick-grid">
+
+            <button class="quick" data-panel="users">
+              <i class="fa-solid fa-users"></i>
+              <strong>Manage Users</strong>
+              <span>Review platform accounts</span>
+            </button>
+
+            <button class="quick" data-panel="organizations">
+              <i class="fa-solid fa-building"></i>
+              <strong>Organizations</strong>
+              <span>Review registered companies</span>
+            </button>
+
+            <button class="quick" data-panel="jobs">
+              <i class="fa-solid fa-briefcase"></i>
+              <strong>Jobs & Applications</strong>
+              <span>Inspect recruitment activity</span>
+            </button>
+
+            <button class="quick" data-panel="resources">
+              <i class="fa-solid fa-book-open"></i>
+              <strong>Learning Resources</strong>
+              <span>Manage learning content</span>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="section-head">
+            <h2>System Connections</h2>
+            <span class="tag">Live Check</span>
+          </div>
+
+          <div class="status-row">
+            <span class="dot" id="apiDot"></span>
+            FastAPI Backend
+            <small id="apiStatus">Checking…</small>
+          </div>
+
+          <div class="status-row">
+            <span class="dot" id="dbDot"></span>
+            Platform API
+            <small id="dbStatus">Checking…</small>
+          </div>
+
+          <p style="font-size:11px;line-height:1.7">
+            Counts and management data will appear when the dashboard API endpoints return successfully.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="panel card" id="dataPanel">
+
+      <div class="section-head">
+        <h2 id="panelTitle">Platform Data</h2>
+        <button class="btn secondary" id="refreshButton">Refresh</button>
+      </div>
+
+      <p id="panelMessage">Choose a section to load its data.</p>
+
+      <div style="overflow-x:auto">
+        <table class="data-table">
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<script>
+(() => {
+
+  "use strict";
+
+  const API = "http://127.0.0.1:8000";
+
+  // ---------------------------------------
+  // AUTHENTICATION
+  // ---------------------------------------
+
+  const token = sessionStorage.getItem("devrecruit_admin_token");
+  const savedUser = sessionStorage.getItem("devrecruit_admin_user");
+
+  const notice = document.getElementById("notice");
+
+  if (!token || !savedUser) {
+    window.location.replace("../login/index.html");
+    return;
+  }
+
+  let user;
+
+  try {
+    user = JSON.parse(savedUser);
+  } catch (error) {
+    sessionStorage.removeItem("devrecruit_admin_token");
+    sessionStorage.removeItem("devrecruit_admin_user");
+    window.location.replace("../login/index.html");
+    return;
+  }
+
+  if (String(user.role || "").toLowerCase() !== "admin") {
+    sessionStorage.removeItem("devrecruit_admin_token");
+    sessionStorage.removeItem("devrecruit_admin_user");
+    window.location.replace("../login/index.html");
+    return;
+  }
+
+  document.getElementById("adminName").textContent =
+    user.full_name || user.name || user.email || "Administrator";
+
+
+  // ---------------------------------------
+  // ADMIN API CONFIGURATION
+  // ---------------------------------------
+
+  const sections = {
+
+    users: {
+      title: "Users",
+      path: "/api/admin/users",
+      columns: [
+        "id",
+        "email",
+        "full_name",
+        "role",
+        "is_active"
+      ]
+    },
+
+    organizations: {
+      title: "Organizations",
+      path: "/api/admin/companies",
+      columns: [
+        "id",
+        "company_name",
+        "industry",
+        "location",
+        "website"
+      ]
+    },
+
+    jobs: {
+      title: "Jobs",
+      path: "/api/admin/jobs",
+      columns: [
+        "id",
+        "title",
+        "company_id",
+        "location",
+        "status"
+      ]
+    },
+
+    applications: {
+      title: "Applications",
+      path: "/api/admin/applications",
+      columns: [
+        "id",
+        "candidate_id",
+        "job_id",
+        "status",
+        "ats_score"
+      ]
+    },
+
+    resources: {
+      title: "Learning Resources",
+      path: "/api/admin/learning-materials",
+      columns: [
+        "id",
+        "title",
+        "category",
+        "skill",
+        "platform",
+        "resource_type",
+        "level"
+      ]
+    }
+
+  };
+
+  let currentSection = "overview";
+
+
+  // ---------------------------------------
+  // NOTICE MESSAGE
+  // ---------------------------------------
+
+  function showNotice(message, error = false) {
+
+    notice.textContent = message;
+    notice.style.display = "block";
+
+    notice.style.background = error ? "#fff0f0" : "#fff4e5";
+    notice.style.borderColor = error ? "#ffcaca" : "#ffd69b";
+    notice.style.color = error ? "#a51d1d" : "#80510b";
+
+  }
+
+
+  // ---------------------------------------
+  // API REQUEST
+  // ---------------------------------------
+
+  async function apiGet(path) {
+
+    const response = await fetch(API + path, {
+      method: "GET",
+      headers: {
+        "Authorization": "Bearer " + token,
+        "Accept": "application/json"
+      }
+    });
+
+    if (response.status === 401 || response.status === 403) {
+      throw new Error(
+        "Your session is not authorized for this admin endpoint. Check the admin role and backend permissions."
+      );
+    }
+
+    if (!response.ok) {
+      throw new Error(
+        "API request failed (" + response.status + "): " + path
+      );
+    }
+
+    return await response.json();
+
+  }
+
+
+  // ---------------------------------------
+  // EXTRACT LIST FROM API RESPONSE
+  // ---------------------------------------
+
+  function listFrom(data) {
+
+    if (Array.isArray(data)) {
+      return data;
+    }
+
+    const keys = [
+      "items",
+      "results",
+      "data",
+      "users",
+      "organizations",
+      "companies",
+      "jobs",
+      "applications",
+      "resources",
+      "learning_materials"
+    ];
+
+    for (const key of keys) {
+
+      if (Array.isArray(data?.[key])) {
+        return data[key];
+      }
+
+    }
+
+    return null;
+
+  }
+
+
+  // ---------------------------------------
+  // DASHBOARD COUNT DISPLAY
+  // ---------------------------------------
+
+  function setCount(id, value) {
+
+    const element = document.getElementById(id);
+
+    if (!element) {
+      return;
+    }
+
+    element.textContent =
+      typeof value === "number" || typeof value === "string"
+        ? value
+        : "—";
+
+  }
+
+
+  // ---------------------------------------
+  // LOAD ADMIN OVERVIEW
+  // ---------------------------------------
+
+  async function loadOverview() {
+
+    // Check FastAPI connection
+    try {
+
+      const health = await fetch(API + "/health");
+
+      if (!health.ok) {
+        throw new Error("Backend unavailable");
+      }
+
+      document.getElementById("apiStatus").textContent = "Connected";
+      document.getElementById("apiDot").style.background = "#18a875";
+
+    } catch (error) {
+
+      document.getElementById("apiStatus").textContent = "Unavailable";
+      document.getElementById("apiDot").style.background = "#d92d20";
+
+    }
+
+    // Load dashboard statistics
+    try {
+
+      const data = await apiGet("/api/admin/dashboard");
+
+      document.getElementById("dbStatus").textContent = "Connected";
+      document.getElementById("dbDot").style.background = "#18a875";
+
+      // Backend returns nested objects.
+      const source = data.stats || data;
+
+      setCount("usersCount", source.users?.total);
+      setCount("orgCount", source.companies?.total);
+      setCount("jobsCount", source.jobs?.total);
+      setCount("appsCount", source.applications?.total);
+
+      notice.style.display = "none";
+
+    } catch (error) {
+
+      document.getElementById("dbStatus").textContent = "Check API";
+      document.getElementById("dbDot").style.background = "#d97706";
+
+      showNotice(
+        "Dashboard statistics could not be loaded: " + error.message,
+        true
+      );
+
+    }
+
+  }
+
+
+  // ---------------------------------------
+  // RENDER TABLE
+  // ---------------------------------------
+
+  function renderTable(items, columns) {
+
+    const head = document.getElementById("tableHead");
+    const body = document.getElementById("tableBody");
+
+    head.innerHTML =
+      "<tr>" +
+      columns.map(column =>
+        "<th>" + escapeHtml(column.replaceAll("_", " ")) + "</th>"
+      ).join("") +
+      "</tr>";
+
+    body.innerHTML = "";
+
+    if (!items.length) {
+
+      body.innerHTML =
+        `<tr><td colspan="${columns.length}">No records found.</td></tr>`;
+
+      return;
+    }
+
+    items.forEach(item => {
+
+      const tr = document.createElement("tr");
+
+      columns.forEach(column => {
+
+        const td = document.createElement("td");
+        const value = item?.[column];
+
+        td.textContent =
+          value === null || value === undefined
+            ? "—"
+            : (
+                typeof value === "object"
+                  ? JSON.stringify(value)
+                  : String(value)
+              );
+
+        tr.appendChild(td);
+
+      });
+
+      body.appendChild(tr);
+
+    });
+
+  }
+
+
+  // ---------------------------------------
+  // HTML ESCAPING
+  // ---------------------------------------
+
+  function escapeHtml(value) {
+
+    return String(value).replace(/[&<>"']/g, character => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    }[character]));
+
+  }
+
+
+  // ---------------------------------------
+  // OPEN ADMIN SECTIONS
+  // ---------------------------------------
+
+  async function openSection(name) {
+
+    if (name === "overview") {
+
+      currentSection = "overview";
+
+      document.getElementById("overview").style.display = "";
+      document.getElementById("dataPanel").classList.remove("visible");
+      document.getElementById("pageTitle").textContent = "Admin Overview";
+
+      await loadOverview();
+
+      return;
+    }
+
+    const config = sections[name];
+
+    if (!config) {
+      return;
+    }
+
+    currentSection = name;
+
+    document.getElementById("overview").style.display = "none";
+    document.getElementById("dataPanel").classList.add("visible");
+
+    document.getElementById("pageTitle").textContent = config.title;
+    document.getElementById("panelTitle").textContent = config.title;
+
+    document.getElementById("panelMessage").textContent = "Loading data…";
+    document.getElementById("tableHead").innerHTML = "";
+    document.getElementById("tableBody").innerHTML = "";
+
+    try {
+
+      const data = await apiGet(config.path);
+      const items = listFrom(data);
+
+      if (!items) {
+        throw new Error("The endpoint returned an unexpected response format.");
+      }
+
+      renderTable(items, config.columns);
+
+      document.getElementById("panelMessage").textContent =
+        `${items.length} record(s) loaded.`;
+
+      notice.style.display = "none";
+
+    } catch (error) {
+
+      document.getElementById("panelMessage").textContent = error.message;
+
+      showNotice(error.message, true);
+
+    }
+
+  }
+
+
+  // ---------------------------------------
+  // SIDEBAR AND QUICK ACCESS BUTTONS
+  // ---------------------------------------
+
+  document.querySelectorAll("[data-panel]").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+      const section = button.dataset.panel;
+
+      document.querySelectorAll(".nav").forEach(nav => {
+
+        nav.classList.toggle(
+          "active",
+          nav.dataset.panel === section
+        );
+
+      });
+
+      openSection(section);
+
+    });
+
+  });
+
+
+  // ---------------------------------------
+  // REFRESH BUTTON
+  // ---------------------------------------
+
+  document.getElementById("refreshButton").addEventListener("click", () => {
+
+    if (currentSection === "overview") {
+      loadOverview();
+    } else {
+      openSection(currentSection);
+    }
+
+  });
+
+
+  // ---------------------------------------
+  // LOGOUT
+  // ---------------------------------------
+
+  document.getElementById("logoutButton").addEventListener("click", () => {
+
+    sessionStorage.removeItem("devrecruit_admin_token");
+    sessionStorage.removeItem("devrecruit_admin_user");
+
+    window.location.replace("../login/index.html");
+
+  });
+
+
+  // ---------------------------------------
+  // INITIALIZE DASHBOARD
+  // ---------------------------------------
+
+  loadOverview();
+
+})();
+</script>
+
+</body>
+</html>

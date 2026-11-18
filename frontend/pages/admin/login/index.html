@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Admin Login | DevRecruit AI
+    </title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet"
+          href="../../../../styles/global.css">
+
+    <!-- Admin Login CSS -->
+    <link rel="stylesheet"
+          href="login.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================================================
+         ADMIN LOGIN
+    ================================================= -->
+
+    <main class="admin-login-page">
+
+
+        <!-- Background -->
+
+        <div class="admin-background">
+
+            <div class="admin-blob admin-blob-one"></div>
+
+            <div class="admin-blob admin-blob-two"></div>
+
+            <div class="admin-blob admin-blob-three"></div>
+
+            <div class="admin-grid"></div>
+
+        </div>
+
+
+        <!-- Main Container -->
+
+        <div class="admin-container">
+
+
+            <!-- Brand -->
+
+            <a href="../../../landing/index.html"
+               class="admin-brand">
+
+                <span class="admin-brand-icon">
+                    🚀
+                </span>
+
+                <span>
+                    DevRecruit AI
+                </span>
+
+            </a>
+
+
+            <!-- Security Banner -->
+
+            <div class="admin-security-banner">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <div>
+
+                    <strong>
+                        Restricted Administrator Access
+                    </strong>
+
+                    <span>
+                        Authorized personnel only
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Login Card -->
+
+            <div class="admin-login-card">
+
+
+                <!-- Header -->
+
+                <div class="admin-header">
+
+                    <div class="admin-icon">
+
+                        <i class="fa-solid fa-user-shield"></i>
+
+                    </div>
+
+                    <span class="admin-label">
+                        ADMIN CONTROL CENTER
+                    </span>
+
+                    <h1>
+                        Administrator Login
+                    </h1>
+
+                    <p>
+                        Securely access platform management,
+                        monitoring and system controls.
+                    </p>
+
+                </div>
+
+
+                <!-- Form -->
+
+                <form
+                    id="adminLoginForm"
+                    class="admin-login-form"
+                >
+
+
+                    <!-- Admin Email -->
+
+                    <div class="admin-form-group">
+
+                        <label for="adminEmail">
+
+                            Administrator Email
+
+                        </label>
+
+                        <div class="admin-input-wrapper">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="adminEmail"
+                                name="email"
+                                placeholder="Enter administrator email"
+                                autocomplete="username"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="admin-form-group">
+
+                        <div class="admin-password-label">
+
+                            <label for="adminPassword">
+
+                                Password
+
+                            </label>
+
+                            <a href="#"
+                               id="adminForgotPassword">
+
+                                Forgot Password?
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="admin-input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="adminPassword"
+                                name="password"
+                                placeholder="Enter administrator password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="admin-password-toggle"
+                                id="adminPasswordToggle"
+                                aria-label="Show password"
+                            >
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Security Code -->
+
+                    <div class="admin-form-group">
+
+                        <label for="securityCode">
+
+                            Security Code
+
+                        </label>
+
+                        <div class="admin-input-wrapper">
+
+                            <i class="fa-solid fa-key"></i>
+
+                            <input
+                                type="password"
+                                id="securityCode"
+                                name="securityCode"
+                                placeholder="Enter security code"
+                                autocomplete="off"
+                                required
+                            >
+
+                        </div>
+
+                        <small class="security-hint">
+
+                            Additional verification required for
+                            administrator access.
+
+                        </small>
+
+                    </div>
+
+
+                    <!-- Remember -->
+
+                    <div class="admin-login-options">
+
+                        <label class="admin-remember">
+
+                            <input
+                                type="checkbox"
+                                id="adminRemember"
+                            >
+
+                            <span>
+                                Trust this device
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Login Button -->
+
+                    <button
+                        type="submit"
+                        class="admin-login-button"
+                    >
+
+                        <span>
+                            Secure Sign In
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <!-- Message -->
+
+                    <p
+                        id="adminLoginMessage"
+                        class="admin-login-message"
+                    ></p>
+
+                </form>
+
+
+                <!-- Security Information -->
+
+                <div class="admin-security-info">
+
+                    <div class="security-item">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <span>
+                            Encrypted authentication
+                        </span>
+
+                    </div>
+
+                    <div class="security-item">
+
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+
+                        <span>
+                            Activity is monitored
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Other Role -->
+
+                <div class="admin-other-role">
+
+                    <span>
+                        Need a different portal?
+                    </span>
+
+                    <a href="../../auth/role-selection/index.html">
+                        Choose another role
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Security -->
+
+            <div class="admin-footer-security">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                DevRecruit AI Platform Security
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

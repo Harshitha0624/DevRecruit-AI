@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Profile | DevRecruit AI</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0b1220;color:#e5e7eb;font:15px Arial,sans-serif}
+header{padding:20px 6%;background:#111b2e;border-bottom:1px solid #26344b;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+a{color:#93c5fd;text-decoration:none}.wrap{max-width:900px;margin:35px auto;padding:0 18px}
+.card{background:#111b2e;border:1px solid #26344b;border-radius:14px;padding:26px}
+h1{margin-top:0}p{color:#aab7ca}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{display:block;margin:14px 0 7px;color:#cbd5e1}input,textarea{width:100%;padding:12px;background:#0b1220;color:white;border:1px solid #35445e;border-radius:8px;font:inherit}
+textarea{min-height:100px;resize:vertical}.wide{grid-column:1/-1}
+button{padding:12px 18px;border:0;border-radius:8px;background:#2563eb;color:white;font-weight:bold;cursor:pointer;margin-top:20px}
+button:disabled{opacity:.6;cursor:wait}#status{margin-top:16px;white-space:pre-wrap}.muted{font-size:13px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}.card{padding:18px}}
+</style>
+</head>
+<body>
+<header>
+<strong>DevRecruit AI · Candidate Profile</strong>
+<nav><a href="../dashboard/index.html">← Back to Dashboard</a></nav>
+</header>
+<main class="wrap">
+<div class="card">
+<h1>My Profile</h1>
+<p>Manage your professional details, skills, education and links.</p>
+<p id="account" class="muted"></p>
+<form id="profileForm">
+<div class="grid">
+<div class="wide"><label for="headline">Professional headline</label><input id="headline" maxlength="255" placeholder="e.g. Computer Science Student | Python Developer"></div>
+<div class="wide"><label for="bio">About me</label><textarea id="bio" placeholder="Tell recruiters about yourself"></textarea></div>
+<div class="wide"><label for="skills">Skills (separate with commas)</label><input id="skills" placeholder="Python, JavaScript, SQL"></div>
+<div><label for="experience">Experience (years)</label><input id="experience" type="number" min="0" step="1" placeholder="0"></div>
+<div><label for="education">Education</label><input id="education" placeholder="Degree and university"></div>
+<div><label for="github">GitHub URL</label><input id="github" type="url" maxlength="500" placeholder="https://github.com/..."></div>
+<div><label for="linkedin">LinkedIn URL</label><input id="linkedin" type="url" maxlength="500" placeholder="https://linkedin.com/in/..."></div>
+<div class="wide"><label for="resume">Resume URL</label><input id="resume" type="url" maxlength="500" placeholder="Resume link, if available"></div>
+</div>
+<button id="save" type="submit">Save Profile</button>
+<p id="status" role="status"></p>
+</form>
+</div>
+</main>
+<script>
+(() => {
+const API = "http://127.0.0.1:8000/api/candidate/profile";
+const token = sessionStorage.getItem("devrecruit_candidate_token") || sessionStorage.getItem("access_token");
+const status = document.getElementById("status");
+const save = document.getElementById("save");
+let profileExists = false;
+
+function message(text, error=false) {
+  status.textContent = text;
+  status.style.color = error ? "#fca5a5" : "#86efac";
+}
+function setValue(id, value) {
+  document.getElementById(id).value = value ?? "";
+}
+function fill(data) {
+  setValue("headline", data.headline);
+  setValue("bio", data.bio);
+  setValue("skills", Array.isArray(data.skills) ? data.skills.join(", ") : "");
+  setValue("experience", data.experience_years);
+  setValue("education", data.education);
+  setValue("github", data.github_url);
+  setValue("linkedin", data.linkedin_url);
+  setValue("resume", data.resume_url);
+}
+function payload() {
+  const exp = document.getElementById("experience").value;
+  return {
+    headline: document.getElementById("headline").value.trim() || null,
+    bio: document.getElementById("bio").value.trim() || null,
+    skills: document.getElementById("skills").value.split(",").map(s=>s.trim()).filter(Boolean),
+    experience_years: exp === "" ? null : Number(exp),
+    education: document.getElementById("education").value.trim() || null,
+    github_url: document.getElementById("github").value.trim() || null,
+    linkedin_url: document.getElementById("linkedin").value.trim() || null,
+    resume_url: document.getElementById("resume").value.trim() || null
+  };
+}
+async function request(url, options={}) {
+  return fetch(url, {
+    ...options,
+    headers: {
+      "Authorization": "Bearer " + token,
+      ...(options.body ? {"Content-Type":"application/json"} : {}),
+      ...(options.headers || {})
+    }
+  });
+}
+async function init() {
+  if (!token) {
+    message("Your login session was not found. Please log in again.", true);
+    return;
+  }
+  const user = JSON.parse(sessionStorage.getItem("devrecruit_candidate_user") || "{}");
+  document.getElementById("account").textContent = user.email ? "Signed in as " + user.email : "";
+  try {
+    const response = await request(API);
+    if (response.ok) {
+      fill(await response.json());
+      profileExists = true;
+      message("Your saved profile has loaded.");
+    } else if (response.status === 404) {
+      profileExists = false;
+      message("Complete the form and save your profile.");
+    } else if (response.status === 401 || response.status === 403) {
+      message("Your session is invalid or expired. Please log in again.", true);
+    } else {
+      message("Could not load profile (HTTP " + response.status + ").", true);
+    }
+  } catch (e) {
+    message("Cannot reach the backend. Make sure FastAPI is running on port 8000.", true);
+  }
+}
+document.getElementById("profileForm").addEventListener("submit", async event => {
+  event.preventDefault();
+  if (!token) {
+    message("Please log in again before saving.", true);
+    return;
+  }
+  const data = payload();
+  if (data.experience_years !== null && (!Number.isInteger(data.experience_years) || data.experience_years < 0)) {
+    message("Experience must be a whole number greater than or equal to zero.", true);
+    return;
+  }
+  save.disabled = true;
+  save.textContent = "Saving...";
+  try {
+    let response = await request(API, {
+      method: profileExists ? "PUT" : "POST",
+      body: JSON.stringify(data)
+    });
+    // If the profile was created elsewhere after page load, retry as an update.
+    if (response.status === 409 && !profileExists) {
+      response = await request(API, {method:"PUT", body:JSON.stringify(data)});
+    }
+    if (response.ok) {
+      profileExists = true;
+      fill(await response.json());
+      message("Profile saved successfully.");
+    } else {
+      const body = await response.json().catch(()=>({}));
+      message(body.detail || ("Save failed (HTTP " + response.status + ")."), true);
+    }
+  } catch (e) {
+    message("Could not save: backend connection failed.", true);
+  } finally {
+    save.disabled = false;
+    save.textContent = "Save Profile";
+  }
+});
+init();
+})();
+</script>
+</body>
+</html>
+'@
+
+Set-Content -Path (Join-Path $profileDir "index.html") -Value $page -Encoding UTF8
+Write-Host "Candidate profile page created: frontend/pages/candidate/profile/index.html"

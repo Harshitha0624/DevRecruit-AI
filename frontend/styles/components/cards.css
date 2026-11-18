@@ -1,0 +1,73 @@
+/* ======================================================
+   Enterprise Cards
+======================================================*/
+
+.card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.12);
+
+}
+
+/* Glass */
+
+.glass-card{
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+}
+
+/* Dashboard */
+
+.dashboard-card{
+
+    border-left:6px solid #2563EB;
+
+}
+
+/* AI */
+
+.ai-card{
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #7C3AED
+    );
+
+    color:white;
+
+}
+
+.ai-card p{
+
+    color:white;
+
+}
+
+/* Hover */
+
+.hover-card:hover{
+
+    transform:translateY(-10px);
+
+}

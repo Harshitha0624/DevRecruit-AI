@@ -1,0 +1,64 @@
+/* ==========================================
+   DEVELOPER RECRUITMENT PLATFORM
+   Global Design Variables
+========================================== */
+
+:root{
+
+    /* Primary */
+
+    --primary:#2563EB;
+    --primary-light:#4F8CFF;
+    --primary-dark:#1E40AF;
+
+    /* Secondary */
+
+    --secondary:#7C3AED;
+    --secondary-light:#A78BFA;
+
+    /* Accent */
+
+    --success:#10B981;
+    --warning:#F59E0B;
+    --danger:#EF4444;
+    --info:#06B6D4;
+
+    /* Background */
+
+    --bg:#F5F7FB;
+    --bg-dark:#0F172A;
+
+    /* Cards */
+
+    --card:#FFFFFF;
+    --card-dark:#1E293B;
+
+    /* Text */
+
+    --text:#1E293B;
+    --text-light:#64748B;
+    --text-white:#FFFFFF;
+
+    /* Border */
+
+    --border:#E2E8F0;
+
+    /* Radius */
+
+    --radius-xs:6px;
+    --radius-sm:10px;
+    --radius-md:16px;
+    --radius-lg:24px;
+    --radius-xl:32px;
+
+    /* Shadow */
+
+    --shadow-sm:0 2px 10px rgba(0,0,0,.08);
+    --shadow-md:0 10px 25px rgba(0,0,0,.12);
+    --shadow-lg:0 20px 50px rgba(0,0,0,.18);
+
+    /* Transition */
+
+    --transition:.3s ease;
+
+}

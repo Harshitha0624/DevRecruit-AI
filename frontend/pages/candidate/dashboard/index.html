@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Candidate Dashboard | DevRecruit AI
+    </title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet"
+          href="../../../../styles/global.css">
+
+    <!-- Dashboard Styles -->
+    <link rel="stylesheet"
+          href="dashboard.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    <!-- ==================================================
+         CANDIDATE PORTAL
+    =================================================== -->
+
+    <div class="candidate-portal">
+
+
+        <!-- ==================================================
+             SIDEBAR
+        =================================================== -->
+
+        <aside class="candidate-sidebar"
+               id="candidateSidebar">
+
+
+            <!-- Brand -->
+
+            <div class="sidebar-brand">
+
+                <a href="../dashboard/index.html">
+
+                    <span class="brand-icon">
+                        🚀
+                    </span>
+
+                    <span class="brand-text">
+                        DevRecruit
+                    </span>
+
+                </a>
+
+                <button
+                    class="sidebar-close"
+                    id="sidebarClose"
+                    aria-label="Close sidebar"
+                >
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- Candidate Mini Profile -->
+
+            <div class="sidebar-profile">
+
+                <div class="profile-avatar">
+
+                    HV
+
+                </div>
+
+                <div class="profile-details">
+
+                    <strong>
+                        Candidate
+                    </strong>
+
+                    <span>
+                        Developer
+                    </span>
+
+                </div>
+
+                <span class="online-indicator"></span>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav class="sidebar-navigation">
+
+
+                <!-- Main -->
+
+                <div class="nav-section">
+
+                    <span class="nav-section-title">
+                        MAIN
+                    </span>
+
+
+                    <a href="../dashboard/index.html"
+                       class="nav-item active">
+
+                        <i class="fa-solid fa-grid-2"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a href="../profile/index.html"
+                       class="nav-item">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <span>
+                            My Profile
+                        </span>
+
+                    </a>
+
+
+                    <a href="../resume/index.html"
+                       class="nav-item">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>
+                            Resume & Portfolio
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- AI Intelligence -->
+
+                <div class="nav-section">
+
+                    <span class="nav-section-title">
+                        AI INTELLIGENCE
+                    </span>
+
+
+                    <a href="../skills/index.html"
+                       class="nav-item">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                        <span>
+                            AI Skill Profile
+                        </span>
+
+                        <span class="nav-badge">
+                            AI
+                        </span>
+
+                    </a>
+
+
+                    <a href="../skill-graph/index.html"
+                       class="nav-item">
+
+                        <i class="fa-solid fa-diagram-project"></i>
+
+                        <span>
+                            Skill Graph
+                        </span>
+
+                    </a>
+
+
+                    <a href="../hiring-score/index.html"
+                       class="nav-item">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                        <span>
+                            AI Hiring Score
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Recruitment -->
+
+                <div class="nav-section">
+
+                    <span class="nav-section-title">
+                        RECRUITMENT
+                    </span>
+
+
+                    <a href="../jobs/index.html"
+                       class="nav-item">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                        <span>
+                            Jobs
+                        </span>
+
+                    </a>
+                    <a href="../jobs/external_jobs.html"
+   class="nav-item">
+
+    <i class="fa-solid fa-globe"></i>
+
+    <span>External Jobs</span>
+
+</a>
+
+
+                    <a href="../applications/index.html"
+                       class="nav-item">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                        <span>
+                            Applications
+                        </span>
+
+                        <span class="nav-count">
+                            3
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Assessments -->
+
+                <div class="nav-section">
+
+                    <span class="nav-section-title">
+                        ASSESSMENT
+                    </span>
+
+
+                    <a href="../assessments/index.html"
+                       class="nav-item">
+
+                        <i class="fa-solid fa-clipboard-check"></i>
+
+                        <span>
+                            Assessments
+                        </span>
+
+                    </a>
+
+
+                    <a href="../coding-practice/index.html"
+                       class="nav-item">
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <span>
+                            Coding Practice
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Learning -->
+
+                <div class="nav-section">
+
+                    <span class="nav-section-title">
+                        LEARNING
+                    </span>
+
+
+                    <a href="../learning/index.html"
+                       class="nav-item">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                        <span>
+                            Learning
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Credentials -->
+
+                <div class="nav-section">
+
+                    <span class="nav-section-title">
+                        VERIFICATION
+                    </span>
+
+
+                    <a href="../credentials/index.html"
+                       class="nav-item">
+
+                        <i class="fa-solid fa-certificate"></i>
+
+                        <span>
+                            Credentials
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+            <!-- Sidebar Bottom -->
+
+            <div class="sidebar-bottom">
+
+
+                <a href="../notifications/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                    <span class="notification-dot"></span>
+
+                </a>
+
+
+                <a href="../settings/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    <span>
+                        Settings
+                    </span>
+
+                </a>
+
+
+                <button
+                    class="logout-button"
+                    id="logoutButton"
+                >
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    <span>
+                        Sign Out
+                    </span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ==================================================
+             SIDEBAR OVERLAY
+        =================================================== -->
+
+        <div class="sidebar-overlay"
+             id="sidebarOverlay">
+        </div>
+
+
+        <!-- ==================================================
+             MAIN CONTENT
+        =================================================== -->
+
+        <main class="candidate-main">
+
+
+            <!-- Top Header -->
+
+            <header class="dashboard-header">
+
+
+                <div class="header-left">
+
+                    <button
+                        class="mobile-menu-button"
+                        id="mobileMenuButton"
+                        aria-label="Open navigation"
+                    >
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <span class="page-label">
+                            CANDIDATE PORTAL
+                        </span>
+
+                        <h1>
+                            Dashboard
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <div class="header-actions">
+
+
+                    <!-- Search -->
+
+                    <button
+                        class="header-action"
+                        aria-label="Search"
+                    >
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                    </button>
+
+
+                    <!-- Notifications -->
+
+                    <a
+                        href="../notifications/index.html"
+                        class="header-action notification-button"
+                        aria-label="Notifications"
+                    >
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-count">
+                            3
+                        </span>
+
+                    </a>
+
+
+                    <!-- Profile -->
+
+                    <a
+                        href="../profile/index.html"
+                        class="header-user"
+                    >
+
+                        <div class="header-avatar">
+                            HV
+                        </div>
+
+                        <div class="header-user-info">
+
+                            <strong>
+                                Candidate
+                            </strong>
+
+                            <span>
+                                Developer
+                            </span>
+
+                        </div>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- ==================================================
+                 DASHBOARD CONTENT
+            =================================================== -->
+
+            <div class="dashboard-content">
+
+
+                <!-- Welcome -->
+
+                <section class="welcome-section">
+
+                    <div>
+
+                        <span class="welcome-eyebrow">
+                            GOOD TO SEE YOU
+                        </span>
+
+                        <h2>
+                            Welcome back, Candidate 👋
+                        </h2>
+
+                        <p>
+                            Here's your AI-powered career
+                            overview and recruitment activity.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="../jobs/index.html"
+                        class="primary-action"
+                    >
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        Explore Jobs
+
+                    </a>
+
+                </section>
+
+
+                <!-- ==================================================
+                     KPI CARDS
+                =================================================== -->
+
+                <section class="dashboard-kpis">
+
+
+                    <article class="kpi-card">
+
+                        <div class="kpi-icon blue">
+
+                            <i class="fa-solid fa-brain"></i>
+
+                        </div>
+
+                        <div class="kpi-info">
+
+                            <span>
+                                AI Hiring Score
+                            </span>
+
+                            <strong>
+                                96%
+                            </strong>
+
+                            <small class="positive">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                4.8% this month
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <div class="kpi-icon purple">
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                        </div>
+
+                        <div class="kpi-info">
+
+                            <span>
+                                Applications
+                            </span>
+
+                            <strong>
+                                12
+                            </strong>
+
+                            <small>
+                                3 active applications
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <div class="kpi-icon cyan">
+
+                            <i class="fa-solid fa-code"></i>
+
+                        </div>
+
+                        <div class="kpi-info">
+
+                            <span>
+                                Skill Match
+                            </span>
+
+                            <strong>
+                                89%
+                            </strong>
+
+                            <small class="positive">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                7 new skills
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <div class="kpi-icon green">
+
+                            <i class="fa-solid fa-certificate"></i>
+
+                        </div>
+
+                        <div class="kpi-info">
+
+                            <span>
+                                Verified Credentials
+                            </span>
+
+                            <strong>
+                                8
+                            </strong>
+
+                            <small>
+                                Blockchain verified
+                            </small>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- ==================================================
+                     AI OVERVIEW
+                =================================================== -->
+
+                <section class="dashboard-grid">
+
+
+                    <!-- AI Career Intelligence -->
+
+                    <article class="dashboard-card ai-overview-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    AI CAREER INTELLIGENCE
+                                </span>
+
+                                <h3>
+                                    Your Career Readiness
+                                </h3>
+
+                            </div>
+
+                            <a href="../skills/index.html">
+                                View Details
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+
+                        <div class="readiness-content">
+
+
+                            <div class="readiness-score">
+
+                                <div class="score-ring">
+
+                                    <div class="score-ring-inner">
+
+                                        <strong>
+                                            96%
+                                        </strong>
+
+                                        <span>
+                                            Ready
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="readiness-details">
+
+                                <div class="readiness-item">
+
+                                    <span>
+                                        Technical Skills
+                                    </span>
+
+                                    <div class="progress-track">
+
+                                        <span
+                                            class="progress-fill"
+                                            style="width:94%"
+                                        ></span>
+
+                                    </div>
+
+                                    <strong>
+                                        94%
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="readiness-item">
+
+                                    <span>
+                                        Coding Performance
+                                    </span>
+
+                                    <div class="progress-track">
+
+                                        <span
+                                            class="progress-fill"
+                                            style="width:91%"
+                                        ></span>
+
+                                    </div>
+
+                                    <strong>
+                                        91%
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="readiness-item">
+
+                                    <span>
+                                        Resume Strength
+                                    </span>
+
+                                    <div class="progress-track">
+
+                                        <span
+                                            class="progress-fill"
+                                            style="width:87%"
+                                        ></span>
+
+                                    </div>
+
+                                    <strong>
+                                        87%
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="readiness-item">
+
+                                    <span>
+                                        Interview Readiness
+                                    </span>
+
+                                    <div class="progress-track">
+
+                                        <span
+                                            class="progress-fill"
+                                            style="width:82%"
+                                        ></span>
+
+                                    </div>
+
+                                    <strong>
+                                        82%
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Skill Snapshot -->
+
+                    <article class="dashboard-card skill-snapshot-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    SKILL INTELLIGENCE
+                                </span>
+
+                                <h3>
+                                    Skill Snapshot
+                                </h3>
+
+                            </div>
+
+                            <a href="../skill-graph/index.html">
+                                Skill Graph
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+
+                        <div class="skill-list">
+
+
+                            <div class="skill-row">
+
+                                <div class="skill-name">
+
+                                    <span class="skill-dot blue"></span>
+
+                                    Python
+
+                                </div>
+
+                                <strong>
+                                    94%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="skill-row">
+
+                                <div class="skill-name">
+
+                                    <span class="skill-dot purple"></span>
+
+                                    Machine Learning
+
+                                </div>
+
+                                <strong>
+                                    88%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="skill-row">
+
+                                <div class="skill-name">
+
+                                    <span class="skill-dot cyan"></span>
+
+                                    SQL
+
+                                </div>
+
+                                <strong>
+                                    85%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="skill-row">
+
+                                <div class="skill-name">
+
+                                    <span class="skill-dot green"></span>
+
+                                    JavaScript
+
+                                </div>
+
+                                <strong>
+                                    81%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="skill-row">
+
+                                <div class="skill-name">
+
+                                    <span class="skill-dot orange"></span>
+
+                                    Cloud
+
+                                </div>
+
+                                <strong>
+                                    76%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="../learning/index.html"
+                            class="skill-improvement"
+                        >
+
+                            <i class="fa-solid fa-lightbulb"></i>
+
+                            AI recommends improving Cloud skills
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </article>
+
+                </section>
+
+
+                <!-- ==================================================
+                     JOBS + APPLICATIONS
+                =================================================== -->
+
+                <section class="dashboard-grid">
+
+
+                    <!-- Recommended Jobs -->
+
+                    <article class="dashboard-card jobs-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    AI RECOMMENDATIONS
+                                </span>
+
+                                <h3>
+                                    Recommended Jobs
+                                </h3>
+
+                            </div>
+
+                            <a href="../jobs/index.html">
+                                View All
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+
+                        <div class="job-list">
+
+
+                            <div class="job-item">
+
+                                <div class="company-logo">
+                                    TC
+                                </div>
+
+                                <div class="job-info">
+
+                                    <strong>
+                                        Machine Learning Engineer
+                                    </strong>
+
+                                    <span>
+                                        Technology Company
+                                        • Bengaluru
+                                    </span>
+
+                                </div>
+
+                                <div class="job-match">
+                                    96% Match
+                                </div>
+
+                            </div>
+
+
+                            <div class="job-item">
+
+                                <div class="company-logo">
+                                    AI
+                                </div>
+
+                                <div class="job-info">
+
+                                    <strong>
+                                        AI Software Engineer
+                                    </strong>
+
+                                    <span>
+                                        AI Innovations
+                                        • Hyderabad
+                                    </span>
+
+                                </div>
+
+                                <div class="job-match">
+                                    92% Match
+                                </div>
+
+                            </div>
+
+
+                            <div class="job-item">
+
+                                <div class="company-logo">
+                                    DS
+                                </div>
+
+                                <div class="job-info">
+
+                                    <strong>
+                                        Data Scientist
+                                    </strong>
+
+                                    <span>
+                                        Data Systems
+                                        • Bengaluru
+                                    </span>
+
+                                </div>
+
+                                <div class="job-match">
+                                    88% Match
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Applications -->
+
+                    <article class="dashboard-card applications-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    RECRUITMENT ACTIVITY
+                                </span>
+
+                                <h3>
+                                    Recent Applications
+                                </h3>
+
+                            </div>
+
+                            <a href="../applications/index.html">
+                                Tracker
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+
+                        <div class="application-list">
+
+
+                            <div class="application-item">
+
+                                <div class="application-company">
+                                    TC
+                                </div>
+
+                                <div class="application-info">
+
+                                    <strong>
+                                        ML Engineer
+                                    </strong>
+
+                                    <span>
+                                        Applied 2 days ago
+                                    </span>
+
+                                </div>
+
+                                <span class="status interview">
+                                    Interview
+                                </span>
+
+                            </div>
+
+
+                            <div class="application-item">
+
+                                <div class="application-company">
+                                    AI
+                                </div>
+
+                                <div class="application-info">
+
+                                    <strong>
+                                        AI Engineer
+                                    </strong>
+
+                                    <span>
+                                        Applied 5 days ago
+                                    </span>
+
+                                </div>
+
+                                <span class="status review">
+                                    Under Review
+                                </span>
+
+                            </div>
+
+
+                            <div class="application-item">
+
+                                <div class="application-company">
+                                    DS
+                                </div>
+
+                                <div class="application-info">
+
+                                    <strong>
+                                        Data Scientist
+                                    </strong>
+
+                                    <span>
+                                        Applied 1 week ago
+                                    </span>
+
+                                </div>
+
+                                <span class="status submitted">
+                                    Submitted
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- ==================================================
+                     NEXT ACTIONS
+                =================================================== -->
+
+                <section class="dashboard-card action-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                YOUR NEXT MOVES
+                            </span>
+
+                            <h3>
+                                Recommended Actions
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="action-grid">
+
+
+                        <a
+                            href="../assessments/index.html"
+                            class="action-item"
+                        >
+
+                            <div class="action-icon purple">
+
+                                <i class="fa-solid fa-clipboard-check"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Complete Assessment
+                                </strong>
+
+                                <span>
+                                    1 recruiter assessment pending
+                                </span>
+
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </a>
+
+
+                        <a
+                            href="../learning/index.html"
+                            class="action-item"
+                        >
+
+                            <div class="action-icon blue">
+
+                                <i class="fa-solid fa-graduation-cap"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Continue Learning
+                                </strong>
+
+                                <span>
+                                    AI recommends Cloud Computing
+                                </span>
+
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </a>
+
+
+                        <a
+                            href="../credentials/index.html"
+                            class="action-item"
+                        >
+
+                            <div class="action-icon green">
+
+                                <i class="fa-solid fa-certificate"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Verify Credentials
+                                </strong>
+
+                                <span>
+                                    2 credentials ready for verification
+                                </span>
+
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- Dashboard JavaScript -->
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

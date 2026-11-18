@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="DevRecruit recruiter job management">
+
+    <title>Jobs | DevRecruit</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="jobs.css">
+
+</head>
+
+<body>
+
+<div class="jobs-page">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="jobs-sidebar"
+           id="jobsSidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../dashboard/index.html">
+
+                <span class="brand-icon">
+                    🚀
+                </span>
+
+                <span>
+                    DevRecruit
+                </span>
+
+            </a>
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                type="button">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                HR
+            </div>
+
+            <div class="profile-info">
+
+                <strong>
+                    Recruiter
+                </strong>
+
+                <span>
+                    Talent Acquisition
+                </span>
+
+            </div>
+
+            <span class="online-dot"></span>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    OVERVIEW
+                </span>
+
+                <a href="../dashboard/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+                <a href="../analytics/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        Analytics
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    TALENT MANAGEMENT
+                </span>
+
+                <a href="../candidates/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <span>
+                        Candidates
+                    </span>
+
+                    <b>
+                        248
+                    </b>
+
+                </a>
+
+                <a href="../ai-ranking/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        AI Candidate Ranking
+                    </span>
+
+                    <em>
+                        AI
+                    </em>
+
+                </a>
+
+                <a href="../shortlisted/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>
+                        Shortlisted
+                    </span>
+
+                    <b>
+                        18
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    RECRUITMENT
+                </span>
+
+                <a href="index.html"
+                   class="nav-item active">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <span>
+                        Job Postings
+                    </span>
+
+                    <b id="jobsNavCount">
+                        12
+                    </b>
+
+                </a>
+
+                <a href="../pipeline/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-filter"></i>
+
+                    <span>
+                        Hiring Pipeline
+                    </span>
+
+                </a>
+
+                <a href="../interviews/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <span>
+                        Interviews
+                    </span>
+
+                    <b>
+                        5
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    EVALUATION
+                </span>
+
+                <a href="../assessments/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <span>
+                        Assessments
+                    </span>
+
+                    <b>
+                        7
+                    </b>
+
+                </a>
+
+                <a href="../coding-tests/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        Coding Tests
+                    </span>
+
+                </a>
+
+                <a href="../credentials/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <span>
+                        Credential Verification
+                    </span>
+
+                    <b class="alert-count">
+                        3
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    COMMUNICATION
+                </span>
+
+                <a href="../messages/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <b>
+                        4
+                    </b>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- FOOTER -->
+
+        <div class="sidebar-footer">
+
+            <a href="../notifications/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span>
+                    Notifications
+                </span>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+            <a href="../settings/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+            <button
+                class="logout-button"
+                id="logoutButton"
+                type="button">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Sign Out
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay">
+    </div>
+
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <main class="jobs-main">
+
+
+        <!-- HEADER -->
+
+        <header class="jobs-header">
+
+            <div class="header-left">
+
+                <button
+                    class="mobile-menu"
+                    id="mobileMenuButton"
+                    type="button">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+                <div>
+
+                    <span class="page-label">
+                        RECRUITMENT MANAGEMENT
+                    </span>
+
+                    <h1>
+                        Job Postings
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <a href="../messages/index.html"
+                   class="header-button">
+
+                    <i class="fa-regular fa-comment-dots"></i>
+
+                </a>
+
+                <a href="../notifications/index.html"
+                   class="header-button notification-button">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span>
+                        7
+                    </span>
+
+                </a>
+
+                <a href="../settings/index.html"
+                   class="header-profile">
+
+                    <div class="header-avatar">
+                        HR
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Recruiter
+                        </strong>
+
+                        <small>
+                            Talent Acquisition
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             CONTENT
+        =================================================== -->
+
+        <div class="jobs-content">
+
+
+            <!-- INTRO -->
+
+            <section class="jobs-intro">
+
+                <div>
+
+                    <span>
+                        JOB MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Manage Your Job Openings
+                    </h2>
+
+                    <p>
+                        Create, publish and manage your organization's
+                        technology job postings from one centralized workspace.
+                    </p>
+
+                </div>
+
+                <button
+                    class="primary-action"
+                    id="createJobButton"
+                    type="button">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Create New Job
+
+                </button>
+
+            </section>
+
+
+            <!-- ==================================================
+                 KPI CARDS
+            =================================================== -->
+
+            <section class="job-summary">
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon blue">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            ACTIVE JOBS
+                        </span>
+
+                        <strong id="activeJobsCount">
+                            8
+                        </strong>
+
+                        <small>
+                            Currently published
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon purple">
+
+                        <i class="fa-solid fa-file-pen"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            DRAFTS
+                        </span>
+
+                        <strong id="draftJobsCount">
+                            3
+                        </strong>
+
+                        <small>
+                            Awaiting publishing
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon green">
+
+                        <i class="fa-solid fa-users"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            APPLICATIONS
+                        </span>
+
+                        <strong id="applicationsCount">
+                            428
+                        </strong>
+
+                        <small>
+                            Across active jobs
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon orange">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            JOB VIEWS
+                        </span>
+
+                        <strong id="jobViewsCount">
+                            12.8K
+                        </strong>
+
+                        <small>
+                            This month
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 TOOLBAR
+            =================================================== -->
+
+            <section class="jobs-toolbar">
+
+                <div class="job-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="jobSearch"
+                        placeholder="Search jobs by title, skill or location...">
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="jobStatusFilter">
+                        STATUS
+                    </label>
+
+                    <select id="jobStatusFilter">
+
+                        <option value="all">
+                            All Jobs
+                        </option>
+
+                        <option value="active">
+                            Active
+                        </option>
+
+                        <option value="draft">
+                            Draft
+                        </option>
+
+                        <option value="closed">
+                            Closed
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="jobTypeFilter">
+                        JOB TYPE
+                    </label>
+
+                    <select id="jobTypeFilter">
+
+                        <option value="all">
+                            All Types
+                        </option>
+
+                        <option value="full-time">
+                            Full Time
+                        </option>
+
+                        <option value="part-time">
+                            Part Time
+                        </option>
+
+                        <option value="contract">
+                            Contract
+                        </option>
+
+                        <option value="internship">
+                            Internship
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="jobLocationFilter">
+                        LOCATION
+                    </label>
+
+                    <select id="jobLocationFilter">
+
+                        <option value="all">
+                            All Locations
+                        </option>
+
+                        <option value="bengaluru">
+                            Bengaluru
+                        </option>
+
+                        <option value="hybrid">
+                            Hybrid
+                        </option>
+
+                        <option value="remote">
+                            Remote
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="clear-filter-button"
+                    id="clearJobFilters"
+                    type="button">
+
+                    <i class="fa-solid fa-rotate-left"></i>
+
+                    Reset
+
+                </button>
+
+            </section>
+
+
+            <!-- ==================================================
+                 JOB LIST
+            =================================================== -->
+
+            <section class="jobs-card">
+
+
+                <div class="jobs-card-header">
+
+                    <div>
+
+                        <span>
+                            JOB POSTINGS
+                        </span>
+
+                        <h3>
+                            Your Recruitment Pipeline
+                        </h3>
+
+                    </div>
+
+
+                    <div class="view-controls">
+
+                        <button
+                            class="view-button active"
+                            data-view="grid"
+                            type="button"
+                            title="Grid view">
+
+                            <i class="fa-solid fa-grip"></i>
+
+                        </button>
+
+                        <button
+                            class="view-button"
+                            data-view="list"
+                            type="button"
+                            title="List view">
+
+                            <i class="fa-solid fa-list"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JOB GRID -->
+
+                <div class="jobs-grid"
+                     id="jobsGrid">
+
+
+                    <!-- JOB 1 -->
+
+                    <article
+                        class="job-card"
+                        data-status="active"
+                        data-type="full-time"
+                        data-location="bengaluru"
+                        data-search="senior full stack developer javascript react node mongodb bengaluru">
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo blue-logo">
+                                JS
+                            </div>
+
+                            <div class="job-card-actions">
+
+                                <button
+                                    class="job-action"
+                                    type="button"
+                                    title="More options">
+
+                                    <i class="fa-solid fa-ellipsis"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="job-title-area">
+
+                            <span class="job-status active">
+                                <i class="fa-solid fa-circle"></i>
+                                Active
+                            </span>
+
+                            <h4>
+                                Senior Full Stack Developer
+                            </h4>
+
+                            <p>
+                                Engineering · Bengaluru
+                            </p>
+
+                        </div>
+
+
+                        <div class="job-tags">
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                            <span>
+                                Node.js
+                            </span>
+
+                            <span>
+                                MongoDB
+                            </span>
+
+                            <span>
+                                +3
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-meta">
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bengaluru
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-clock"></i>
+                                Full Time
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                                12–20 LPA
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-card-footer">
+
+                            <div class="application-info">
+
+                                <strong>
+                                    86
+                                </strong>
+
+                                <span>
+                                    Applications
+                                </span>
+
+                            </div>
+
+                            <div class="job-date">
+                                Posted 2 days ago
+                            </div>
+
+                            <button
+                                class="manage-job-button"
+                                type="button">
+
+                                Manage
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 2 -->
+
+                    <article
+                        class="job-card"
+                        data-status="active"
+                        data-type="full-time"
+                        data-location="hybrid"
+                        data-search="python ai machine learning engineer python tensorflow scikit learn hybrid">
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo purple-logo">
+                                AI
+                            </div>
+
+                            <div class="job-card-actions">
+
+                                <button
+                                    class="job-action"
+                                    type="button">
+
+                                    <i class="fa-solid fa-ellipsis"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="job-title-area">
+
+                            <span class="job-status active">
+                                <i class="fa-solid fa-circle"></i>
+                                Active
+                            </span>
+
+                            <h4>
+                                AI / Machine Learning Engineer
+                            </h4>
+
+                            <p>
+                                Artificial Intelligence · Hybrid
+                            </p>
+
+                        </div>
+
+
+                        <div class="job-tags">
+
+                            <span>
+                                Python
+                            </span>
+
+                            <span>
+                                TensorFlow
+                            </span>
+
+                            <span>
+                                ML
+                            </span>
+
+                            <span>
+                                +4
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-meta">
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Hybrid
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-clock"></i>
+                                Full Time
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                                10–18 LPA
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-card-footer">
+
+                            <div class="application-info">
+
+                                <strong>
+                                    64
+                                </strong>
+
+                                <span>
+                                    Applications
+                                </span>
+
+                            </div>
+
+                            <div class="job-date">
+                                Posted 4 days ago
+                            </div>
+
+                            <button
+                                class="manage-job-button"
+                                type="button">
+
+                                Manage
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 3 -->
+
+                    <article
+                        class="job-card"
+                        data-status="active"
+                        data-type="internship"
+                        data-location="bengaluru"
+                        data-search="software developer intern java spring boot mysql bengaluru internship">
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo green-logo">
+                                SD
+                            </div>
+
+                            <div class="job-card-actions">
+
+                                <button
+                                    class="job-action"
+                                    type="button">
+
+                                    <i class="fa-solid fa-ellipsis"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="job-title-area">
+
+                            <span class="job-status active">
+                                <i class="fa-solid fa-circle"></i>
+                                Active
+                            </span>
+
+                            <h4>
+                                Software Developer Intern
+                            </h4>
+
+                            <p>
+                                Engineering · Bengaluru
+                            </p>
+
+                        </div>
+
+
+                        <div class="job-tags">
+
+                            <span>
+                                Java
+                            </span>
+
+                            <span>
+                                Spring Boot
+                            </span>
+
+                            <span>
+                                MySQL
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-meta">
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bengaluru
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-clock"></i>
+                                Internship
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                                25K–35K
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-card-footer">
+
+                            <div class="application-info">
+
+                                <strong>
+                                    112
+                                </strong>
+
+                                <span>
+                                    Applications
+                                </span>
+
+                            </div>
+
+                            <div class="job-date">
+                                Posted 1 week ago
+                            </div>
+
+                            <button
+                                class="manage-job-button"
+                                type="button">
+
+                                Manage
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 4 -->
+
+                    <article
+                        class="job-card"
+                        data-status="draft"
+                        data-type="full-time"
+                        data-location="remote"
+                        data-search="backend developer golang postgres redis remote">
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo orange-logo">
+                                BE
+                            </div>
+
+                            <div class="job-card-actions">
+
+                                <button
+                                    class="job-action"
+                                    type="button">
+
+                                    <i class="fa-solid fa-ellipsis"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="job-title-area">
+
+                            <span class="job-status draft">
+                                <i class="fa-solid fa-circle"></i>
+                                Draft
+                            </span>
+
+                            <h4>
+                                Backend Developer
+                            </h4>
+
+                            <p>
+                                Platform Engineering · Remote
+                            </p>
+
+                        </div>
+
+
+                        <div class="job-tags">
+
+                            <span>
+                                Go
+                            </span>
+
+                            <span>
+                                PostgreSQL
+                            </span>
+
+                            <span>
+                                Redis
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-meta">
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Remote
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-clock"></i>
+                                Full Time
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                                14–22 LPA
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-card-footer">
+
+                            <div class="application-info">
+
+                                <strong>
+                                    0
+                                </strong>
+
+                                <span>
+                                    Applications
+                                </span>
+
+                            </div>
+
+                            <div class="job-date">
+                                Last edited today
+                            </div>
+
+                            <button
+                                class="manage-job-button"
+                                type="button">
+
+                                Edit
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 5 -->
+
+                    <article
+                        class="job-card"
+                        data-status="active"
+                        data-type="contract"
+                        data-location="remote"
+                        data-search="devops cloud engineer aws docker kubernetes remote contract">
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo cyan-logo">
+                                CL
+                            </div>
+
+                            <div class="job-card-actions">
+
+                                <button
+                                    class="job-action"
+                                    type="button">
+
+                                    <i class="fa-solid fa-ellipsis"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="job-title-area">
+
+                            <span class="job-status active">
+                                <i class="fa-solid fa-circle"></i>
+                                Active
+                            </span>
+
+                            <h4>
+                                Cloud / DevOps Engineer
+                            </h4>
+
+                            <p>
+                                Cloud Infrastructure · Remote
+                            </p>
+
+                        </div>
+
+
+                        <div class="job-tags">
+
+                            <span>
+                                AWS
+                            </span>
+
+                            <span>
+                                Docker
+                            </span>
+
+                            <span>
+                                Kubernetes
+                            </span>
+
+                            <span>
+                                +2
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-meta">
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Remote
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-clock"></i>
+                                Contract
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                                15–24 LPA
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-card-footer">
+
+                            <div class="application-info">
+
+                                <strong>
+                                    47
+                                </strong>
+
+                                <span>
+                                    Applications
+                                </span>
+
+                            </div>
+
+                            <div class="job-date">
+                                Posted 9 days ago
+                            </div>
+
+                            <button
+                                class="manage-job-button"
+                                type="button">
+
+                                Manage
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 6 -->
+
+                    <article
+                        class="job-card"
+                        data-status="closed"
+                        data-type="full-time"
+                        data-location="bengaluru"
+                        data-search="ui ux designer figma design system bengaluru closed">
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo pink-logo">
+                                UX
+                            </div>
+
+                            <div class="job-card-actions">
+
+                                <button
+                                    class="job-action"
+                                    type="button">
+
+                                    <i class="fa-solid fa-ellipsis"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="job-title-area">
+
+                            <span class="job-status closed">
+                                <i class="fa-solid fa-circle"></i>
+                                Closed
+                            </span>
+
+                            <h4>
+                                UI / UX Designer
+                            </h4>
+
+                            <p>
+                                Product Design · Bengaluru
+                            </p>
+
+                        </div>
+
+
+                        <div class="job-tags">
+
+                            <span>
+                                Figma
+                            </span>
+
+                            <span>
+                                UX Research
+                            </span>
+
+                            <span>
+                                Design Systems
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-meta">
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bengaluru
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-clock"></i>
+                                Full Time
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                                8–14 LPA
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-card-footer">
+
+                            <div class="application-info">
+
+                                <strong>
+                                    119
+                                </strong>
+
+                                <span>
+                                    Applications
+                                </span>
+
+                            </div>
+
+                            <div class="job-date">
+                                Closed 3 days ago
+                            </div>
+
+                            <button
+                                class="manage-job-button"
+                                type="button">
+
+                                View
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- EMPTY STATE -->
+
+                <div class="empty-state"
+                     id="emptyJobState">
+
+                    <div class="empty-icon">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                    </div>
+
+                    <h3>
+                        No jobs found
+                    </h3>
+
+                    <p>
+                        Try changing your search or filter criteria.
+                    </p>
+
+                </div>
+
+
+                <!-- FOOTER -->
+
+                <div class="jobs-footer">
+
+                    <span id="jobResultCount">
+                        Showing 6 jobs
+                    </span>
+
+                    <div class="pagination">
+
+                        <button
+                            type="button"
+                            disabled>
+
+                            <i class="fa-solid fa-chevron-left"></i>
+
+                        </button>
+
+                        <button
+                            class="active"
+                            type="button">
+
+                            1
+
+                        </button>
+
+                        <button
+                            type="button">
+
+                            2
+
+                        </button>
+
+                        <button
+                            type="button">
+
+                            3
+
+                        </button>
+
+                        <button
+                            type="button">
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- ==================================================
+     CREATE JOB MODAL
+================================================== -->
+
+<div class="job-modal"
+     id="jobModal"
+     aria-hidden="true">
+
+    <div class="modal-overlay"
+         id="modalOverlay">
+    </div>
+
+    <div class="job-modal-content">
+
+        <div class="modal-header">
+
+            <div>
+
+                <span>
+                    RECRUITMENT
+                </span>
+
+                <h2>
+                    Create New Job
+                </h2>
+
+                <p>
+                    Add the details for your new job posting.
+                </p>
+
+            </div>
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                type="button">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <form
+            class="job-form"
+            id="jobForm">
+
+
+            <div class="form-grid">
+
+                <div class="form-field full-width">
+
+                    <label for="jobTitle">
+                        Job Title *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="jobTitle"
+                        placeholder="e.g. Senior Software Engineer"
+                        required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="jobDepartment">
+                        Department *
+                    </label>
+
+                    <select
+                        id="jobDepartment"
+                        required>
+
+                        <option value="">
+                            Select department
+                        </option>
+
+                        <option>
+                            Engineering
+                        </option>
+
+                        <option>
+                            Artificial Intelligence
+                        </option>
+
+                        <option>
+                            Product
+                        </option>
+
+                        <option>
+                            Design
+                        </option>
+
+                        <option>
+                            Data Science
+                        </option>
+
+                        <option>
+                            Human Resources
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="jobType">
+                        Job Type *
+                    </label>
+
+                    <select
+                        id="jobType"
+                        required>
+
+                        <option value="">
+                            Select type
+                        </option>
+
+                        <option value="full-time">
+                            Full Time
+                        </option>
+
+                        <option value="part-time">
+                            Part Time
+                        </option>
+
+                        <option value="contract">
+                            Contract
+                        </option>
+
+                        <option value="internship">
+                            Internship
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="jobLocation">
+                        Location *
+                    </label>
+
+                    <select
+                        id="jobLocation"
+                        required>
+
+                        <option value="">
+                            Select location
+                        </option>
+
+                        <option value="bengaluru">
+                            Bengaluru
+                        </option>
+
+                        <option value="hybrid">
+                            Hybrid
+                        </option>
+
+                        <option value="remote">
+                            Remote
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="jobExperience">
+                        Experience
+                    </label>
+
+                    <select id="jobExperience">
+
+                        <option>
+                            0–1 years
+                        </option>
+
+                        <option>
+                            1–3 years
+                        </option>
+
+                        <option selected>
+                            3–5 years
+                        </option>
+
+                        <option>
+                            5–8 years
+                        </option>
+
+                        <option>
+                            8+ years
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="jobSalary">
+                        Salary Range
+                    </label>
+
+                    <input
+                        type="text"
+                        id="jobSalary"
+                        placeholder="e.g. ₹10–18 LPA">
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="jobDeadline">
+                        Application Deadline
+                    </label>
+
+                    <input
+                        type="date"
+                        id="jobDeadline">
+
+                </div>
+
+
+                <div class="form-field full-width">
+
+                    <label for="jobSkills">
+                        Required Skills
+                    </label>
+
+                    <input
+                        type="text"
+                        id="jobSkills"
+                        placeholder="e.g. Python, FastAPI, PostgreSQL, Docker">
+
+                </div>
+
+
+                <div class="form-field full-width">
+
+                    <label for="jobDescription">
+                        Job Description *
+                    </label>
+
+                    <textarea
+                        id="jobDescription"
+                        rows="6"
+                        placeholder="Describe the role, responsibilities and requirements..."
+                        required></textarea>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-actions">
+
+                <button
+                    type="button"
+                    class="secondary-button"
+                    id="cancelJobButton">
+
+                    Cancel
+
+                </button>
+
+                <button
+                    type="submit"
+                    class="primary-action">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Publish Job
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     TOAST
+================================================== -->
+
+<div class="jobs-toast"
+     id="jobsToast">
+
+    <div class="toast-icon">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+    </div>
+
+    <div class="toast-content">
+
+        <strong id="toastTitle">
+            Success
+        </strong>
+
+        <span id="toastMessage">
+            Operation completed successfully.
+        </span>
+
+    </div>
+
+    <button
+        id="toastClose"
+        type="button">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+</div>
+
+
+<script src="jobs.js"></script>
+
+</body>
+
+</html>

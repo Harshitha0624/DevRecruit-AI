@@ -1,0 +1,2034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Recruiter Dashboard | DevRecruit AI</title>
+
+    <link rel="stylesheet"
+          href="dashboard.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+<div class="recruiter-portal">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="recruiter-sidebar"
+           id="recruiterSidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../dashboard/index.html">
+
+                <span class="brand-icon">
+                    🚀
+                </span>
+
+                <span class="brand-text">
+                    DevRecruit
+                </span>
+
+            </a>
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                aria-label="Close sidebar">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- RECRUITER PROFILE -->
+
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                HR
+            </div>
+
+            <div class="profile-details">
+
+                <strong>
+                    Recruiter
+                </strong>
+
+                <span>
+                    Talent Acquisition
+                </span>
+
+            </div>
+
+            <span class="online-indicator"></span>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-navigation">
+
+
+            <!-- OVERVIEW -->
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    OVERVIEW
+                </span>
+
+
+                <a href="../dashboard/index.html"
+                   class="nav-item active">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a href="../analytics/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        Analytics
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- TALENT -->
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    TALENT MANAGEMENT
+                </span>
+
+
+                <a href="../candidates/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <span>
+                        Candidates
+                    </span>
+
+                    <span class="nav-count">
+                        248
+                    </span>
+
+                </a>
+
+
+                <a href="../ai-ranking/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        AI Candidate Ranking
+                    </span>
+
+                    <span class="nav-badge">
+                        AI
+                    </span>
+
+                </a>
+
+
+                <a href="../shortlisted/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>
+                        Shortlisted
+                    </span>
+
+                    <span class="nav-count">
+                        18
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- RECRUITMENT -->
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    RECRUITMENT
+                </span>
+
+
+                <a href="../jobs/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <span>
+                        Job Postings
+                    </span>
+
+                    <span class="nav-count">
+                        12
+                    </span>
+
+                </a>
+
+
+                <a href="../pipeline/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-filter-circle-dollar"></i>
+
+                    <span>
+                        Hiring Pipeline
+                    </span>
+
+                </a>
+
+
+                <a href="../interviews/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <span>
+                        Interviews
+                    </span>
+
+                    <span class="nav-count">
+                        5
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- ASSESSMENTS -->
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    EVALUATION
+                </span>
+
+
+                <a href="../assessments/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <span>
+                        Assessments
+                    </span>
+
+                    <span class="nav-count">
+                        7
+                    </span>
+
+                </a>
+
+
+                <a href="../coding-tests/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        Coding Tests
+                    </span>
+
+                </a>
+
+
+                <a href="../credentials/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <span>
+                        Credential Verification
+                    </span>
+
+                    <span class="verification-alert">
+                        3
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    COMMUNICATION
+                </span>
+
+
+                <a href="../messages/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <span class="nav-count">
+                        4
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+            <a href="../notifications/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span>
+                    Notifications
+                </span>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+
+            <a href="../settings/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <button
+                class="logout-button"
+                id="logoutButton">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Sign Out
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay">
+    </div>
+
+
+    <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
+
+    <main class="recruiter-main">
+
+
+        <!-- ==================================================
+             HEADER
+        =================================================== -->
+
+        <header class="dashboard-header">
+
+
+            <div class="header-left">
+
+                <button
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div>
+
+                    <span class="page-label">
+                        RECRUITMENT INTELLIGENCE CENTER
+                    </span>
+
+                    <h1>
+                        Recruiter Dashboard
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+
+                <!-- SEARCH -->
+
+                <button
+                    class="header-action"
+                    id="globalSearchButton"
+                    aria-label="Search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+
+                <!-- NOTIFICATIONS -->
+
+                <a href="../notifications/index.html"
+                   class="header-action notification-action">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        7
+                    </span>
+
+                </a>
+
+
+                <!-- PROFILE -->
+
+                <a href="../settings/index.html"
+                   class="header-user">
+
+                    <div class="header-avatar">
+                        HR
+                    </div>
+
+                    <div class="header-user-info">
+
+                        <strong>
+                            Recruiter
+                        </strong>
+
+                        <span>
+                            Talent Acquisition
+                        </span>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             DASHBOARD CONTENT
+        =================================================== -->
+
+        <div class="dashboard-content">
+
+
+            <!-- ==================================================
+                 WELCOME HERO
+            =================================================== -->
+
+            <section class="recruiter-hero">
+
+
+                <div class="hero-background-grid"></div>
+
+
+                <div class="hero-content">
+
+                    <span class="hero-label">
+                        AI-POWERED RECRUITMENT
+                    </span>
+
+                    <h2>
+                        Build your
+                        <span>next great team.</span>
+                    </h2>
+
+                    <p>
+                        Monitor your hiring pipeline, discover
+                        high-potential developers and let AI
+                        surface the candidates most aligned with
+                        your requirements.
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a href="../jobs/index.html"
+                           class="primary-button">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                            Create Job
+
+                        </a>
+
+
+                        <a href="../candidates/index.html"
+                           class="secondary-button">
+
+                            <i class="fa-solid fa-users"></i>
+
+                            Explore Candidates
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AI STATUS -->
+
+                <div class="ai-status-card">
+
+                    <div class="ai-status-top">
+
+                        <div class="ai-status-icon">
+
+                            <i class="fa-solid fa-brain"></i>
+
+                        </div>
+
+                        <span>
+                            AI RECRUITMENT ENGINE
+                        </span>
+
+                        <span class="status-live">
+                            LIVE
+                        </span>
+
+                    </div>
+
+
+                    <div class="ai-status-score">
+
+                        <strong>
+                            94.7%
+                        </strong>
+
+                        <span>
+                            Match confidence
+                        </span>
+
+                    </div>
+
+
+                    <div class="ai-status-progress">
+
+                        <span style="width:94.7%"></span>
+
+                    </div>
+
+
+                    <div class="ai-status-footer">
+
+                        <span>
+                            248 candidates analyzed
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            +12.4%
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 KPI CARDS
+            =================================================== -->
+
+            <section class="kpi-grid">
+
+
+                <!-- CANDIDATES -->
+
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div class="kpi-icon blue">
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+                        <span class="trend positive">
+
+                            <i class="fa-solid fa-arrow-up"></i>
+
+                            18.6%
+
+                        </span>
+
+                    </div>
+
+
+                    <span class="kpi-label">
+                        TOTAL CANDIDATES
+                    </span>
+
+                    <strong class="kpi-value">
+                        248
+                    </strong>
+
+                    <span class="kpi-description">
+                        Candidates across active roles
+                    </span>
+
+                </div>
+
+
+                <!-- JOBS -->
+
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div class="kpi-icon purple">
+
+                            <i class="fa-solid fa-briefcase"></i>
+
+                        </div>
+
+                        <span class="trend positive">
+
+                            <i class="fa-solid fa-arrow-up"></i>
+
+                            8.3%
+
+                        </span>
+
+                    </div>
+
+
+                    <span class="kpi-label">
+                        ACTIVE JOBS
+                    </span>
+
+                    <strong class="kpi-value">
+                        12
+                    </strong>
+
+                    <span class="kpi-description">
+                        Open positions currently hiring
+                    </span>
+
+                </div>
+
+
+                <!-- SHORTLISTED -->
+
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div class="kpi-icon green">
+
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                        <span class="trend positive">
+
+                            <i class="fa-solid fa-arrow-up"></i>
+
+                            14.2%
+
+                        </span>
+
+                    </div>
+
+
+                    <span class="kpi-label">
+                        SHORTLISTED
+                    </span>
+
+                    <strong class="kpi-value">
+                        18
+                    </strong>
+
+                    <span class="kpi-description">
+                        Candidates ready for next stage
+                    </span>
+
+                </div>
+
+
+                <!-- INTERVIEWS -->
+
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div class="kpi-icon orange">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                        </div>
+
+                        <span class="trend neutral">
+
+                            This week
+
+                        </span>
+
+                    </div>
+
+
+                    <span class="kpi-label">
+                        INTERVIEWS
+                    </span>
+
+                    <strong class="kpi-value">
+                        24
+                    </strong>
+
+                    <span class="kpi-description">
+                        Upcoming candidate interviews
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 MAIN GRID
+            =================================================== -->
+
+            <section class="dashboard-main-grid">
+
+
+                <!-- ==================================================
+                     HIRING PIPELINE
+                =================================================== -->
+
+                <div class="dashboard-card pipeline-card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                RECRUITMENT FLOW
+                            </span>
+
+                            <h3>
+                                Hiring Pipeline
+                            </h3>
+
+                        </div>
+
+
+                        <a href="../pipeline/index.html"
+                           class="card-link">
+
+                            View Pipeline
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="pipeline">
+
+
+                        <div class="pipeline-stage">
+
+                            <div class="stage-top">
+
+                                <span>
+                                    Applied
+                                </span>
+
+                                <strong>
+                                    248
+                                </strong>
+
+                            </div>
+
+                            <div class="stage-bar">
+
+                                <span
+                                    style="width:100%">
+                                </span>
+
+                            </div>
+
+                            <small>
+                                100% of applicants
+                            </small>
+
+                        </div>
+
+
+                        <div class="pipeline-stage">
+
+                            <div class="stage-top">
+
+                                <span>
+                                    Screening
+                                </span>
+
+                                <strong>
+                                    96
+                                </strong>
+
+                            </div>
+
+                            <div class="stage-bar">
+
+                                <span
+                                    style="width:72%">
+                                </span>
+
+                            </div>
+
+                            <small>
+                                38.7% conversion
+                            </small>
+
+                        </div>
+
+
+                        <div class="pipeline-stage">
+
+                            <div class="stage-top">
+
+                                <span>
+                                    Assessment
+                                </span>
+
+                                <strong>
+                                    52
+                                </strong>
+
+                            </div>
+
+                            <div class="stage-bar">
+
+                                <span
+                                    style="width:51%">
+                                </span>
+
+                            </div>
+
+                            <small>
+                                54.1% conversion
+                            </small>
+
+                        </div>
+
+
+                        <div class="pipeline-stage">
+
+                            <div class="stage-top">
+
+                                <span>
+                                    Interview
+                                </span>
+
+                                <strong>
+                                    24
+                                </strong>
+
+                            </div>
+
+                            <div class="stage-bar">
+
+                                <span
+                                    style="width:31%">
+                                </span>
+
+                            </div>
+
+                            <small>
+                                46.2% conversion
+                            </small>
+
+                        </div>
+
+
+                        <div class="pipeline-stage selected-stage">
+
+                            <div class="stage-top">
+
+                                <span>
+                                    Selected
+                                </span>
+
+                                <strong>
+                                    8
+                                </strong>
+
+                            </div>
+
+                            <div class="stage-bar">
+
+                                <span
+                                    style="width:18%">
+                                </span>
+
+                            </div>
+
+                            <small>
+                                33.3% conversion
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================================
+                     AI INSIGHTS
+                =================================================== -->
+
+                <div class="dashboard-card ai-insights-card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                ARTIFICIAL INTELLIGENCE
+                            </span>
+
+                            <h3>
+                                AI Hiring Insights
+                            </h3>
+
+                        </div>
+
+                        <div class="ai-card-icon">
+
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="insight-list">
+
+
+                        <div class="insight-item">
+
+                            <div class="insight-icon green">
+
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    18 high-fit candidates
+                                </strong>
+
+                                <span>
+                                    match your open Full Stack
+                                    Developer role above 85%.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="insight-item">
+
+                            <div class="insight-icon orange">
+
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    7 candidates need attention
+                                </strong>
+
+                                <span>
+                                    Their applications have been
+                                    waiting for more than 3 days.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="insight-item">
+
+                            <div class="insight-icon purple">
+
+                                <i class="fa-solid fa-lightbulb"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Expand your search
+                                </strong>
+
+                                <span>
+                                    Candidates with adjacent skills
+                                    could increase your talent pool
+                                    by 23%.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="ai-insight-button"
+                        id="generateInsightButton">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                        Generate New AI Insight
+
+                    </button>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- ==================================================
+                 CANDIDATE + JOBS
+            =================================================== -->
+
+            <section class="dashboard-secondary-grid">
+
+
+                <!-- ==================================================
+                     TOP CANDIDATES
+                =================================================== -->
+
+                <div class="dashboard-card candidates-card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                AI MATCH ENGINE
+                            </span>
+
+                            <h3>
+                                Top Candidate Matches
+                            </h3>
+
+                        </div>
+
+
+                        <a href="../ai-ranking/index.html"
+                           class="card-link">
+
+                            View Ranking
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="candidate-table">
+
+
+                        <div class="candidate-row table-header">
+
+                            <span>
+                                CANDIDATE
+                            </span>
+
+                            <span>
+                                ROLE
+                            </span>
+
+                            <span>
+                                AI MATCH
+                            </span>
+
+                            <span>
+                                STATUS
+                            </span>
+
+                            <span>
+                            </span>
+
+                        </div>
+
+
+                        <div class="candidate-row">
+
+                            <div class="candidate-info">
+
+                                <div class="candidate-avatar avatar-one">
+                                    AK
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Alex Kumar
+                                    </strong>
+
+                                    <span>
+                                        4.8 years experience
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <span class="candidate-role">
+                                Full Stack
+                            </span>
+
+
+                            <div class="match-score">
+
+                                <strong>
+                                    96%
+                                </strong>
+
+                                <div>
+                                    <span style="width:96%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <span class="status-pill shortlisted">
+                                Shortlisted
+                            </span>
+
+
+                            <button
+                                class="row-action"
+                                data-candidate="Alex Kumar"
+                                aria-label="Open candidate">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="candidate-row">
+
+                            <div class="candidate-info">
+
+                                <div class="candidate-avatar avatar-two">
+                                    SP
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Sarah Patel
+                                    </strong>
+
+                                    <span>
+                                        3.6 years experience
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <span class="candidate-role">
+                                Backend
+                            </span>
+
+
+                            <div class="match-score">
+
+                                <strong>
+                                    93%
+                                </strong>
+
+                                <div>
+                                    <span style="width:93%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <span class="status-pill assessment">
+                                Assessment
+                            </span>
+
+
+                            <button
+                                class="row-action"
+                                data-candidate="Sarah Patel"
+                                aria-label="Open candidate">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="candidate-row">
+
+                            <div class="candidate-info">
+
+                                <div class="candidate-avatar avatar-three">
+                                    RM
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Rahul Mehta
+                                    </strong>
+
+                                    <span>
+                                        5.1 years experience
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <span class="candidate-role">
+                                AI / ML
+                            </span>
+
+
+                            <div class="match-score">
+
+                                <strong>
+                                    91%
+                                </strong>
+
+                                <div>
+                                    <span style="width:91%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <span class="status-pill interview">
+                                Interview
+                            </span>
+
+
+                            <button
+                                class="row-action"
+                                data-candidate="Rahul Mehta"
+                                aria-label="Open candidate">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="candidate-row">
+
+                            <div class="candidate-info">
+
+                                <div class="candidate-avatar avatar-four">
+                                    NS
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Neha Shah
+                                    </strong>
+
+                                    <span>
+                                        2.9 years experience
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <span class="candidate-role">
+                                Frontend
+                            </span>
+
+
+                            <div class="match-score">
+
+                                <strong>
+                                    89%
+                                </strong>
+
+                                <div>
+                                    <span style="width:89%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <span class="status-pill screening">
+                                Screening
+                            </span>
+
+
+                            <button
+                                class="row-action"
+                                data-candidate="Neha Shah"
+                                aria-label="Open candidate">
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================================
+                     ACTIVE JOBS
+                =================================================== -->
+
+                <div class="dashboard-card jobs-card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                OPEN POSITIONS
+                            </span>
+
+                            <h3>
+                                Active Job Postings
+                            </h3>
+
+                        </div>
+
+
+                        <a href="../jobs/index.html"
+                           class="card-link">
+
+                            Manage Jobs
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="jobs-list">
+
+
+                        <div class="job-item">
+
+                            <div class="job-icon blue">
+
+                                <i class="fa-solid fa-code"></i>
+
+                            </div>
+
+                            <div class="job-info">
+
+                                <strong>
+                                    Senior Full Stack Developer
+                                </strong>
+
+                                <span>
+                                    86 applicants · 4 shortlisted
+                                </span>
+
+                            </div>
+
+                            <div class="job-status active">
+                                Active
+                            </div>
+
+                        </div>
+
+
+                        <div class="job-item">
+
+                            <div class="job-icon purple">
+
+                                <i class="fa-solid fa-brain"></i>
+
+                            </div>
+
+                            <div class="job-info">
+
+                                <strong>
+                                    Machine Learning Engineer
+                                </strong>
+
+                                <span>
+                                    54 applicants · 7 shortlisted
+                                </span>
+
+                            </div>
+
+                            <div class="job-status active">
+                                Active
+                            </div>
+
+                        </div>
+
+
+                        <div class="job-item">
+
+                            <div class="job-icon green">
+
+                                <i class="fa-solid fa-server"></i>
+
+                            </div>
+
+                            <div class="job-info">
+
+                                <strong>
+                                    Backend Engineer
+                                </strong>
+
+                                <span>
+                                    41 applicants · 3 shortlisted
+                                </span>
+
+                            </div>
+
+                            <div class="job-status active">
+                                Active
+                            </div>
+
+                        </div>
+
+
+                        <div class="job-item">
+
+                            <div class="job-icon orange">
+
+                                <i class="fa-solid fa-mobile-screen"></i>
+
+                            </div>
+
+                            <div class="job-info">
+
+                                <strong>
+                                    Mobile Application Developer
+                                </strong>
+
+                                <span>
+                                    29 applicants · 2 shortlisted
+                                </span>
+
+                            </div>
+
+                            <div class="job-status closing">
+                                Closing Soon
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="../jobs/index.html"
+                       class="create-job-link">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Create New Job Posting
+
+                    </a>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- ==================================================
+                 BOTTOM INTELLIGENCE GRID
+            =================================================== -->
+
+            <section class="dashboard-bottom-grid">
+
+
+                <!-- ASSESSMENT ACTIVITY -->
+
+                <div class="dashboard-card activity-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                EVALUATION
+                            </span>
+
+                            <h3>
+                                Assessment Activity
+                            </h3>
+
+                        </div>
+
+
+                        <a href="../assessments/index.html"
+                           class="card-link">
+
+                            View All
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="assessment-metrics">
+
+                        <div>
+
+                            <strong>
+                                82%
+                            </strong>
+
+                            <span>
+                                Completion Rate
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                76%
+                            </strong>
+
+                            <span>
+                                Average Score
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                7
+                            </strong>
+
+                            <span>
+                                Pending Review
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-progress">
+
+                        <div class="progress-label">
+
+                            <span>
+                                Technical assessments
+                            </span>
+
+                            <strong>
+                                82%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress-track">
+
+                            <span style="width:82%"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-progress">
+
+                        <div class="progress-label">
+
+                            <span>
+                                Coding evaluations
+                            </span>
+
+                            <strong>
+                                68%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress-track">
+
+                            <span style="width:68%"></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- UPCOMING INTERVIEWS -->
+
+                <div class="dashboard-card interviews-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                SCHEDULE
+                            </span>
+
+                            <h3>
+                                Upcoming Interviews
+                            </h3>
+
+                        </div>
+
+
+                        <a href="../interviews/index.html"
+                           class="card-link">
+
+                            Calendar
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="interview-list">
+
+
+                        <div class="interview-item">
+
+                            <div class="interview-date">
+
+                                <strong>
+                                    18
+                                </strong>
+
+                                <span>
+                                    AUG
+                                </span>
+
+                            </div>
+
+
+                            <div class="interview-details">
+
+                                <strong>
+                                    Alex Kumar
+                                </strong>
+
+                                <span>
+                                    Full Stack · 10:30 AM
+                                </span>
+
+                            </div>
+
+
+                            <span class="interview-type">
+                                Technical
+                            </span>
+
+                        </div>
+
+
+                        <div class="interview-item">
+
+                            <div class="interview-date">
+
+                                <strong>
+                                    19
+                                </strong>
+
+                                <span>
+                                    AUG
+                                </span>
+
+                            </div>
+
+
+                            <div class="interview-details">
+
+                                <strong>
+                                    Rahul Mehta
+                                </strong>
+
+                                <span>
+                                    AI/ML · 2:00 PM
+                                </span>
+
+                            </div>
+
+
+                            <span class="interview-type">
+                                Technical
+                            </span>
+
+                        </div>
+
+
+                        <div class="interview-item">
+
+                            <div class="interview-date">
+
+                                <strong>
+                                    20
+                                </strong>
+
+                                <span>
+                                    AUG
+                                </span>
+
+                            </div>
+
+
+                            <div class="interview-details">
+
+                                <strong>
+                                    Sarah Patel
+                                </strong>
+
+                                <span>
+                                    Backend · 11:00 AM
+                                </span>
+
+                            </div>
+
+
+                            <span class="interview-type">
+                                HR
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CREDENTIAL ALERT -->
+
+                <div class="dashboard-card verification-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                TRUST & VERIFICATION
+                            </span>
+
+                            <h3>
+                                Credential Alerts
+                            </h3>
+
+                        </div>
+
+                        <div class="verification-icon">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="verification-summary">
+
+                        <strong>
+                            3
+                        </strong>
+
+                        <span>
+                            credentials require review
+                        </span>
+
+                    </div>
+
+
+                    <div class="verification-alert-item">
+
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+
+                        <div>
+
+                            <strong>
+                                Certificate verification pending
+                            </strong>
+
+                            <span>
+                                2 candidates submitted external
+                                certifications.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="verification-alert-item">
+
+                        <i class="fa-solid fa-fingerprint"></i>
+
+                        <div>
+
+                            <strong>
+                                Blockchain proof available
+                            </strong>
+
+                            <span>
+                                1 credential can be verified instantly.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="../credentials/index.html"
+                       class="verification-link">
+
+                        Review Credentials
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- ==================================================
+     GLOBAL SEARCH MODAL
+================================================== -->
+
+<div class="search-modal"
+     id="searchModal">
+
+    <div class="search-modal-backdrop"
+         id="searchModalBackdrop">
+    </div>
+
+
+    <div class="search-modal-content">
+
+        <div class="search-modal-header">
+
+            <div>
+
+                <span>
+                    RECRUITER SEARCH
+                </span>
+
+                <h3>
+                    Find anything
+                </h3>
+
+            </div>
+
+
+            <button
+                id="closeSearchModal"
+                aria-label="Close search">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="global-search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="globalSearchInput"
+                placeholder="Search candidates, jobs, assessments..."
+                autocomplete="off">
+
+            <kbd>
+                ESC
+            </kbd>
+
+        </div>
+
+
+        <div class="search-suggestions">
+
+            <span>
+                QUICK ACCESS
+            </span>
+
+
+            <button
+                data-search-target="candidates">
+
+                <i class="fa-solid fa-users"></i>
+
+                Candidates
+
+            </button>
+
+
+            <button
+                data-search-target="jobs">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                Job postings
+
+            </button>
+
+
+            <button
+                data-search-target="assessments">
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+                Assessments
+
+            </button>
+
+
+            <button
+                data-search-target="interviews">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                Interviews
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>

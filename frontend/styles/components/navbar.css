@@ -1,0 +1,279 @@
+/* ==========================================================
+   NAVBAR
+========================================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.72);
+
+    border-bottom:1px solid rgba(255,255,255,.4);
+
+    transition:.35s ease;
+
+}
+
+.navbar.scrolled{
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    background:rgba(255,255,255,.90);
+
+}
+
+.navbar-container{
+
+    height:82px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+/* ==========================================================
+LOGO
+========================================================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+}
+
+.logo i{
+
+    width:46px;
+
+    height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:14px;
+
+    color:white;
+
+    font-size:22px;
+
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+}
+
+.logo span{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ==========================================================
+MENU
+========================================================== */
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#334155;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#2563EB;
+
+}
+
+/* ==========================================================
+RIGHT
+========================================================== */
+
+.nav-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+/* ==========================================================
+SEARCH
+========================================================== */
+
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    width:220px;
+
+    padding:12px 18px;
+
+    border-radius:50px;
+
+    background:#F8FAFC;
+
+}
+
+.search-box input{
+
+    border:none;
+
+    outline:none;
+
+    width:100%;
+
+    background:transparent;
+
+}
+
+.search-box i{
+
+    color:#64748B;
+
+}
+
+/* ==========================================================
+BUTTONS
+========================================================== */
+
+.icon-btn,
+
+.theme-btn{
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:50%;
+
+    background:#F8FAFC;
+
+    transition:.3s;
+
+}
+
+.icon-btn:hover,
+
+.theme-btn:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+.login-btn{
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    border:2px solid #2563EB;
+
+    background:white;
+
+    color:#2563EB;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.register-btn{
+
+    padding:13px 28px;
+
+    border:none;
+
+    border-radius:50px;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.25);
+
+}
+
+.login-btn:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+.register-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+.hamburger{
+
+    display:none;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}

@@ -1,0 +1,43 @@
+.alert{
+
+    padding:18px;
+
+    border-radius:12px;
+
+    margin:15px 0;
+
+    font-weight:500;
+
+}
+
+.alert-success{
+
+    background:#D1FAE5;
+
+    color:#065F46;
+
+}
+
+.alert-danger{
+
+    background:#FEE2E2;
+
+    color:#991B1B;
+
+}
+
+.alert-warning{
+
+    background:#FEF3C7;
+
+    color:#92400E;
+
+}
+
+.alert-info{
+
+    background:#DBEAFE;
+
+    color:#1E40AF;
+
+}

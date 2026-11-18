@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="DevRecruit recruiter messaging center">
+
+    <title>Messages | DevRecruit</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="messages.css">
+
+</head>
+
+<body>
+
+<div class="messages-page">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="messages-sidebar"
+           id="messagesSidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../dashboard/index.html">
+
+                <span class="brand-icon">
+                    🚀
+                </span>
+
+                <span>
+                    DevRecruit
+                </span>
+
+            </a>
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                type="button"
+                aria-label="Close navigation">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                HR
+            </div>
+
+            <div class="profile-info">
+
+                <strong>
+                    Recruiter
+                </strong>
+
+                <span>
+                    Talent Acquisition
+                </span>
+
+            </div>
+
+            <span class="online-dot"></span>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    OVERVIEW
+                </span>
+
+                <a href="../dashboard/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+                <a href="../analytics/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        Analytics
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    TALENT MANAGEMENT
+                </span>
+
+                <a href="../candidates/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <span>
+                        Candidates
+                    </span>
+
+                    <b>
+                        248
+                    </b>
+
+                </a>
+
+                <a href="../ai-ranking/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>
+                        AI Candidate Ranking
+                    </span>
+
+                    <em>
+                        AI
+                    </em>
+
+                </a>
+
+                <a href="../shortlisted/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>
+                        Shortlisted
+                    </span>
+
+                    <b>
+                        18
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    RECRUITMENT
+                </span>
+
+                <a href="../jobs/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <span>
+                        Job Postings
+                    </span>
+
+                    <b>
+                        12
+                    </b>
+
+                </a>
+
+                <a href="../pipeline/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-filter"></i>
+
+                    <span>
+                        Hiring Pipeline
+                    </span>
+
+                </a>
+
+                <a href="../interviews/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <span>
+                        Interviews
+                    </span>
+
+                    <b>
+                        5
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    EVALUATION
+                </span>
+
+                <a href="../assessments/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <span>
+                        Assessments
+                    </span>
+
+                    <b>
+                        7
+                    </b>
+
+                </a>
+
+                <a href="../coding-tests/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span>
+                        Coding Tests
+                    </span>
+
+                </a>
+
+                <a href="../credentials/index.html"
+                   class="nav-item">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <span>
+                        Credential Verification
+                    </span>
+
+                    <b class="alert-count">
+                        3
+                    </b>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-group">
+
+                <span class="nav-title">
+                    COMMUNICATION
+                </span>
+
+                <a href="index.html"
+                   class="nav-item active">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <b>
+                        4
+                    </b>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR FOOTER -->
+
+        <div class="sidebar-footer">
+
+            <a href="../notifications/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <span>
+                    Notifications
+                </span>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+            <a href="../settings/index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+            <button
+                class="logout-button"
+                id="logoutButton"
+                type="button">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Sign Out
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay">
+    </div>
+
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <main class="messages-main">
+
+
+        <!-- HEADER -->
+
+        <header class="messages-header">
+
+            <div class="header-left">
+
+                <button
+                    class="mobile-menu"
+                    id="mobileMenuButton"
+                    type="button"
+                    aria-label="Open navigation">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+                <div>
+
+                    <span class="page-label">
+                        COMMUNICATION CENTER
+                    </span>
+
+                    <h1>
+                        Messages
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="header-button"
+                    id="refreshMessages"
+                    type="button"
+                    title="Refresh">
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                </button>
+
+
+                <a href="../notifications/index.html"
+                   class="header-button notification-button"
+                   aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span>
+                        7
+                    </span>
+
+                </a>
+
+
+                <a href="../settings/index.html"
+                   class="header-profile">
+
+                    <div class="header-avatar">
+                        HR
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Recruiter
+                        </strong>
+
+                        <small>
+                            Talent Acquisition
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             CONTENT
+        =================================================== -->
+
+        <div class="messages-content">
+
+
+            <!-- PAGE INTRO -->
+
+            <section class="page-intro">
+
+                <div>
+
+                    <span>
+                        RECRUITER COMMUNICATION
+                    </span>
+
+                    <h2>
+                        Candidate Messages
+                    </h2>
+
+                    <p>
+                        Communicate with candidates, coordinate interviews
+                        and manage recruitment conversations from one place.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="primary-action"
+                    id="newMessageButton"
+                    type="button">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                    New Message
+
+                </button>
+
+            </section>
+
+
+            <!-- ==================================================
+                 MESSAGE WORKSPACE
+            =================================================== -->
+
+            <section class="message-workspace">
+
+
+                <!-- ==================================================
+                     CONVERSATION LIST
+                =================================================== -->
+
+                <aside class="conversation-panel">
+
+
+                    <div class="conversation-header">
+
+                        <div>
+
+                            <span>
+                                INBOX
+                            </span>
+
+                            <h3>
+                                Conversations
+                            </h3>
+
+                        </div>
+
+
+                        <button
+                            class="small-icon-button"
+                            id="composeButton"
+                            type="button"
+                            title="Compose">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- SEARCH -->
+
+                    <div class="conversation-search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="search"
+                            id="messageSearch"
+                            placeholder="Search conversations..."
+                            autocomplete="off">
+
+                    </div>
+
+
+                    <!-- FILTER -->
+
+                    <div class="message-tabs">
+
+                        <button
+                            class="message-tab active"
+                            data-filter="all"
+                            type="button">
+
+                            All
+
+                        </button>
+
+                        <button
+                            class="message-tab"
+                            data-filter="unread"
+                            type="button">
+
+                            Unread
+
+                            <span>
+                                4
+                            </span>
+
+                        </button>
+
+                        <button
+                            class="message-tab"
+                            data-filter="starred"
+                            type="button">
+
+                            Starred
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- CONVERSATIONS -->
+
+                    <div class="conversation-list"
+                         id="conversationList">
+
+
+                        <!-- CONVERSATION 1 -->
+
+                        <button
+                            class="conversation-item active"
+                            data-name="Priya Nair"
+                            data-status="unread"
+                            data-starred="true"
+                            type="button">
+
+                            <div class="conversation-avatar purple">
+
+                                PN
+
+                                <span class="online-indicator"></span>
+
+                            </div>
+
+
+                            <div class="conversation-info">
+
+                                <div class="conversation-top">
+
+                                    <strong>
+                                        Priya Nair
+                                    </strong>
+
+                                    <time>
+                                        10:42 AM
+                                    </time>
+
+                                </div>
+
+
+                                <div class="conversation-bottom">
+
+                                    <span>
+                                        Thank you for scheduling...
+                                    </span>
+
+                                    <b>
+                                        2
+                                    </b>
+
+                                </div>
+
+                            </div>
+
+                        </button>
+
+
+                        <!-- CONVERSATION 2 -->
+
+                        <button
+                            class="conversation-item"
+                            data-name="Aarav Sharma"
+                            data-status="unread"
+                            data-starred="false"
+                            type="button">
+
+                            <div class="conversation-avatar blue">
+
+                                AS
+
+                                <span class="online-indicator"></span>
+
+                            </div>
+
+
+                            <div class="conversation-info">
+
+                                <div class="conversation-top">
+
+                                    <strong>
+                                        Aarav Sharma
+                                    </strong>
+
+                                    <time>
+                                        9:18 AM
+                                    </time>
+
+                                </div>
+
+
+                                <div class="conversation-bottom">
+
+                                    <span>
+                                        I have completed the assessment.
+                                    </span>
+
+                                    <b>
+                                        1
+                                    </b>
+
+                                </div>
+
+                            </div>
+
+                        </button>
+
+
+                        <!-- CONVERSATION 3 -->
+
+                        <button
+                            class="conversation-item"
+                            data-name="Sneha Reddy"
+                            data-status="read"
+                            data-starred="true"
+                            type="button">
+
+                            <div class="conversation-avatar orange">
+
+                                SR
+
+                            </div>
+
+
+                            <div class="conversation-info">
+
+                                <div class="conversation-top">
+
+                                    <strong>
+                                        Sneha Reddy
+                                    </strong>
+
+                                    <time>
+                                        Yesterday
+                                    </time>
+
+                                </div>
+
+
+                                <div class="conversation-bottom">
+
+                                    <span>
+                                        I've attached my updated resume.
+                                    </span>
+
+                                    <i class="fa-solid fa-star starred"></i>
+
+                                </div>
+
+                            </div>
+
+                        </button>
+
+
+                        <!-- CONVERSATION 4 -->
+
+                        <button
+                            class="conversation-item"
+                            data-name="Rohan Kumar"
+                            data-status="read"
+                            data-starred="false"
+                            type="button">
+
+                            <div class="conversation-avatar green">
+
+                                RK
+
+                            </div>
+
+
+                            <div class="conversation-info">
+
+                                <div class="conversation-top">
+
+                                    <strong>
+                                        Rohan Kumar
+                                    </strong>
+
+                                    <time>
+                                        Yesterday
+                                    </time>
+
+                                </div>
+
+
+                                <div class="conversation-bottom">
+
+                                    <span>
+                                        Looking forward to the interview.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </button>
+
+
+                        <!-- CONVERSATION 5 -->
+
+                        <button
+                            class="conversation-item"
+                            data-name="Vikram Singh"
+                            data-status="unread"
+                            data-starred="false"
+                            type="button">
+
+                            <div class="conversation-avatar cyan">
+
+                                VS
+
+                            </div>
+
+
+                            <div class="conversation-info">
+
+                                <div class="conversation-top">
+
+                                    <strong>
+                                        Vikram Singh
+                                    </strong>
+
+                                    <time>
+                                        Mon
+                                    </time>
+
+                                </div>
+
+
+                                <div class="conversation-bottom">
+
+                                    <span>
+                                        Could you share the interview details?
+                                    </span>
+
+                                    <b>
+                                        1
+                                    </b>
+
+                                </div>
+
+                            </div>
+
+                        </button>
+
+
+                        <!-- CONVERSATION 6 -->
+
+                        <button
+                            class="conversation-item"
+                            data-name="Ananya Mehta"
+                            data-status="read"
+                            data-starred="false"
+                            type="button">
+
+                            <div class="conversation-avatar pink">
+
+                                AM
+
+                            </div>
+
+
+                            <div class="conversation-info">
+
+                                <div class="conversation-top">
+
+                                    <strong>
+                                        Ananya Mehta
+                                    </strong>
+
+                                    <time>
+                                        Sun
+                                    </time>
+
+                                </div>
+
+
+                                <div class="conversation-bottom">
+
+                                    <span>
+                                        Thanks for the opportunity!
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </button>
+
+                    </div>
+
+                </aside>
+
+
+                <!-- ==================================================
+                     CHAT PANEL
+                =================================================== -->
+
+                <section class="chat-panel">
+
+
+                    <!-- CHAT HEADER -->
+
+                    <header class="chat-header">
+
+                        <div class="chat-user">
+
+                            <div class="chat-avatar purple">
+
+                                PN
+
+                                <span class="online-indicator"></span>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong id="chatCandidateName">
+                                    Priya Nair
+                                </strong>
+
+                                <span id="chatCandidateRole">
+                                    Cloud Engineer · Bengaluru
+                                </span>
+
+                                <small>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span id="chatOnlineStatus">
+                                        Online
+                                    </span>
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="chat-header-actions">
+
+                            <button
+                                class="chat-icon-button"
+                                id="scheduleInterviewButton"
+                                type="button"
+                                title="Schedule interview">
+
+                                <i class="fa-solid fa-calendar-plus"></i>
+
+                            </button>
+
+
+                            <button
+                                class="chat-icon-button"
+                                id="candidateProfileButton"
+                                type="button"
+                                title="Candidate profile">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </button>
+
+
+                            <button
+                                class="chat-icon-button"
+                                id="moreChatButton"
+                                type="button"
+                                title="More options">
+
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                            </button>
+
+                        </div>
+
+                    </header>
+
+
+                    <!-- CHAT BODY -->
+
+                    <div class="chat-body"
+                         id="chatBody">
+
+
+                        <div class="date-divider">
+
+                            <span>
+                                TODAY
+                            </span>
+
+                        </div>
+
+
+                        <!-- RECEIVED -->
+
+                        <div class="message-row received">
+
+                            <div class="message-avatar purple">
+                                PN
+                            </div>
+
+
+                            <div class="message-bubble-group">
+
+                                <div class="message-bubble">
+
+                                    Hi! Thank you for reaching out.
+                                    I'm very interested in the Cloud
+                                    Engineer position.
+
+                                </div>
+
+                                <time>
+                                    10:31 AM
+                                </time>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SENT -->
+
+                        <div class="message-row sent">
+
+                            <div class="message-bubble-group">
+
+                                <div class="message-bubble">
+
+                                    Hi Priya! Thanks for your response.
+                                    Your technical assessment score was
+                                    excellent. We'd like to move forward
+                                    with the next stage.
+
+                                </div>
+
+                                <time>
+
+                                    10:35 AM
+
+                                    <i class="fa-solid fa-check-double"></i>
+
+                                </time>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- RECEIVED -->
+
+                        <div class="message-row received">
+
+                            <div class="message-avatar purple">
+                                PN
+                            </div>
+
+
+                            <div class="message-bubble-group">
+
+                                <div class="message-bubble">
+
+                                    That's great to hear! I'm available
+                                    for an interview this week.
+                                    Please let me know the preferred time.
+
+                                </div>
+
+                                <time>
+                                    10:38 AM
+                                </time>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SENT -->
+
+                        <div class="message-row sent">
+
+                            <div class="message-bubble-group">
+
+                                <div class="message-bubble">
+
+                                    Perfect. I've scheduled a technical
+                                    interview for Thursday at 11:00 AM.
+                                    I'll send the meeting details shortly.
+
+                                </div>
+
+                                <time>
+
+                                    10:40 AM
+
+                                    <i class="fa-solid fa-check-double"></i>
+
+                                </time>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- RECEIVED -->
+
+                        <div class="message-row received">
+
+                            <div class="message-avatar purple">
+                                PN
+                            </div>
+
+
+                            <div class="message-bubble-group">
+
+                                <div class="message-bubble">
+
+                                    Thank you for scheduling the interview.
+                                    I'll be there. Looking forward to speaking
+                                    with the team!
+
+                                </div>
+
+                                <time>
+                                    10:42 AM
+                                </time>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==================================================
+                         ATTACHMENT PREVIEW
+                    =================================================== -->
+
+                    <div class="attachment-preview"
+                         id="attachmentPreview">
+
+                        <div class="attachment-icon">
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong id="attachmentName">
+                                Resume.pdf
+                            </strong>
+
+                            <span id="attachmentSize">
+                                2.4 MB
+                            </span>
+
+                        </div>
+
+                        <button
+                            id="removeAttachment"
+                            type="button"
+                            title="Remove attachment">
+
+                            <i class="fa-solid fa-xmark"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- ==================================================
+                         MESSAGE COMPOSER
+                    =================================================== -->
+
+                    <form class="message-composer"
+                          id="messageForm">
+
+
+                        <input
+                            type="file"
+                            id="messageAttachment"
+                            hidden
+                            accept=".pdf,.doc,.docx,.png,.jpg,.jpeg">
+
+
+                        <button
+                            class="composer-button"
+                            id="attachmentButton"
+                            type="button"
+                            title="Attach file">
+
+                            <i class="fa-solid fa-paperclip"></i>
+
+                        </button>
+
+
+                        <textarea
+                            id="messageInput"
+                            rows="1"
+                            placeholder="Type your message..."
+                            aria-label="Message"></textarea>
+
+
+                        <button
+                            class="emoji-button"
+                            id="emojiButton"
+                            type="button"
+                            title="Add emoji">
+
+                            <i class="fa-regular fa-face-smile"></i>
+
+                        </button>
+
+
+                        <button
+                            class="send-button"
+                            type="submit"
+                            title="Send message">
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </button>
+
+                    </form>
+
+                </section>
+
+
+                <!-- ==================================================
+                     CANDIDATE INFO PANEL
+                =================================================== -->
+
+                <aside class="candidate-info-panel">
+
+
+                    <div class="candidate-panel-header">
+
+                        <span>
+                            CANDIDATE
+                        </span>
+
+                        <button
+                            id="closeCandidatePanel"
+                            type="button"
+                            title="Close">
+
+                            <i class="fa-solid fa-xmark"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="candidate-profile-large">
+
+                        <div class="large-avatar purple">
+                            PN
+
+                            <span class="online-indicator"></span>
+                        </div>
+
+                        <h3>
+                            Priya Nair
+                        </h3>
+
+                        <span>
+                            Cloud Engineer
+                        </span>
+
+                        <small>
+                            Bengaluru, Karnataka
+                        </small>
+
+                    </div>
+
+
+                    <!-- CONTACT -->
+
+                    <div class="candidate-contact">
+
+                        <a href="mailto:priya.nair@example.com">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            priya.nair@example.com
+
+                        </a>
+
+                        <a href="tel:+919876543210">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            +91 98765 43210
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- JOB -->
+
+                    <div class="candidate-panel-section">
+
+                        <span>
+                            APPLIED FOR
+                        </span>
+
+                        <div class="job-mini-card">
+
+                            <div class="job-mini-icon">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Cloud Engineer
+                                </strong>
+
+                                <small>
+                                    Engineering · Full Time
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SKILLS -->
+
+                    <div class="candidate-panel-section">
+
+                        <span>
+                            TOP SKILLS
+                        </span>
+
+                        <div class="skill-tags">
+
+                            <span>
+                                AWS
+                            </span>
+
+                            <span>
+                                Docker
+                            </span>
+
+                            <span>
+                                Kubernetes
+                            </span>
+
+                            <span>
+                                Python
+                            </span>
+
+                            <span>
+                                Terraform
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STATS -->
+
+                    <div class="candidate-mini-stats">
+
+                        <div>
+
+                            <strong>
+                                94%
+                            </strong>
+
+                            <span>
+                                AI Match
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                92
+                            </strong>
+
+                            <span>
+                                Assessment
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                8.7
+                            </strong>
+
+                            <span>
+                                Experience
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROFILE BUTTON -->
+
+                    <button
+                        class="view-profile-button"
+                        id="viewCandidateProfile"
+                        type="button">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        View Full Profile
+
+                    </button>
+
+                </aside>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- ==================================================
+     NEW MESSAGE MODAL
+================================================== -->
+
+<div class="message-modal"
+     id="messageModal">
+
+    <div class="modal-backdrop"
+         id="modalBackdrop">
+    </div>
+
+
+    <div class="modal-content">
+
+
+        <button
+            class="modal-close"
+            id="modalClose"
+            type="button"
+            aria-label="Close">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="modal-heading">
+
+            <div class="modal-icon">
+
+                <i class="fa-solid fa-pen"></i>
+
+            </div>
+
+            <div>
+
+                <span>
+                    COMMUNICATION
+                </span>
+
+                <h3>
+                    New Message
+                </h3>
+
+                <p>
+                    Start a conversation with a candidate.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form id="newMessageForm">
+
+
+            <div class="form-group">
+
+                <label for="recipient">
+                    Candidate
+                </label>
+
+                <select id="recipient"
+                        required>
+
+                    <option value="">
+                        Select candidate
+                    </option>
+
+                    <option value="Priya Nair">
+                        Priya Nair — Cloud Engineer
+                    </option>
+
+                    <option value="Aarav Sharma">
+                        Aarav Sharma — Backend Developer
+                    </option>
+
+                    <option value="Sneha Reddy">
+                        Sneha Reddy — Frontend Developer
+                    </option>
+
+                    <option value="Rohan Kumar">
+                        Rohan Kumar — Software Engineer
+                    </option>
+
+                    <option value="Vikram Singh">
+                        Vikram Singh — DevOps Engineer
+                    </option>
+
+                    <option value="Ananya Mehta">
+                        Ananya Mehta — Full Stack Developer
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="messageSubject">
+                    Subject
+                </label>
+
+                <input
+                    type="text"
+                    id="messageSubject"
+                    placeholder="Message subject"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="newMessageText">
+                    Message
+                </label>
+
+                <textarea
+                    id="newMessageText"
+                    rows="5"
+                    placeholder="Write your message..."
+                    required></textarea>
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <button
+                    class="modal-secondary"
+                    id="cancelNewMessage"
+                    type="button">
+
+                    Cancel
+
+                </button>
+
+
+                <button
+                    class="modal-primary"
+                    type="submit">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Send Message
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     TOAST
+================================================== -->
+
+<div class="messages-toast"
+     id="messagesToast">
+
+    <div class="toast-icon">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+    </div>
+
+
+    <div class="toast-content">
+
+        <strong id="toastTitle">
+            Success
+        </strong>
+
+        <span id="toastMessage">
+            Action completed successfully.
+        </span>
+
+    </div>
+
+
+    <button
+        id="toastClose"
+        type="button"
+        aria-label="Close notification">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+</div>
+
+
+<script src="messages.js"></script>
+
+</body>
+
+</html>
